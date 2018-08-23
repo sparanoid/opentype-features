@@ -30,3 +30,17 @@
   font-size: 108%;
   opacity: .8;
 }
+
+.largetype {
+  @include heading();
+  font-size: 220%;
+  margin-bottom: 1.8rem !important;
+
+  &-lg {
+    font-size: 480%;
+  }
+}
+
+:root {
+  --space-lg: 18vw;
+}
