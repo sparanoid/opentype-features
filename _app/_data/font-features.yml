@@ -1,0 +1,545 @@
+- slug: liga
+  title: Common/standard ligatures
+  desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: ff fi fl ffi Th
+    css:
+      - '"liga" 0, "clig" 0'
+      - '"liga", "clig"'
+  links:
+    - Enabled by Default
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: calt
+  title: Contextual alternates
+  desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
+  demo:
+    multiline: true
+    font: tk-caflisch-script-pro
+    text: The bloom has gone off the rose
+    css:
+      - '"calt" 0'
+      - '"calt"'
+  links:
+    - Enabled by Default
+    - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
+
+- slug: dlig
+  title: Discretionary ligatures
+  desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: ct sp st
+    css:
+      - 'normal'
+      - '"dlig"'
+  links:
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: smcp
+  title: Small caps
+  desc: This feature turns lowercase characters into small capitals.
+  demo:
+    multiline: true
+    font:
+    text: Changing case to Small Caps.
+    css:
+      - 'normal'
+      - '"smcp"'
+  links:
+    - San Francisco
+
+- slug: c2sc
+  title: Capitals to small caps
+  desc: This feature turns uppercase characters into small capitals.
+  demo:
+    multiline: true
+    font:
+    text: Changing case to Small Caps.
+    css:
+      - 'normal'
+      - '"c2sc", "smcp"'
+  links:
+    - San Francisco
+
+- slug: case
+  title: Case-sensitive Forms
+  desc:
+  demo:
+    multiline: true
+    font:
+    text: '{¿¡HO-HO—HO!?} [Target] (New)'
+    css:
+      - 'normal'
+      - '"case"'
+  links:
+    - San Francisco
+
+- slug: swsh
+  title: Swashes
+  desc: This feature replaces default character glyphs with corresponding swash glyphs.
+  demo:
+    multiline: true
+    font: tk-bickham-script-pro-3
+    text: Fred And Ginger
+    css:
+      - 'normal'
+      - '"swsh"'
+  links:
+    - '[Bickham Script Pro 3](https://typekit.com/fonts/bickham-script-pro-3)'
+
+- slug: hlig
+  title: Historical Ligatures
+  desc:
+  demo:
+    multiline: true
+    font:
+    text: ſinful ſingular
+    css:
+      - 'normal'
+      - '"hlig"'
+  links:
+    - Fedra Serif B
+
+- slug: hist
+  title: Historical Forms
+  desc:
+  demo:
+    multiline: true
+    font:
+    text: Aparadise lost 1234567890
+    css:
+      - 'normal'
+      - '"hist"'
+  links:
+    - Fedra Serif A
+
+- slug: salt
+  title: Stylistic alternates
+  desc: This feature replaces default character glyphs with stylistic alternates.
+  demo:
+    multiline: true
+    font:
+    text: An easy & breezy Sunday morning.
+    css:
+      - 'normal'
+      - '"salt"'
+  links:
+    - Fedra Serif A
+
+- slug: lnum
+  title: Lining figures
+  desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: 0123456789
+    css:
+      - '"lnum"'
+  links:
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: onum
+  title: Oldstyle figures
+  desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: 0123456789
+    css:
+      - '"onum"'
+  links:
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: pnum
+  title: Proportional figures
+  desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
+  demo:
+    multiline: true
+    font: tk-hypatia-sans-pro
+    text: 0123456789
+    css:
+      - 'normal'
+      - '"pnum"'
+  links:
+    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+- slug: tnum
+  title: Tabular figures
+  desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
+  demo:
+    multiline: true
+    font: tk-hypatia-sans-pro
+    text: 0123456789
+    css:
+      - 'normal'
+      - '"tnum"'
+  links:
+    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+- slug: frac
+  title: Fractions
+  desc: This feature replaces figures separated by a slash with common (diagonal) fractions.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: Add 1 3/4 C of flour, 1/2 cup at a time.
+    css:
+      - 'normal'
+      - '"frac"'
+  links:
+    - San Francisco
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: ordn
+  title: Ordinals
+  desc:
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: 1st, 2nd, 3rd
+    css:
+      - 'normal'
+      - '"ordn"'
+  links:
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: ss**
+  title: Stylistic sets
+  desc:
+  demo:
+    multiline: true
+    font:
+    text: 0123456789. The quick brown fox jumps over the lazy dog.
+    css:
+      - 'normal'
+      - '"ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"'
+  links:
+
+- slug: pwid
+  title: Proportional Widths
+  desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: きょう、本を買った。
+    css:
+      - 'normal'
+      - '"pwid"'
+  links:
+    - '[Microsoft Registered features - pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: palt
+  title: Proportional Alternate Widths
+  desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
+  demo:
+    multiline: true
+    font: tk-source-han-sans-japanese
+    text: きょう、本を買った。
+    css:
+      - 'normal'
+      - '"palt"'
+  links:
+    - '[Microsoft Registered features - palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
+    - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+
+- slug: pkna
+  title: Proportional Kana
+  desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: あいうえおかきくけこがぎぐげご。
+    css:
+      - 'normal'
+      - '"pkna"'
+  links:
+    - '[Microsoft Registered features - pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: fwid
+  title: Full Widths
+  desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: チーズバーガー12個をお願いします。
+    css:
+      - 'normal'
+      - '"fwid"'
+  links:
+    - '[Microsoft Registered features - fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: hwid
+  title: Half Widths
+  desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: チーズバーガー12個をお願いします。
+    css:
+      - 'normal'
+      - '"hwid"'
+  links:
+    - '[Microsoft Registered features - hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: halt
+  title: Alternate Half Widths
+  desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: きょう、『広辞苑』を買いたいです。
+    css:
+      - 'normal'
+      - '"halt"'
+  links:
+    - '[Microsoft Registered features - halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: twid
+  title: Third Widths
+  desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: チーズバーガー120個をお願いします。
+    css:
+      - 'normal'
+      - '"twid"'
+  links:
+    - '[Microsoft Registered features - twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: qwid
+  title: Quarter Widths
+  desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: チーズバーガー1200個をお願いします。
+    css:
+      - 'normal'
+      - '"qwid"'
+  links:
+    - '[Microsoft Registered features - qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: jp78
+  title: JIS78 Forms
+  desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS C 6226-1978 (JIS78) specification.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: 餌
+    css:
+      - 'normal'
+      - '"jp78"'
+  links:
+    - '[Microsoft Registered features - jp78](https://www.microsoft.com/typography/otspec/features_fj.htm#jp78)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: jp83
+  title: JIS83 Forms
+  desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS X 0208-1983 (JIS83) specification.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: 餌
+    css:
+      - 'normal'
+      - '"jp83"'
+  links:
+    - '[Microsoft Registered features - jp83](https://www.microsoft.com/typography/otspec/features_fj.htm#jp83)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: jp90
+  title: JIS90 Forms
+  desc: This feature replaces Japanese glyphs from the JIS78 or JIS83 specifications with the corresponding forms from the JIS X 0208-1990 (JIS90) specification.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: 餌
+    css:
+      - 'normal'
+      - '"jp90"'
+  links:
+    - '[Microsoft Registered features - jp90](https://www.microsoft.com/typography/otspec/features_fj.htm#jp90)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: jp04
+  title: JIS2004 Forms
+  desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters, which were incorporated into JIS X 0213:2004 as new prototypical forms. The 'jp04' feature is a subset of the 'nlck' feature, and is used to access these prototypical glyphs in a manner that maintains the integrity of JIS X 0213:2004.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pro largetype-lg
+    text: 餌
+    css:
+      - 'normal'
+      - '"jp04"'
+  links:
+    - '[Microsoft Registered features - jp04](https://www.microsoft.com/typography/otspec/features_fj.htm#jp04)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pro)'
+
+- slug: trad
+  title: Traditional Forms
+  desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: 台
+    css:
+      - 'normal'
+      - '"trad"'
+  links:
+    - '[Microsoft Registered features - trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: ruby
+  title: Ruby Notation Forms
+  desc: Japanese typesetting often uses smaller kana glyphs, generally in superscripted form, to clarify the meaning of kanji which may be unfamiliar to the reader. These are called ruby, from the old typesetting term for four-point-sized type. This feature identifies glyphs in the font which have been designed for this use, substituting them for the default designs.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: |
+      <span>
+        <ruby>
+          日 <rp>(</rp><rt>に</rt><rp>)</rp>
+          本 <rp>(</rp><rt>ほん</rt><rp>)</rp>
+        </ruby>
+      </span>
+    css:
+      - 'normal'
+      - '"ruby"'
+  links:
+    - '[Microsoft Registered features - ruby](https://www.microsoft.com/typography/otspec/features_pt.htm#ruby)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: hkna
+  title: Horizontal Kana Alternates
+  desc: This feature replaces standard kana with forms that have been specially designed for only horizontal writing. This is a typographic optimization for improved fit and more even color.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: あいうえおかきくけこがぎぐげご。
+    css:
+      - 'normal'
+      - '"hkna"'
+  links:
+    - '[Microsoft Registered features - hkna](https://www.microsoft.com/typography/otspec/features_fj.htm#hkna)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: nlck
+  title: NLC Kanji Forms
+  desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: 屡
+    css:
+      - 'normal'
+      - '"nlck"'
+  links:
+    - '[Microsoft Registered features - nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: nalt
+  title: Alternate Annotation Forms
+  desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
+  demo:
+    multiline: false
+    font: tk-kozuka-mincho-pr6n largetype-lg
+    text: あ
+    css:
+      - 'normal'
+      - '"nalt"'
+  links:
+    - '[Microsoft Registered features - nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: ital
+  title: Italics
+  desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
+  demo:
+    multiline: true
+    font: tk-kozuka-mincho-pr6n
+    text: Infinite Jestを読みたい。
+    css:
+      - 'normal'
+      - '"ital"'
+  links:
+    - '[Microsoft Registered features - ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
+    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+- slug: kern
+  title: Kerning
+  desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: Try As You Will
+    css:
+      - 'normal'
+      - '"kern"'
+  links:
+    - '[Microsoft Registered features - kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
+    - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
+
+- slug: ccmp
+  title: Glyph Composition/Decomposition
+  desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
+  demo:
+    multiline: false
+    font: tk-source-han-sans-japanese largetype-lg
+    text: あ
+    css:
+      - 'normal'
+      - '"ccmp"'
+  links:
+    - '[Microsoft Registered features - ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
+    - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+
+- slug: sups
+  title: Superscript
+  desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
+  demo:
+    multiline: true
+    font: tk-hypatia-sans-pro
+    text: X2
+    css:
+      - 'normal'
+      - '"sups"'
+  links:
+    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+- slug: subs
+  title: Subscript
+  desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
+  demo:
+    multiline: true
+    font: tk-warnock-pro
+    text: H2O, CO2
+    css:
+      - 'normal'
+      - '"subs"'
+  links:
+    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- slug: locl
+  title: Localised Forms
+  desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
+  demo:
+    multiline: true
+    font:
+    text: гпклдвзитжц
+    css:
+      - 'normal'
+      - '"locl"'
+  links:
+    - '[Microsoft Registered features - locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
