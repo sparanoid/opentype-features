@@ -23,7 +23,7 @@
       - '"calt" 0'
       - '"calt"'
   links:
-    - Enabled by Default
+    - Enabled by Default (except Chrome, cannot be disabled in Safari)
     - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
 
 - slug: dlig
@@ -172,7 +172,7 @@
   desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
   demo:
     multiline: true
-    font: tk-hypatia-sans-pro
+    font: tk-hypatia-sans-pro demo-lg
     text: <i>0123456789</i>
     css:
       - 'normal'
@@ -411,8 +411,8 @@
     text: |
       <span>
         <ruby>
-          日 <rp>(</rp><rt><i>に</i></rt><rp>)</rp>
-          本 <rp>(</rp><rt><i>ほん</i></rt><rp>)</rp>
+          運 <rp>(</rp><rt><i>うん</i></rt><rp>)</rp>
+          命 <rp>(</rp><rt><i>めい</i></rt><rp>)</rp>
         </ruby>
       </span>
     css:
@@ -503,6 +503,7 @@
       - 'normal'
       - '"ccmp"'
   links:
+    - Enabled by Default (except Chrome and Safari)
     - '[Microsoft Registered features - ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
     - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
 
@@ -543,4 +544,5 @@
       - 'normal'
       - '"locl"'
   links:
+    - Enabled by Default (only in Firefox)
     - '[Microsoft Registered features - locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
