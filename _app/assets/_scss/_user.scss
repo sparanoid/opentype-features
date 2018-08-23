@@ -40,7 +40,6 @@
   --base-font-size: 220%;
   font-size: var(--base-font-size);
   line-height: var(--line-height);
-  margin-bottom: 1.8rem !important;
   color: #000;
   background: rgba(#000, .04);
   transition: all .1s ease;
@@ -73,7 +72,7 @@
 
   &:hover {
     color: #fff;
-    background: rgba(#000, 1);
+    background: var(--link-color);
 
     > span {
 
@@ -114,4 +113,26 @@
   &-ruby-fix {
     padding-top: calc(var(--space-sm) + .45em);
   }
+}
+
+.demo-code {
+  margin-bottom: 1.8rem;
+  color: var(--code-color);
+  background: rgba(#000, .08);
+  font-family: var(--fontstack-monospace);
+
+  --space-code: var(--space-lg);
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  @include padding-offset(var(--space-code));
+  @include margin-offset(calc(var(--space-code) * -1));
+
+  @media (max-width: $breakpoint-md) {
+    --space-code: var(--space-md);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    --space-code: var(--space-sm);
+  }
+
 }
