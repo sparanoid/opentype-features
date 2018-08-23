@@ -31,16 +31,87 @@
   opacity: .8;
 }
 
-.largetype {
-  @include heading();
-  font-size: 220%;
-  margin-bottom: 1.8rem !important;
-
-  &-lg {
-    font-size: 480%;
-  }
-}
-
 :root {
   --space-lg: 18vw;
+}
+
+.content .demo {
+  @include heading();
+  --base-font-size: 220%;
+  font-size: var(--base-font-size);
+  line-height: var(--line-height);
+  margin-bottom: 1.8rem !important;
+  color: #000;
+  background: rgba(#000, .04);
+  transition: all .1s ease;
+
+  --space-code: var(--space-lg);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  @include padding-offset(var(--space-code));
+  @include margin-offset(calc(var(--space-code) * -1));
+
+  @media (max-width: $breakpoint-md) {
+    --space-code: var(--space-md);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    --space-code: var(--space-sm);
+  }
+
+  > span {
+
+    i {
+      font-style: normal;
+    }
+
+    &:last-child i {
+      color: var(--link-color);
+      transition: all .1s ease;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+    background: rgba(#000, 1);
+
+    > span {
+
+      &:last-child i {
+        color: #fff;
+      }
+    }
+  }
+
+  &-xl {
+    --base-font-size: 480%;
+
+    @media (max-width: $breakpoint-md) {
+      --base-font-size: 220%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      --base-font-size: 220%;
+    }
+  }
+
+  &-lg {
+    --base-font-size: 320%;
+
+    @media (max-width: $breakpoint-md) {
+      --base-font-size: 220%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      --base-font-size: 220%;
+    }
+  }
+
+  &-multiline > span {
+    display: block;
+  }
+
+  &-ruby-fix {
+    padding-top: calc(var(--space-sm) + .45em);
+  }
 }
