@@ -7,23 +7,11 @@ css: |
   :root {
     --font-features: normal;
   }
-
-  .hl {
-    color: var(--link-color);
-  }
-
-  .of-demo {
-
-  }
-
-  .of-demo-multiline > span{
-    display: block;
-  }
 ---
 
 {%- include amsf/core -%}
 
-<p>This page, should be by far, the most complete <code>font-feature-settings</code> demo page on the web.</p>
+<p>This page, should be by far, the most complete CSS <code>font-feature-settings</code> demo for OpenType Features on the web.</p>
 
 <blockquote>
   <p>Global <code>--font-features</code> is disabled on this page.</p>
@@ -42,9 +30,13 @@ css: |
     </ul>
   {% endif %}
 
-  <p class="of-demo largetype {{ feature.demo.font }} {% if feature.demo.multiline %}of-demo-multiline{% endif %}">
+  <p class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
     {% for demo in feature.demo.css %}
       <span style='font-feature-settings: {{ demo }}'>{{ feature.demo.text }}</span>
     {% endfor %}
   </p>
 {% endfor %}
+
+<hr>
+
+<p>Special thanks: <a href="https://gordianz.com/">Gordian Zhang</></p>

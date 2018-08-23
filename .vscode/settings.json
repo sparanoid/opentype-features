@@ -2,5 +2,6 @@
     "files.associations": {
         "*.html": "jekyll",
         "**/_app/_includes/**": "jekyll"
-    }
+    },
+    "htmltagwrap.tag": "i"
 }
