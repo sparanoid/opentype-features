@@ -38,7 +38,9 @@ css: |
 
 <h2>Supported Font Features</h2>
 {% for group in site.data.font-features %}
-  <h3>{{ group.name }}</h3>
+  {% if group.features %}
+    <h3>{{ group.name }}</h3>
+  {% endif %}
   {% for feature in group.features %}
     <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
   {% endfor %}
