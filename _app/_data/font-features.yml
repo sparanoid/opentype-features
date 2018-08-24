@@ -185,13 +185,10 @@
         - name: Default*
           title: Only in Firefox
           class: tag-default
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
         - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro demo-lg
+        font: demo-lg
         text: <i>гпклдвзитжц</i>
         lang:
           - ru
@@ -200,6 +197,7 @@
           - 'normal'
           - '"locl"'
       links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
 
 - group:
   name: Bicameral [cased] Alphabets (Latin, Greek, Cyrillic, etc.)
