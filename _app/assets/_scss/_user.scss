@@ -25,7 +25,10 @@
 //   --fontstack-serif: Georgia, "Hiragino Mincho ProN", serif;
 // }
 
-// EXAMPLE: amsf.github.io custom appearance
+:root {
+  --space-lg: 18vw;
+}
+
 .content {
 
   h2 {
@@ -35,17 +38,15 @@
     opacity: 1;
   }
 
+  h3 {
+    margin-top: 5vmin;
+    margin-bottom: .5rem;
+  }
+
   .sub-title {
     font-size: 108%;
     opacity: .8;
   }
-}
-
-:root {
-  --space-lg: 18vw;
-}
-
-.content {
 
   details {
 
@@ -62,6 +63,13 @@
       summary {
         color: var(--link-color);
       }
+    }
+  }
+
+  .feature-list {
+
+    a {
+      color: var(--code-color);
     }
   }
 
