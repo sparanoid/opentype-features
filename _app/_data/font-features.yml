@@ -280,9 +280,12 @@
         font: tk-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
+          - '"onum"'
           - '"lnum"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - ...and many more
 
     - slug: onum
       title: Oldstyle Figures
@@ -292,9 +295,12 @@
         font: tk-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
+          - '"lnum"'
           - '"onum"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - ...and many more
 
     - slug: pnum
       title: Proportional Figures
