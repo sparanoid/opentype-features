@@ -360,6 +360,160 @@
         - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
+    - slug: afrc
+      title: Alternative Fractions
+      desc: Converts figures separated by slash with alternative stacked fraction form
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"afrc"'
+      links:
+
+    - slug: dnom
+      title: Denominator
+      desc: Converts to appropriate fraction denominator form, invoked by `frac`
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"dnom"'
+      links:
+
+    - slug: numr
+      title: Numerator
+      desc: Converts to appropriate fraction numerator form, invoked by `frac`
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"numr"'
+      links:
+
+    - slug: sinf
+      title: Scientific Inferiors
+      desc: as in "H<sub>2</sub>O", "SO<sub>x</sub>", "YC<sub>b</sub>C<sub>r</sub>", or "NO<sub>2</sub>"
+      meta:
+        - name: Partial
+          title: This demo is partially supported
+          class: tag-wip
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        lang:
+        text: H2O SOx YCbCr NO2
+        css:
+          - 'normal'
+          - '"sinf"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+    - slug: zero
+      title: Slashed Zero
+      desc: Replaces 0 figure with slashed 0
+      meta:
+      demo:
+        multiline: false
+        font: tk-hypatia-sans-pro demo-xl
+        lang:
+        text: 0
+        css:
+          - 'normal'
+          - '"zero"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+    - slug: mgrk
+      title: Mathematical Greek
+      desc: Replaces Greek characters with special forms for use in mathematics
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"mgrk"'
+      links:
+
+    - slug: flac
+      title: Flattened accent forms
+      desc:
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"flac"'
+      links:
+
+    - slug: dtls
+      title: Dotless Forms
+      desc:
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"dtls"'
+      links:
+
+    - slug: ssty
+      title: Math script style alternates
+      desc:
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"ssty"'
+      links:
+
 - group:
   name: Stylistic Set 01-20
   features:
