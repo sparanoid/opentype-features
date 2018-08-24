@@ -122,13 +122,13 @@
   desc: This feature replaces default character glyphs with stylistic alternates.
   demo:
     multiline: true
-    font:
+    font: tk-bree
     text: An <i>ea</i>s<i>y &</i> bree<i>zy</i> Sund<i>ay</i> mornin<i>g</i>.
     css:
       - 'normal'
       - '"salt"'
   links:
-    - Fedra Serif A
+    - '[Bree](https://typekit.com/fonts/bree-web)'
 
 - slug: lnum
   title: Lining figures
@@ -207,7 +207,7 @@
   links:
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: ss**
+- slug: ss01-ss20
   title: Stylistic sets
   desc:
   demo:
