@@ -20,14 +20,17 @@ css: |
 </blockquote>
 
 <style>
+      .of-normal { font-feature-settings: normal; }
 {%- for feature in site.data.font-features %}
-  .of-{{ feature.slug }} {
-    {%- for demo in feature.demo.css -%}
-      {%- if forloop.last == true -%}
-        font-feature-settings: {{ demo }};
+  {%- for current_style in feature.demo.css -%}
+    {%- if forloop.last == true %}
+      .of-{{ feature.slug }} { font-feature-settings: {{ current_style }}; }
+    {%- else -%}
+      {%- if current_style != "normal" %}
+      .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }
       {%- endif -%}
-    {%- endfor -%}
-  }
+    {%- endif -%}
+  {%- endfor -%}
 {%- endfor %}
 </style>
 
@@ -50,10 +53,16 @@ css: |
   {% endif %}
 
   <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
-    {% for demo in feature.demo.css %}
+    {% for current_style in feature.demo.css %}
       {%- capture feature_class -%}
         {%- if forloop.last == true -%}
-          of-{{ feature.slug | remove: '"' }}
+          of-{{ feature.slug }}
+        {%- else -%}
+          {%- if current_style == "normal" -%}
+            of-normal
+          {%- else -%}
+            of-{{ feature.slug }}--off
+          {%- endif -%}
         {%- endif -%}
       {%- endcapture -%}
       <span class="{{ feature_class }}">{{ feature.demo.text }}</span>
