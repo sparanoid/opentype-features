@@ -1,5 +1,5 @@
 - group:
-  name: asdasd1
+  name: Ligation & Alternate
   features:
     - slug: liga
       title: Standard Ligatures
@@ -48,47 +48,6 @@
           - '"dlig"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
-
-    - slug: smcp
-      title: Small Caps
-      desc: This feature turns lowercase characters into small capitals.
-      demo:
-        multiline: true
-        font:
-        text: C<i>hanging</i> <i>case to</i> S<i>mall</i> C<i>aps</i>.
-        css:
-          - 'normal'
-          - '"smcp"'
-      links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
-
-    - slug: c2sc
-      title: Capitals to Small Caps
-      desc: This feature turns uppercase characters into small capitals.
-      demo:
-        multiline: true
-        font:
-        text: <i>Changing case to Small Caps</i>.
-        css:
-          - 'normal'
-          - '"c2sc", "smcp"'
-      links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
-
-    - slug: case
-      title: Case Sensitive Forms
-      desc:
-      demo:
-        multiline: true
-        font:
-        text: '<i>{</i>¿¡HO<i>-</i>HO<i>—</i>HO!?<i>}</i> <i>[</i>Target<i>]</i> <i>(</i>New<i>)</i>'
-        css:
-          - 'normal'
-          - '"case"'
-      links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
 
     - slug: swsh
       title: Swashes
@@ -150,6 +109,169 @@
       links:
         - '[Bree](https://typekit.com/fonts/bree-web)'
 
+    - slug: kern
+      title: Kerning
+      desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: <i>Try As You Will</i>
+        css:
+          - 'normal'
+          - '"kern"'
+      links:
+        - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
+
+    - slug: ccmp
+      title: Glyph Composition / Decomposition
+      desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
+      meta:
+        - name: Default*
+          title: Enabled by Default (except Chrome and Safari)
+          class: tag-default
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
+      demo:
+        multiline: false
+        font: tk-source-han-sans-japanese demo-xl
+        # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
+        text: <i>あﾞ</i>
+        css:
+          - 'normal'
+          - '"ccmp"'
+      links:
+        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+
+    - slug: sups
+      title: Superscript
+      desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
+      meta:
+      demo:
+        multiline: true
+        font: tk-hypatia-sans-pro demo-lg
+        text: X<i>2</i>
+        css:
+          - 'normal'
+          - '"sups"'
+      links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+    - slug: subs
+      title: Subscript
+      desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
+      meta:
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: H<i>2</i>O, CO<i>2</i>
+        css:
+          - 'normal'
+          - '"subs"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: locl
+      title: Localised Forms
+      desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
+      meta:
+        - name: Default*
+          title: Only in Firefox
+          class: tag-default
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
+      demo:
+        multiline: true
+        font: demo-lg
+        text: <i>гпклдвзитжц</i>
+        css:
+          - 'normal'
+          - '"locl"'
+      links:
+
+- group:
+  name: Bicameral [cased] Alphabets (Latin, Greek, Cyrillic, etc.)
+  features:
+    - slug: smcp
+      title: Small Caps
+      desc: This feature turns lowercase characters into small capitals.
+      demo:
+        multiline: true
+        font:
+        text: C<i>hanging</i> <i>case to</i> S<i>mall</i> C<i>aps</i>.
+        css:
+          - 'normal'
+          - '"smcp"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: c2sc
+      title: Capitals to Small Caps
+      desc: This feature turns uppercase characters into small capitals.
+      demo:
+        multiline: true
+        font:
+        text: <i>Changing case to Small Caps</i>.
+        css:
+          - 'normal'
+          - '"c2sc", "smcp"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: case
+      title: Case Sensitive Forms
+      desc:
+      demo:
+        multiline: true
+        font:
+        text: '<i>{</i>¿¡HO<i>-</i>HO<i>—</i>HO!?<i>}</i> <i>[</i>Target<i>]</i> <i>(</i>New<i>)</i>'
+        css:
+          - 'normal'
+          - '"case"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+
+    - slug: ital
+      title: Italics
+      desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
+      meta:
+        - '[ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n demo-lg
+        text: <i>Infinite Jest</i>を読みたい。
+        css:
+          - 'normal'
+          - '"ital"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: ordn
+      title: Ordinals
+      desc:
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
+        css:
+          - 'normal'
+          - '"ordn"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+- group:
+  name: Digits & Math
+  features:
     - slug: lnum
       title: Lining Figures
       desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
@@ -214,19 +336,9 @@
         - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-    - slug: ordn
-      title: Ordinals
-      desc:
-      demo:
-        multiline: true
-        font: tk-warnock-pro demo-lg
-        text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
-        css:
-          - 'normal'
-          - '"ordn"'
-      links:
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
-
+- group:
+  name: Stylistic Set 01-20
+  features:
     - slug: ss01-ss20
       title: Stylistic Set 1 – 20
       desc: |
@@ -245,6 +357,9 @@
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
         - ...and many more
 
+- group:
+  name: East Asian Tetragrams (Chinese, Japanese, Korean)
+  features:
     - slug: pwid
       title: Proportional Widths
       desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
@@ -509,108 +624,14 @@
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-    - slug: ital
-      title: Italics
-      desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
-      meta:
-        - '[ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
-      demo:
-        multiline: true
-        font: tk-kozuka-mincho-pr6n demo-lg
-        text: <i>Infinite Jest</i>を読みたい。
-        css:
-          - 'normal'
-          - '"ital"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
-
-    - slug: kern
-      title: Kerning
-      desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
-      meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
-      demo:
-        multiline: true
-        font: tk-warnock-pro demo-lg
-        text: <i>Try As You Will</i>
-        css:
-          - 'normal'
-          - '"kern"'
-      links:
-        - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
-
-    - slug: ccmp
-      title: Glyph Composition / Decomposition
-      desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
-      meta:
-        - name: Default*
-          title: Enabled by Default (except Chrome and Safari)
-          class: tag-default
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-        - '[ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
-      demo:
-        multiline: false
-        font: tk-source-han-sans-japanese demo-xl
-        # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
-        text: <i>あﾞ</i>
-        css:
-          - 'normal'
-          - '"ccmp"'
-      links:
-        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
-
-    - slug: sups
-      title: Superscript
-      desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
-      meta:
-      demo:
-        multiline: true
-        font: tk-hypatia-sans-pro demo-lg
-        text: X<i>2</i>
-        css:
-          - 'normal'
-          - '"sups"'
-      links:
-        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
-
-    - slug: subs
-      title: Subscript
-      desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
-      meta:
-      demo:
-        multiline: true
-        font: tk-warnock-pro demo-lg
-        text: H<i>2</i>O, CO<i>2</i>
-        css:
-          - 'normal'
-          - '"subs"'
-      links:
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+- group:
+  name: West Asian (Semitic, Arabic)
+  features:
 
 - group:
-  name: QQQ
+  name: South-Asian alphasyllabaries (Indic/Brahmic)
   features:
-    - slug: locl
-      title: Localised Forms
-      desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
-      meta:
-        - name: Default*
-          title: Only in Firefox
-          class: tag-default
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
-      demo:
-        multiline: true
-        font: demo-lg
-        text: <i>гпклдвзитжц</i>
-        css:
-          - 'normal'
-          - '"locl"'
-      links:
+
+- group:
+  name: Writing Direction
+  features:
