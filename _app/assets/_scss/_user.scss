@@ -70,6 +70,22 @@
 
     a {
       color: var(--code-color);
+
+      &.tag-default {
+
+        &,
+        code {
+          color: #0575ef;
+        }
+      }
+
+      &.tag-wip {
+
+        &,
+        code {
+          color: #ff9d00;
+        }
+      }
     }
   }
 
