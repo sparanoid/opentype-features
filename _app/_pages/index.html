@@ -85,7 +85,8 @@ css: |
     <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
       {% for current_style in feature.demo.css %}
         {%- capture feature_class -%}
-          {%- if forloop.last == true -%}
+          {% comment %} check how many visual effects we have for this feature {% endcomment %}
+          {%- if forloop.last -%}
             of-{{ feature.slug }}
           {%- else -%}
             {%- if current_style == "normal" -%}
@@ -95,7 +96,29 @@ css: |
             {%- endif -%}
           {%- endif -%}
         {%- endcapture -%}
-        <span class="{{ feature_class }}">{{ feature.demo.text }}</span>
+
+        {%- capture feature_lang -%}
+          {% comment %} check how many visual effects we have for this feature {% endcomment %}
+          {%- if forloop.last -%}
+            {%- if feature.demo.lang -%}
+              {%- if feature.demo.lang.last -%}
+                lang="{{ feature.demo.lang[1] }}"
+              {%- else -%}
+                lang="{{ feature.demo.lang }}"
+              {%- endif -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- if feature.demo.lang -%}
+              {%- if feature.demo.lang.first -%}
+                lang="{{ feature.demo.lang[0] }}"
+              {%- else -%}
+                lang="{{ feature.demo.lang }}"
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endcapture -%}
+
+        <span class="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</span>
       {% endfor %}
     </div>
 

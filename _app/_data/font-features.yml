@@ -141,6 +141,7 @@
       demo:
         multiline: false
         font: tk-source-han-sans-japanese demo-xl
+        lang: ja
         # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
         text: <i>あﾞ</i>
         css:
@@ -190,8 +191,11 @@
         - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
       demo:
         multiline: true
-        font: demo-lg
+        font: tk-hypatia-sans-pro demo-lg
         text: <i>гпклдвзитжц</i>
+        lang:
+          - ru
+          - bg
         css:
           - 'normal'
           - '"locl"'
@@ -374,6 +378,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n demo-lg
+        lang: ja
         text: <i>きょう</i>、本を買<i>っ</i>た。
         css:
           - 'normal'
@@ -389,6 +394,7 @@
       demo:
         multiline: true
         font: tk-source-han-sans-japanese demo-lg
+        lang: ja
         text: <i>きょう、</i>本を買<i>った</i>。
         css:
           - 'normal'
@@ -404,6 +410,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: <i>あいうえおかきくけこがぎぐげご</i>。
         css:
           - 'normal'
@@ -419,6 +426,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: きょう<i>、『</i>広辞苑<i>』</i>を買いたいです。
         css:
           - 'normal'
@@ -434,6 +442,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: チーズバーガー<i>12</i>個をお願いします。
         css:
           - 'normal'
@@ -449,6 +458,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: チーズバーガー<i>12</i>個をお願いします。
         css:
           - 'normal'
@@ -464,6 +474,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: チーズバーガー<i>120</i>個をお願いします。
         css:
           - 'normal'
@@ -479,6 +490,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: チーズバーガー<i>1200</i>個をお願いします。
         css:
           - 'normal'
@@ -494,6 +506,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
         text: <i>餌</i>
         css:
           - 'normal'
@@ -509,6 +522,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
         text: <i>餌</i>
         css:
           - 'normal'
@@ -524,6 +538,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
         text: <i>餌</i>
         css:
           - 'normal'
@@ -539,6 +554,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pro demo-xl
+        lang: ja
         text: <i>餌</i>
         css:
           - 'normal'
@@ -554,6 +570,9 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang:
+          - zh-Hans
+          - zh-Hant
         text: <i>台</i>
         css:
           - 'normal'
@@ -569,6 +588,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl demo-ruby-fix
+        lang: ja
         text: |
           <span>
             <ruby>
@@ -593,6 +613,7 @@
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
+        lang: ja
         text: あいうえおかきくけこがぎぐげご。
         css:
           - 'normal'
@@ -608,6 +629,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
         text: <i>屡</i>
         css:
           - 'normal'
@@ -623,6 +645,7 @@
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
         text: <i>あ</i>
         css:
           - 'normal'
