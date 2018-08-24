@@ -20,77 +20,85 @@ css: |
 {% endif %}
 
 <style id="ob-style">
-      .of-normal { font-feature-settings: normal; }
-{%- for feature in site.data.font-features %}
-  {%- for current_style in feature.demo.css -%}
-    {%- if forloop.last == true %}
-      .of-{{ feature.slug }} { font-feature-settings: {{ current_style }}; }
-    {%- else -%}
-      {%- if current_style != "normal" %}
-      .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }
+          .of-normal { font-feature-settings: normal; }
+{%- for group in site.data.font-features %}
+  {%- for feature in group.features -%}
+    {%- for current_style in feature.demo.css -%}
+      {%- if forloop.last == true %}
+          .of-{{ feature.slug }} { font-feature-settings: {{ current_style }}; }
+      {%- else -%}
+        {%- if current_style != "normal" %}
+          .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }
+        {%- endif -%}
       {%- endif -%}
-    {%- endif -%}
+    {%- endfor -%}
   {%- endfor -%}
 {%- endfor %}
 </style>
 
-<h2 id="{{ feature.slug }}">Supported Font Features</h2>
-{% for feature in site.data.font-features %}
-  <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
-{% endfor %}
-
-{% for feature in site.data.font-features %}
-  <h2 id="{{ feature.slug }}">{{ feature.title }}: <code>{{ feature.slug }}</code></h2>
-  {{ feature.desc | markdownify }}
-
-  {% if feature.meta %}
-    <ul class="meta">
-      {% for meta in feature.meta %}
-        <li>
-          {% if meta.name %}
-            <span class="tag {{ meta.class }}" title="{{ meta.title }}">{{ meta.name }}</span>
-          {% else %}
-            {{ meta | markdownify | remove: '<p>' | remove: '</p>' }}
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% if feature.links %}
-    <details>
-      <summary>Supported Fonts</summary>
-      <ul class="links">
-        {% for link in feature.links %}
-          <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-        {% endfor %}
-      </ul>
-    </details>
-  {% endif %}
-
-  <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
-    {% for current_style in feature.demo.css %}
-      {%- capture feature_class -%}
-        {%- if forloop.last == true -%}
-          of-{{ feature.slug }}
-        {%- else -%}
-          {%- if current_style == "normal" -%}
-            of-normal
-          {%- else -%}
-            of-{{ feature.slug }}--off
-          {%- endif -%}
-        {%- endif -%}
-      {%- endcapture -%}
-      <span class="{{ feature_class }}">{{ feature.demo.text }}</span>
-    {% endfor %}
-  </div>
-
-  {% for demo in feature.demo.css %}
-    {% if forloop.last == true %}
-      <div class="demo-code">font-feature-settings: {{ demo }};</div>
-    {% endif %}
+<h2>Supported Font Features</h2>
+{% for group in site.data.font-features %}
+  <h3>{{ group.name }}</h3>
+  {% for feature in group.features %}
+    <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
   {% endfor %}
 {% endfor %}
+
+{% for group in site.data.font-features %}
+  {% for feature in group.features %}
+    <h2 id="{{ feature.slug }}">{{ feature.title }}: <code>{{ feature.slug }}</code></h2>
+    {{ feature.desc | markdownify }}
+
+    {% if feature.meta %}
+      <ul class="meta">
+        {% for meta in feature.meta %}
+          <li>
+            {% if meta.name %}
+              <span class="tag {{ meta.class }}" title="{{ meta.title }}">{{ meta.name }}</span>
+            {% else %}
+              {{ meta | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if feature.links %}
+      <details>
+        <summary>Supported Fonts</summary>
+        <ul class="links">
+          {% for link in feature.links %}
+            <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+
+    <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
+      {% for current_style in feature.demo.css %}
+        {%- capture feature_class -%}
+          {%- if forloop.last == true -%}
+            of-{{ feature.slug }}
+          {%- else -%}
+            {%- if current_style == "normal" -%}
+              of-normal
+            {%- else -%}
+              of-{{ feature.slug }}--off
+            {%- endif -%}
+          {%- endif -%}
+        {%- endcapture -%}
+        <span class="{{ feature_class }}">{{ feature.demo.text }}</span>
+      {% endfor %}
+    </div>
+
+    {% for demo in feature.demo.css %}
+      {% if forloop.last == true %}
+        <div class="demo-code">font-feature-settings: {{ demo }};</div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
 
 <hr>
 

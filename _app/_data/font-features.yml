@@ -1,607 +1,616 @@
-- slug: liga
-  title: Standard Ligatures
-  desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
-  meta:
-    - name: Default
-      title: Enabled by Default
-      class: tag-default
-  demo:
-    multiline: true
-    font: tk-warnock-pro
-    text: Di<i>ff</i>erent <i>fi</i>rst A<i>fl</i>iction a<i>ffi</i>davit <i>Th</i>ere
-    css:
-      - '"liga" 0, "clig" 0'
-      - '"liga", "clig"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+- group:
+  name: asdasd1
+  features:
+    - slug: liga
+      title: Standard Ligatures
+      desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
+      meta:
+        - name: Default
+          title: Enabled by Default
+          class: tag-default
+      demo:
+        multiline: true
+        font: tk-warnock-pro
+        text: Di<i>ff</i>erent <i>fi</i>rst A<i>fl</i>iction a<i>ffi</i>davit <i>Th</i>ere
+        css:
+          - '"liga" 0, "clig" 0'
+          - '"liga", "clig"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: calt
-  title: Contextual Alternates
-  desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
-  meta:
-    - name: Default*
-      title: Enabled by Default (except Chrome, cannot be disabled in Safari)
-      class: tag-default
-  demo:
-    multiline: true
-    font: tk-caflisch-script-pro demo-lg
-    text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
-    css:
-      - '"calt" 0'
-      - '"calt"'
-  links:
-    - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
+    - slug: calt
+      title: Contextual Alternates
+      desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
+      meta:
+        - name: Default*
+          title: Enabled by Default (except Chrome, cannot be disabled in Safari)
+          class: tag-default
+      demo:
+        multiline: true
+        font: tk-caflisch-script-pro demo-lg
+        text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
+        css:
+          - '"calt" 0'
+          - '"calt"'
+      links:
+        - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
 
-- slug: dlig
-  title: Discretionary Ligatures
-  desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
-  meta:
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: <i>ct sp st</i>
-    css:
-      - 'normal'
-      - '"dlig"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: dlig
+      title: Discretionary Ligatures
+      desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
+      meta:
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: <i>ct sp st</i>
+        css:
+          - 'normal'
+          - '"dlig"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: smcp
-  title: Small Caps
-  desc: This feature turns lowercase characters into small capitals.
-  demo:
-    multiline: true
-    font:
-    text: C<i>hanging</i> <i>case to</i> S<i>mall</i> C<i>aps</i>.
-    css:
-      - 'normal'
-      - '"smcp"'
-  links:
-    - '[San Francisco](https://developer.apple.com/fonts/)'
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: smcp
+      title: Small Caps
+      desc: This feature turns lowercase characters into small capitals.
+      demo:
+        multiline: true
+        font:
+        text: C<i>hanging</i> <i>case to</i> S<i>mall</i> C<i>aps</i>.
+        css:
+          - 'normal'
+          - '"smcp"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: c2sc
-  title: Capitals to Small Caps
-  desc: This feature turns uppercase characters into small capitals.
-  demo:
-    multiline: true
-    font:
-    text: <i>Changing case to Small Caps</i>.
-    css:
-      - 'normal'
-      - '"c2sc", "smcp"'
-  links:
-    - '[San Francisco](https://developer.apple.com/fonts/)'
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: c2sc
+      title: Capitals to Small Caps
+      desc: This feature turns uppercase characters into small capitals.
+      demo:
+        multiline: true
+        font:
+        text: <i>Changing case to Small Caps</i>.
+        css:
+          - 'normal'
+          - '"c2sc", "smcp"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: case
-  title: Case Sensitive Forms
-  desc:
-  demo:
-    multiline: true
-    font:
-    text: '<i>{</i>¿¡HO<i>-</i>HO<i>—</i>HO!?<i>}</i> <i>[</i>Target<i>]</i> <i>(</i>New<i>)</i>'
-    css:
-      - 'normal'
-      - '"case"'
-  links:
-    - '[San Francisco](https://developer.apple.com/fonts/)'
+    - slug: case
+      title: Case Sensitive Forms
+      desc:
+      demo:
+        multiline: true
+        font:
+        text: '<i>{</i>¿¡HO<i>-</i>HO<i>—</i>HO!?<i>}</i> <i>[</i>Target<i>]</i> <i>(</i>New<i>)</i>'
+        css:
+          - 'normal'
+          - '"case"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
 
-- slug: swsh
-  title: Swashes
-  desc: This feature replaces default character glyphs with corresponding swash glyphs.
-  demo:
-    multiline: true
-    font: tk-bickham-script-pro-3 demo-lg
-    text: <i>F</i>red <i>A</i>n<i>d</i> <i>G</i>inger
-    css:
-      - 'normal'
-      - '"swsh"'
-  links:
-    - '[Bickham Script Pro 3](https://typekit.com/fonts/bickham-script-pro-3)'
+    - slug: swsh
+      title: Swashes
+      desc: This feature replaces default character glyphs with corresponding swash glyphs.
+      demo:
+        multiline: true
+        font: tk-bickham-script-pro-3 demo-lg
+        text: <i>F</i>red <i>A</i>n<i>d</i> <i>G</i>inger
+        css:
+          - 'normal'
+          - '"swsh"'
+      links:
+        - '[Bickham Script Pro 3](https://typekit.com/fonts/bickham-script-pro-3)'
 
-- slug: hlig
-  title: Historical Ligatures
-  desc:
-  meta:
-    - name: WIP
-      title: This demo is working in progress
-      class: tag-wip
-  demo:
-    multiline: true
-    font:
-    text: ſinful ſingular
-    css:
-      - 'normal'
-      - '"hlig"'
-  links:
-    - Fedra Serif B
+    - slug: hlig
+      title: Historical Ligatures
+      desc:
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+      demo:
+        multiline: true
+        font:
+        text: ſinful ſingular
+        css:
+          - 'normal'
+          - '"hlig"'
+      links:
+        - Fedra Serif B
 
-- slug: hist
-  title: Historical Forms
-  desc:
-  meta:
-    - name: WIP
-      title: This demo is working in progress
-      class: tag-wip
-  demo:
-    multiline: true
-    font:
-    text: Aparadise lost
-    css:
-      - 'normal'
-      - '"hist"'
-  links:
-    - Fedra Serif A
+    - slug: hist
+      title: Historical Forms
+      desc:
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+      demo:
+        multiline: true
+        font:
+        text: Aparadise lost
+        css:
+          - 'normal'
+          - '"hist"'
+      links:
+        - Fedra Serif A
 
-- slug: salt
-  title: Stylistic Alternates
-  desc: This feature replaces default character glyphs with stylistic alternates.
-  demo:
-    multiline: true
-    font: tk-bree
-    text: An <i>ea</i>s<i>y &</i> bree<i>zy</i> Sund<i>ay</i> mornin<i>g</i>.
-    css:
-      - 'normal'
-      - '"salt"'
-  links:
-    - '[Bree](https://typekit.com/fonts/bree-web)'
+    - slug: salt
+      title: Stylistic Alternates
+      desc: This feature replaces default character glyphs with stylistic alternates.
+      demo:
+        multiline: true
+        font: tk-bree
+        text: An <i>ea</i>s<i>y &</i> bree<i>zy</i> Sund<i>ay</i> mornin<i>g</i>.
+        css:
+          - 'normal'
+          - '"salt"'
+      links:
+        - '[Bree](https://typekit.com/fonts/bree-web)'
 
-- slug: lnum
-  title: Lining Figures
-  desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: <i>0123456789</i>
-    css:
-      - '"lnum"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: lnum
+      title: Lining Figures
+      desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: <i>0123456789</i>
+        css:
+          - '"lnum"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: onum
-  title: Oldstyle Figures
-  desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: <i>0123456789</i>
-    css:
-      - '"onum"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: onum
+      title: Oldstyle Figures
+      desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: <i>0123456789</i>
+        css:
+          - '"onum"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: pnum
-  title: Proportional Figures
-  desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
-  demo:
-    multiline: true
-    font: tk-hypatia-sans-pro demo-lg
-    text: <i>0123456789</i>
-    css:
-      - 'normal'
-      - '"pnum"'
-  links:
-    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+    - slug: pnum
+      title: Proportional Figures
+      desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
+      demo:
+        multiline: true
+        font: tk-hypatia-sans-pro demo-lg
+        text: <i>0123456789</i>
+        css:
+          - 'normal'
+          - '"pnum"'
+      links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
-- slug: tnum
-  title: Tabular Figures
-  desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
-  demo:
-    multiline: true
-    font: tk-hypatia-sans-pro demo-lg
-    text: <i>0123456789</i>
-    css:
-      - '"pnum"'
-      - '"tnum"'
-  links:
-    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+    - slug: tnum
+      title: Tabular Figures
+      desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
+      demo:
+        multiline: true
+        font: tk-hypatia-sans-pro demo-lg
+        text: <i>0123456789</i>
+        css:
+          - '"pnum"'
+          - '"tnum"'
+      links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
-- slug: frac
-  title: Fractions
-  desc: This feature replaces figures separated by a slash with common (diagonal) fractions.
-  demo:
-    multiline: true
-    font: tk-warnock-pro
-    text: Add 1 <i>3/4</i> C of flour, <i>1/2</i> cup at a time.
-    css:
-      - 'normal'
-      - '"frac"'
-  links:
-    - '[San Francisco](https://developer.apple.com/fonts/)'
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: frac
+      title: Fractions
+      desc: This feature replaces figures separated by a slash with common (diagonal) fractions.
+      demo:
+        multiline: true
+        font: tk-warnock-pro
+        text: Add 1 <i>3/4</i> C of flour, <i>1/2</i> cup at a time.
+        css:
+          - 'normal'
+          - '"frac"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: ordn
-  title: Ordinals
-  desc:
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
-    css:
-      - 'normal'
-      - '"ordn"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: ordn
+      title: Ordinals
+      desc:
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
+        css:
+          - 'normal'
+          - '"ordn"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: ss01-ss20
-  title: Stylistic Set 1 – 20
-  desc: |
-    This feature replaces sets of default character glyphs with stylistic variants. Glyphs in stylistic sets may be designed to harmonise visually, interact in particular ways, or otherwise work together. See also: [stylistic alternates (salt)](#salt), which is designed to offer stylistic alternatives of individual glyphs.
+    - slug: ss01-ss20
+      title: Stylistic Set 1 – 20
+      desc: |
+        This feature replaces sets of default character glyphs with stylistic variants. Glyphs in stylistic sets may be designed to harmonise visually, interact in particular ways, or otherwise work together. See also: [stylistic alternates (salt)](#salt), which is designed to offer stylistic alternatives of individual glyphs.
 
-    To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
-  demo:
-    multiline: true
-    font: tk-hypatia-sans-pro
-    text: <i>01234</i>, <i>5</i>6<i>7</i>8<i>9</i> <i>&</i> <i>The quick brown fox jumps over the lazy dog</i>.
-    css:
-      - 'normal'
-      - '"ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"'
-  links:
-    - '[San Francisco](https://developer.apple.com/fonts/)'
-    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
-    - ...and many more
+        To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
+      demo:
+        multiline: true
+        font: tk-hypatia-sans-pro
+        text: <i>01234</i>, <i>5</i>6<i>7</i>8<i>9</i> <i>&</i> <i>The quick brown fox jumps over the lazy dog</i>.
+        css:
+          - 'normal'
+          - '"ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - ...and many more
 
-- slug: pwid
-  title: Proportional Widths
-  desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
-  meta:
-    - '[pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n demo-lg
-    text: <i>きょう</i>、本を買<i>っ</i>た。
-    css:
-      - 'normal'
-      - '"pwid"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: pwid
+      title: Proportional Widths
+      desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
+      meta:
+        - '[pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n demo-lg
+        text: <i>きょう</i>、本を買<i>っ</i>た。
+        css:
+          - 'normal'
+          - '"pwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: palt
-  title: Proportional Alternate Widths
-  desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
-  meta:
-    - '[palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
-  demo:
-    multiline: true
-    font: tk-source-han-sans-japanese demo-lg
-    text: <i>きょう、</i>本を買<i>った</i>。
-    css:
-      - 'normal'
-      - '"palt"'
-  links:
-    - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+    - slug: palt
+      title: Proportional Alternate Widths
+      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
+      meta:
+        - '[palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
+      demo:
+        multiline: true
+        font: tk-source-han-sans-japanese demo-lg
+        text: <i>きょう、</i>本を買<i>った</i>。
+        css:
+          - 'normal'
+          - '"palt"'
+      links:
+        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
 
-- slug: pkna
-  title: Proportional Kana
-  desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
-  meta:
-    - '[pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: <i>あいうえおかきくけこがぎぐげご</i>。
-    css:
-      - 'normal'
-      - '"pkna"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: pkna
+      title: Proportional Kana
+      desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
+      meta:
+        - '[pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: <i>あいうえおかきくけこがぎぐげご</i>。
+        css:
+          - 'normal'
+          - '"pkna"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: halt
-  title: Alternate Half Widths
-  desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
-  meta:
-    - '[halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: きょう<i>、『</i>広辞苑<i>』</i>を買いたいです。
-    css:
-      - 'normal'
-      - '"halt"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: halt
+      title: Alternate Half Widths
+      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
+      meta:
+        - '[halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: きょう<i>、『</i>広辞苑<i>』</i>を買いたいです。
+        css:
+          - 'normal'
+          - '"halt"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: fwid
-  title: Full Widths
-  desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
-  meta:
-    - '[fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: チーズバーガー<i>12</i>個をお願いします。
-    css:
-      - 'normal'
-      - '"fwid"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: fwid
+      title: Full Widths
+      desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
+      meta:
+        - '[fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: チーズバーガー<i>12</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"fwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: hwid
-  title: Half Widths
-  desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
-  meta:
-    - '[hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: チーズバーガー<i>12</i>個をお願いします。
-    css:
-      - 'normal'
-      - '"hwid"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: hwid
+      title: Half Widths
+      desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
+      meta:
+        - '[hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: チーズバーガー<i>12</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"hwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: twid
-  title: Third Widths
-  desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
-  meta:
-    - '[twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: チーズバーガー<i>120</i>個をお願いします。
-    css:
-      - 'normal'
-      - '"twid"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: twid
+      title: Third Widths
+      desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
+      meta:
+        - '[twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: チーズバーガー<i>120</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"twid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: qwid
-  title: Quarter Widths
-  desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
-  meta:
-    - '[qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: チーズバーガー<i>1200</i>個をお願いします。
-    css:
-      - 'normal'
-      - '"qwid"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: qwid
+      title: Quarter Widths
+      desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
+      meta:
+        - '[qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: チーズバーガー<i>1200</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"qwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: jp78
-  title: JIS78 Forms
-  desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS C 6226-1978 (JIS78) specification.
-  meta:
-    - '[jp78](https://www.microsoft.com/typography/otspec/features_fj.htm#jp78)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>餌</i>
-    css:
-      - 'normal'
-      - '"jp78"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: jp78
+      title: JIS78 Forms
+      desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS C 6226-1978 (JIS78) specification.
+      meta:
+        - '[jp78](https://www.microsoft.com/typography/otspec/features_fj.htm#jp78)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>餌</i>
+        css:
+          - 'normal'
+          - '"jp78"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: jp83
-  title: JIS83 Forms
-  desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS X 0208-1983 (JIS83) specification.
-  meta:
-    - '[jp83](https://www.microsoft.com/typography/otspec/features_fj.htm#jp83)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>餌</i>
-    css:
-      - 'normal'
-      - '"jp83"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: jp83
+      title: JIS83 Forms
+      desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS X 0208-1983 (JIS83) specification.
+      meta:
+        - '[jp83](https://www.microsoft.com/typography/otspec/features_fj.htm#jp83)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>餌</i>
+        css:
+          - 'normal'
+          - '"jp83"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: jp90
-  title: JIS90 Forms
-  desc: This feature replaces Japanese glyphs from the JIS78 or JIS83 specifications with the corresponding forms from the JIS X 0208-1990 (JIS90) specification.
-  meta:
-    - '[jp90](https://www.microsoft.com/typography/otspec/features_fj.htm#jp90)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>餌</i>
-    css:
-      - 'normal'
-      - '"jp90"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: jp90
+      title: JIS90 Forms
+      desc: This feature replaces Japanese glyphs from the JIS78 or JIS83 specifications with the corresponding forms from the JIS X 0208-1990 (JIS90) specification.
+      meta:
+        - '[jp90](https://www.microsoft.com/typography/otspec/features_fj.htm#jp90)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>餌</i>
+        css:
+          - 'normal'
+          - '"jp90"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: jp04
-  title: JIS2004 Forms
-  desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters, which were incorporated into JIS X 0213:2004 as new prototypical forms. The 'jp04' feature is a subset of the 'nlck' feature, and is used to access these prototypical glyphs in a manner that maintains the integrity of JIS X 0213:2004.
-  meta:
-    - '[jp04](https://www.microsoft.com/typography/otspec/features_fj.htm#jp04)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pro demo-xl
-    text: <i>餌</i>
-    css:
-      - 'normal'
-      - '"jp04"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pro)'
+    - slug: jp04
+      title: JIS2004 Forms
+      desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters, which were incorporated into JIS X 0213:2004 as new prototypical forms. The 'jp04' feature is a subset of the 'nlck' feature, and is used to access these prototypical glyphs in a manner that maintains the integrity of JIS X 0213:2004.
+      meta:
+        - '[jp04](https://www.microsoft.com/typography/otspec/features_fj.htm#jp04)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pro demo-xl
+        text: <i>餌</i>
+        css:
+          - 'normal'
+          - '"jp04"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pro)'
 
-- slug: trad
-  title: Traditional Forms
-  desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
-  meta:
-    - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>台</i>
-    css:
-      - 'normal'
-      - '"trad"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: trad
+      title: Traditional Forms
+      desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
+      meta:
+        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>台</i>
+        css:
+          - 'normal'
+          - '"trad"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: ruby
-  title: Ruby Notation Forms
-  desc: Japanese typesetting often uses smaller kana glyphs, generally in superscripted form, to clarify the meaning of kanji which may be unfamiliar to the reader. These are called ruby, from the old typesetting term for four-point-sized type. This feature identifies glyphs in the font which have been designed for this use, substituting them for the default designs.
-  meta:
-    - '[ruby](https://www.microsoft.com/typography/otspec/features_pt.htm#ruby)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl demo-ruby-fix
-    text: |
-      <span>
-        <ruby>
-          運 <rp>(</rp><rt><i>うん</i></rt><rp>)</rp>
-          命 <rp>(</rp><rt><i>めい</i></rt><rp>)</rp>
-        </ruby>
-      </span>
-    css:
-      - 'normal'
-      - '"ruby"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: ruby
+      title: Ruby Notation Forms
+      desc: Japanese typesetting often uses smaller kana glyphs, generally in superscripted form, to clarify the meaning of kanji which may be unfamiliar to the reader. These are called ruby, from the old typesetting term for four-point-sized type. This feature identifies glyphs in the font which have been designed for this use, substituting them for the default designs.
+      meta:
+        - '[ruby](https://www.microsoft.com/typography/otspec/features_pt.htm#ruby)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl demo-ruby-fix
+        text: |
+          <span>
+            <ruby>
+              運 <rp>(</rp><rt><i>うん</i></rt><rp>)</rp>
+              命 <rp>(</rp><rt><i>めい</i></rt><rp>)</rp>
+            </ruby>
+          </span>
+        css:
+          - 'normal'
+          - '"ruby"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: hkna
-  title: Horizontal Kana Alternates
-  desc: This feature replaces standard kana with forms that have been specially designed for only horizontal writing. This is a typographic optimization for improved fit and more even color.
-  meta:
-    - '[hkna](https://www.microsoft.com/typography/otspec/features_fj.htm#hkna)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n
-    text: あいうえおかきくけこがぎぐげご。
-    css:
-      - 'normal'
-      - '"hkna"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: hkna
+      title: Horizontal Kana Alternates
+      desc: This feature replaces standard kana with forms that have been specially designed for only horizontal writing. This is a typographic optimization for improved fit and more even color.
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[hkna](https://www.microsoft.com/typography/otspec/features_fj.htm#hkna)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        text: あいうえおかきくけこがぎぐげご。
+        css:
+          - 'normal'
+          - '"hkna"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: nlck
-  title: NLC Kanji Forms
-  desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
-  meta:
-    - '[nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>屡</i>
-    css:
-      - 'normal'
-      - '"nlck"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: nlck
+      title: NLC Kanji Forms
+      desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
+      meta:
+        - '[nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>屡</i>
+        css:
+          - 'normal'
+          - '"nlck"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: nalt
-  title: Alternate Annotation Forms
-  desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
-  meta:
-    - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
-  demo:
-    multiline: false
-    font: tk-kozuka-mincho-pr6n demo-xl
-    text: <i>あ</i>
-    css:
-      - 'normal'
-      - '"nalt"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: nalt
+      title: Alternate Annotation Forms
+      desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
+      meta:
+        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        text: <i>あ</i>
+        css:
+          - 'normal'
+          - '"nalt"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: ital
-  title: Italics
-  desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
-  meta:
-    - '[ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
-  demo:
-    multiline: true
-    font: tk-kozuka-mincho-pr6n demo-lg
-    text: <i>Infinite Jest</i>を読みたい。
-    css:
-      - 'normal'
-      - '"ital"'
-  links:
-    - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    - slug: ital
+      title: Italics
+      desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
+      meta:
+        - '[ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n demo-lg
+        text: <i>Infinite Jest</i>を読みたい。
+        css:
+          - 'normal'
+          - '"ital"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-- slug: kern
-  title: Kerning
-  desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
-  meta:
-    - name: WIP
-      title: This demo is working in progress
-      class: tag-wip
-    - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: <i>Try As You Will</i>
-    css:
-      - 'normal'
-      - '"kern"'
-  links:
-    - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
+    - slug: kern
+      title: Kerning
+      desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: <i>Try As You Will</i>
+        css:
+          - 'normal'
+          - '"kern"'
+      links:
+        - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
 
-- slug: ccmp
-  title: Glyph Composition / Decomposition
-  desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
-  meta:
-    - name: Default*
-      title: Enabled by Default (except Chrome and Safari)
-      class: tag-default
-    - name: WIP
-      title: This demo is working in progress
-      class: tag-wip
-    - '[ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
-  demo:
-    multiline: false
-    font: tk-source-han-sans-japanese demo-xl
-    # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
-    text: <i>あﾞ</i>
-    css:
-      - 'normal'
-      - '"ccmp"'
-  links:
-    - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+    - slug: ccmp
+      title: Glyph Composition / Decomposition
+      desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
+      meta:
+        - name: Default*
+          title: Enabled by Default (except Chrome and Safari)
+          class: tag-default
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
+      demo:
+        multiline: false
+        font: tk-source-han-sans-japanese demo-xl
+        # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
+        text: <i>あﾞ</i>
+        css:
+          - 'normal'
+          - '"ccmp"'
+      links:
+        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
 
-- slug: sups
-  title: Superscript
-  desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
-  meta:
-  demo:
-    multiline: true
-    font: tk-hypatia-sans-pro demo-lg
-    text: X<i>2</i>
-    css:
-      - 'normal'
-      - '"sups"'
-  links:
-    - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+    - slug: sups
+      title: Superscript
+      desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
+      meta:
+      demo:
+        multiline: true
+        font: tk-hypatia-sans-pro demo-lg
+        text: X<i>2</i>
+        css:
+          - 'normal'
+          - '"sups"'
+      links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
-- slug: subs
-  title: Subscript
-  desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
-  meta:
-  demo:
-    multiline: true
-    font: tk-warnock-pro demo-lg
-    text: H<i>2</i>O, CO<i>2</i>
-    css:
-      - 'normal'
-      - '"subs"'
-  links:
-    - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    - slug: subs
+      title: Subscript
+      desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
+      meta:
+      demo:
+        multiline: true
+        font: tk-warnock-pro demo-lg
+        text: H<i>2</i>O, CO<i>2</i>
+        css:
+          - 'normal'
+          - '"subs"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-- slug: locl
-  title: Localised Forms
-  desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
-  meta:
-    - name: Default*
-      title: Only in Firefox
-      class: tag-default
-    - name: WIP
-      title: This demo is working in progress
-      class: tag-wip
-    - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
-  demo:
-    multiline: true
-    font: demo-lg
-    text: <i>гпклдвзитжц</i>
-    css:
-      - 'normal'
-      - '"locl"'
-  links:
+- group:
+  name: QQQ
+  features:
+    - slug: locl
+      title: Localised Forms
+      desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
+      meta:
+        - name: Default*
+          title: Only in Firefox
+          class: tag-default
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
+      demo:
+        multiline: true
+        font: demo-lg
+        text: <i>гпклдвзитжц</i>
+        css:
+          - 'normal'
+          - '"locl"'
+      links:
