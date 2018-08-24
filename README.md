@@ -1,15 +1,17 @@
-# Almace Scaffolding
+# OpenType Features in CSS
 
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/almace-scaffolding.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/sparanoid/almace-scaffolding.svg)](https://travis-ci.org/sparanoid/almace-scaffolding)
-[![devDependency Status](https://david-dm.org/sparanoid/almace-scaffolding/dev-status.svg)](https://david-dm.org/sparanoid/almace-scaffolding#info=devDependencies)
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/opentype-features.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/sparanoid/opentype-features.svg)](https://travis-ci.org/sparanoid/opentype-features)
+[![devDependency Status](https://david-dm.org/sparanoid/opentype-features/dev-status.svg)](https://david-dm.org/sparanoid/opentype-features#info=devDependencies)
 
-`AMSF`, a.k.a. **Almace Scaffolding**, a super-fast Jekyll framework. Supports LiveReload, Sass, HTML minification, inlined stylesheets and more.
+The Complete CSS Demo for OpenType Features
 
 -----
 
-## [Getting Started](https://sparanoid.com/lab/amsf/getting-started.html)
+## Contributing
+
+If you find something wrong or I just missed some OpenType features of cool fonts, you can just edit [./_app/_data/font-features.yml](https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml) this data file via GitHub and send me Pull Request.
 
 ## Donate
 
