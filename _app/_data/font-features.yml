@@ -1,5 +1,5 @@
 - slug: liga
-  title: Common/standard ligatures
+  title: Standard Ligatures
   desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
   demo:
     multiline: true
@@ -13,7 +13,7 @@
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
 - slug: calt
-  title: Contextual alternates
+  title: Contextual Alternates
   desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
   demo:
     multiline: true
@@ -27,7 +27,7 @@
     - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
 
 - slug: dlig
-  title: Discretionary ligatures
+  title: Discretionary Ligatures
   desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
   demo:
     multiline: true
@@ -40,7 +40,7 @@
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
 - slug: smcp
-  title: Small caps
+  title: Small Caps
   desc: This feature turns lowercase characters into small capitals.
   demo:
     multiline: true
@@ -53,7 +53,7 @@
     - San Francisco
 
 - slug: c2sc
-  title: Capitals to small caps
+  title: Capitals to Small Caps
   desc: This feature turns uppercase characters into small capitals.
   demo:
     multiline: true
@@ -66,7 +66,7 @@
     - San Francisco
 
 - slug: case
-  title: Case-sensitive Forms
+  title: Case Sensitive Forms
   desc:
   demo:
     multiline: true
@@ -94,6 +94,7 @@
 - slug: hlig
   title: Historical Ligatures
   desc:
+  wip: true
   demo:
     multiline: true
     font:
@@ -107,6 +108,7 @@
 - slug: hist
   title: Historical Forms
   desc:
+  wip: true
   demo:
     multiline: true
     font:
@@ -118,7 +120,7 @@
     - Fedra Serif A
 
 - slug: salt
-  title: Stylistic alternates
+  title: Stylistic Alternates
   desc: This feature replaces default character glyphs with stylistic alternates.
   demo:
     multiline: true
@@ -131,7 +133,7 @@
     - '[Bree](https://typekit.com/fonts/bree-web)'
 
 - slug: lnum
-  title: Lining figures
+  title: Lining Figures
   desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
   demo:
     multiline: true
@@ -143,7 +145,7 @@
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
 - slug: onum
-  title: Oldstyle figures
+  title: Oldstyle Figures
   desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
   demo:
     multiline: true
@@ -155,7 +157,7 @@
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
 - slug: pnum
-  title: Proportional figures
+  title: Proportional Figures
   desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
   demo:
     multiline: true
@@ -168,7 +170,7 @@
     - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
 - slug: tnum
-  title: Tabular figures
+  title: Tabular Figures
   desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
   demo:
     multiline: true
@@ -208,7 +210,7 @@
     - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
 - slug: ss01-ss20
-  title: Stylistic sets
+  title: Stylistic Set 1 – 20
   desc:
   demo:
     multiline: true
@@ -493,7 +495,7 @@
     - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
 
 - slug: ccmp
-  title: Glyph Composition/Decomposition
+  title: Glyph Composition / Decomposition
   desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
   demo:
     multiline: false
