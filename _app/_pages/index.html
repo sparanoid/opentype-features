@@ -53,7 +53,7 @@ css: |
             {{ tag.class | append: ' ' }}
           {%- endfor -%}
         {%- endcapture -%}
-        <a href="#{{ feature.slug }}" class="{{ css_class }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
+        <a href="#{{ feature.slug }}" class="tag {{ css_class }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
       {% endfor %}
     </p>
   {% else %}
@@ -155,7 +155,9 @@ css: |
     {% endcomment %}
     {% for demo in feature.demo.css %}
       {% if forloop.last == true %}
-        <div class="demo-code">font-feature-settings: {{ demo }};</div>
+        <div class="demo-code highlight">
+          <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ demo }}</span><span class="o">;</span>
+        </div>
       {% endif %}
     {% endfor %}
   {% endfor %}
