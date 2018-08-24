@@ -44,7 +44,13 @@ css: |
   {% if group.features %}
     <p class="feature-list">
       {% for feature in group.features %}
-        <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
+        {%- capture css_class -%}
+          {% comment %} loop over meta tags to get feature status {% endcomment %}
+          {%- for tag in feature.meta -%}
+            {{ tag.class | append: ' ' }}
+          {%- endfor -%}
+        {%- endcapture -%}
+        <a href="#{{ feature.slug }}" class="{{ css_class }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
       {% endfor %}
     </p>
   {% else %}
