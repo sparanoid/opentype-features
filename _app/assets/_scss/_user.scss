@@ -47,6 +47,24 @@
 
 .content {
 
+  details {
+
+    summary {
+
+      &:focus,
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+
+    &[open] {
+
+      summary {
+        color: var(--link-color);
+      }
+    }
+  }
+
   .demo {
     @include heading();
     --base-font-size: 220%;
