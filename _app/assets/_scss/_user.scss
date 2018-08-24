@@ -36,6 +36,10 @@
     font-weight: bold;
     font-size: 180%;
     opacity: 1;
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: 140%;
+    }
   }
 
   h3 {
