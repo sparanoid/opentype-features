@@ -26,9 +26,19 @@
 // }
 
 // EXAMPLE: amsf.github.io custom appearance
-.content .sub-title {
-  font-size: 108%;
-  opacity: .8;
+.content {
+
+  h2 {
+    margin-top: 15vmin;
+    font-weight: bold;
+    font-size: 180%;
+    opacity: .8;
+  }
+
+  .sub-title {
+    font-size: 108%;
+    opacity: .8;
+  }
 }
 
 :root {
@@ -134,5 +144,8 @@
   @media (max-width: $breakpoint-sm) {
     --space-code: var(--space-sm);
   }
+}
+
+.links {
 
 }

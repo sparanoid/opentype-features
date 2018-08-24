@@ -35,7 +35,7 @@ css: |
 </style>
 
 
-<h2 id="{{ feature.slug }}">Supported font features</h2>
+<h2 id="{{ feature.slug }}">Supported Font Features</h2>
 {% for feature in site.data.font-features %}
   <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
 {% endfor %}
@@ -45,7 +45,7 @@ css: |
   {{ feature.desc | markdownify }}
 
   {% if feature.links %}
-    <ul>
+    <ul class="links">
       {% for link in feature.links %}
         <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>
       {% endfor %}
