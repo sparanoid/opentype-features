@@ -199,6 +199,22 @@
       links:
         - '[San Francisco](https://developer.apple.com/fonts/)'
 
+    - slug: nalt
+      title: Alternate Annotation Forms
+      desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
+      meta:
+        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
+        text: <i>あ</i>
+        css:
+          - 'normal'
+          - '"nalt"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
 - group:
   name: Bicameral [cased] Alphabets (Latin, Greek, Cyrillic, etc.)
   features:
@@ -368,131 +384,108 @@
 - group:
   name: East Asian Tetragrams (Chinese, Japanese, Korean)
   features:
-    - slug: pwid
-      title: Proportional Widths
-      desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
+    - slug: smpl
+      title: Simplified Forms
+      desc: Replaces sinograms with their simplified versions, may be language dependent.
       meta:
-        - '[pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#smpl)'
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n demo-lg
-        lang: ja
-        text: <i>きょう</i>、本を買<i>っ</i>た。
+        font: tk-kozuka-mincho-prn demo-lg
+        lang:
+          - zh-Hant
+          - zh-Hans
+        text: <i>檯臺颱</i>
         css:
           - 'normal'
-          - '"pwid"'
+          - '"smpl"'
+      links:
+
+    - slug: trad
+      title: Traditional Forms
+      desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
+      meta:
+        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang:
+          - zh-Hans
+          - zh-Hant
+        text: <i>台</i>
+        css:
+          - 'normal'
+          - '"trad"'
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-    - slug: palt
-      title: Proportional Alternate Widths
-      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
+    - slug: tnam
+      title: Traditional Name Forms
+      desc: Japanese alternates for proper names
       meta:
-        - '[palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
       demo:
         multiline: true
-        font: tk-source-han-sans-japanese demo-lg
-        lang: ja
-        text: <i>きょう、</i>本を買<i>った</i>。
+        font:
+        lang:
+        text: Not available, feel free to contribute!
         css:
           - 'normal'
-          - '"palt"'
+          - '"tnam"'
       links:
-        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
 
-    - slug: pkna
-      title: Proportional Kana
-      desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
+    - slug: expt
+      title: Expert Forms
+      desc: Typographic alternatives for some Japanese tetragrams
       meta:
-        - '[pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n
-        lang: ja
-        text: <i>あいうえおかきくけこがぎぐげご</i>。
+        font:
+        lang:
+        text: Not available, feel free to contribute!
         css:
           - 'normal'
-          - '"pkna"'
+          - '"expt"'
       links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-    - slug: halt
-      title: Alternate Half Widths
-      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
+    - slug: hojo
+      title: Hojo Kanji Forms
+      desc: Hojo alternates for Japanese tetragrams
       meta:
-        - '[halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n
-        lang: ja
-        text: きょう<i>、『</i>広辞苑<i>』</i>を買いたいです。
+        font:
+        lang:
+        text: Not available, feel free to contribute!
         css:
           - 'normal'
-          - '"halt"'
+          - '"hojo"'
       links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-    - slug: fwid
-      title: Full Widths
-      desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
+    - slug: nlck
+      title: NLC Kanji Forms
+      desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
       meta:
-        - '[fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
+        - '[nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
       demo:
-        multiline: true
-        font: tk-kozuka-mincho-pr6n
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
         lang: ja
-        text: チーズバーガー<i>12</i>個をお願いします。
+        text: <i>屡</i>
         css:
           - 'normal'
-          - '"fwid"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
-
-    - slug: hwid
-      title: Half Widths
-      desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
-      meta:
-        - '[hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
-      demo:
-        multiline: true
-        font: tk-kozuka-mincho-pr6n
-        lang: ja
-        text: チーズバーガー<i>12</i>個をお願いします。
-        css:
-          - 'normal'
-          - '"hwid"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
-
-    - slug: twid
-      title: Third Widths
-      desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
-      meta:
-        - '[twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
-      demo:
-        multiline: true
-        font: tk-kozuka-mincho-pr6n
-        lang: ja
-        text: チーズバーガー<i>120</i>個をお願いします。
-        css:
-          - 'normal'
-          - '"twid"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
-
-    - slug: qwid
-      title: Quarter Widths
-      desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
-      meta:
-        - '[qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
-      demo:
-        multiline: true
-        font: tk-kozuka-mincho-pr6n
-        lang: ja
-        text: チーズバーガー<i>1200</i>個をお願いします。
-        css:
-          - 'normal'
-          - '"qwid"'
+          - '"nlck"'
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
@@ -560,21 +553,199 @@
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pro)'
 
-    - slug: trad
-      title: Traditional Forms
-      desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
+    - slug: hngl
+      title: Hangul
+      desc: Transliterates Chinese-style characters with Korean Hangul
       meta:
-        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
       demo:
-        multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
-        lang:
-          - zh-Hans
-          - zh-Hant
-        text: <i>台</i>
+        multiline: true
+        font:
+        lang: ko
+        text: Not available, feel free to contribute!
         css:
           - 'normal'
-          - '"trad"'
+          - '"hngl"'
+      links:
+
+    - slug: ljmo
+      title: Leading Jamo Forms
+      desc: Initial group of consonants for a synthesized Korean Hangul tetragram
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang: ko
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"ljmo"'
+      links:
+
+    - slug: tjmo
+      title: Trailing Jamo Forms
+      desc: Final group of consonants for a synthesized Korean Hangul tetragram
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang: ko
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"tjmo"'
+      links:
+
+    - slug: vjmo
+      title: Vowel Jamo Forms
+      desc: Medial group of vowels for a synthesized Korean Hangul tetragram
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang: ko
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"vjmo"'
+      links:
+
+    - slug: fwid
+      title: Full Widths
+      desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
+      meta:
+        - '[fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: チーズバーガー<i>12</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"fwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: hwid
+      title: Half Widths
+      desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
+      meta:
+        - '[hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: チーズバーガー<i>12</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"hwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: halt
+      title: Alternate Half Widths
+      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
+      meta:
+        - '[halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: きょう<i>、『</i>広辞苑<i>』</i>を買いたいです。
+        css:
+          - 'normal'
+          - '"halt"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: twid
+      title: Third Widths
+      desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
+      meta:
+        - '[twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: チーズバーガー<i>120</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"twid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: qwid
+      title: Quarter Widths
+      desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
+      meta:
+        - '[qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: チーズバーガー<i>1200</i>個をお願いします。
+        css:
+          - 'normal'
+          - '"qwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: pwid
+      title: Proportional Widths
+      desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
+      meta:
+        - '[pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n demo-lg
+        lang: ja
+        text: <i>きょう</i>、本を買<i>っ</i>た。
+        css:
+          - 'normal'
+          - '"pwid"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: palt
+      title: Proportional Alternate Widths
+      desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
+      meta:
+        - '[palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
+      demo:
+        multiline: true
+        font: tk-source-han-sans-japanese demo-lg
+        lang: ja
+        text: <i>きょう、</i>本を買<i>った</i>。
+        css:
+          - 'normal'
+          - '"palt"'
+      links:
+        - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
+
+    - slug: pkna
+      title: Proportional Kana
+      desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
+      meta:
+        - '[pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
+      demo:
+        multiline: true
+        font: tk-kozuka-mincho-pr6n
+        lang: ja
+        text: <i>あいうえおかきくけこがぎぐげご</i>。
+        css:
+          - 'normal'
+          - '"pkna"'
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
@@ -619,37 +790,22 @@
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
-    - slug: nlck
-      title: NLC Kanji Forms
-      desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
+    - slug: vkna
+      title: Vertical Kana
+      desc: Alternate Japanese kana forms for vertical text, e.g. ｜ for chōonpu instead of ー, cf. `hkna`.
       meta:
-        - '[nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
       demo:
-        multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        multiline: true
+        font:
         lang: ja
-        text: <i>屡</i>
+        text: Not available, feel free to contribute!
         css:
           - 'normal'
-          - '"nlck"'
+          - '"vkna"'
       links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
-
-    - slug: nalt
-      title: Alternate Annotation Forms
-      desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
-      meta:
-        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
-      demo:
-        multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
-        lang: ja
-        text: <i>あ</i>
-        css:
-          - 'normal'
-          - '"nalt"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
 - group:
   name: West Asian (Semitic, Arabic)
