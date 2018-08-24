@@ -86,6 +86,14 @@
           color: #ff9d00;
         }
       }
+
+      &.tag-na {
+
+        &,
+        code {
+          color: #ff0037;
+        }
+      }
     }
   }
 
@@ -127,6 +135,18 @@
     &:hover {
       color: #fff;
       background: var(--link-color);
+
+      &.tag-default {
+        background: #0575ef;
+      }
+
+      &.tag-wip {
+        background: #ff8615;
+      }
+
+      &.tag-na {
+        background: #f71b49;
+      }
 
       > span {
 
@@ -241,6 +261,11 @@
     .tag-wip {
       color: #793f00;
       background: #ffeb9a;
+    }
+
+    .tag-na {
+      color: #790014;
+      background: #ffb1c4;
     }
 
     a[href*="microsoft.com"] {
