@@ -968,345 +968,345 @@
 - group:
   name: South-Asian alphasyllabaries (Indic/Brahmic)
   features:
-    - slug: abvf
-      title: Above-base Forms
-      desc: Replaces the above-base part of a vowel sign. For Khmer and similar scripts.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"abvf"'
-      links:
+    # - slug: abvf
+    #   title: Above-base Forms
+    #   desc: Replaces the above-base part of a vowel sign. For Khmer and similar scripts.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"abvf"'
+    #   links:
 
-    - slug: abvm
-      title: Above-base Mark Positioning
-      desc: Positions a mark glyph above a base glyph.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"abvm"'
-      links:
+    # - slug: abvm
+    #   title: Above-base Mark Positioning
+    #   desc: Positions a mark glyph above a base glyph.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"abvm"'
+    #   links:
 
-    - slug: abvs
-      title: Above-base Substitutions
-      desc: Ligates a consonant with an above-mark.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"abvs"'
-      links:
+    # - slug: abvs
+    #   title: Above-base Substitutions
+    #   desc: Ligates a consonant with an above-mark.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"abvs"'
+    #   links:
 
-    - slug: blwf
-      title: Below-base Forms
-      desc: Replaces halant+consonant combination with a subscript form.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"blwf"'
-      links:
+    # - slug: blwf
+    #   title: Below-base Forms
+    #   desc: Replaces halant+consonant combination with a subscript form.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"blwf"'
+    #   links:
 
-    - slug: blwm
-      title: Below-base Mark Positioning
-      desc: Positions a mark glyph below a base glyph.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"blwm"'
-      links:
+    # - slug: blwm
+    #   title: Below-base Mark Positioning
+    #   desc: Positions a mark glyph below a base glyph.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"blwm"'
+    #   links:
 
-    - slug: blws
-      title: Below-base Substitutions
-      desc: Ligates a consonant with a below-mark.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"blws"'
-      links:
+    # - slug: blws
+    #   title: Below-base Substitutions
+    #   desc: Ligates a consonant with a below-mark.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"blws"'
+    #   links:
 
-    - slug: pref
-      title: Pre-base Forms
-      desc: Replaces halant+consonant at the end of a consonant cluster with a glyph at the beginning. Khmer, Myanmar, Malayalam, Telugu.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"pref"'
-      links:
+    # - slug: pref
+    #   title: Pre-base Forms
+    #   desc: Replaces halant+consonant at the end of a consonant cluster with a glyph at the beginning. Khmer, Myanmar, Malayalam, Telugu.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"pref"'
+    #   links:
 
-    - slug: pres
-      title: Pre-base Substitutions
-      desc: Ligates consonant combinations.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"pres"'
-      links:
+    # - slug: pres
+    #   title: Pre-base Substitutions
+    #   desc: Ligates consonant combinations.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"pres"'
+    #   links:
 
-    - slug: psts
-      title: Post-base Substitutions
-      desc: Ligates a final consonant+consonant.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"psts"'
-      links:
+    # - slug: psts
+    #   title: Post-base Substitutions
+    #   desc: Ligates a final consonant+consonant.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"psts"'
+    #   links:
 
-    - slug: pstf
-      title: Post-base Forms
-      desc: Substitutes final halant+consonant with special form. Khmer and Gurmukhi, Malayalam.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"pstf"'
-      links:
+    # - slug: pstf
+    #   title: Post-base Forms
+    #   desc: Substitutes final halant+consonant with special form. Khmer and Gurmukhi, Malayalam.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"pstf"'
+    #   links:
 
-    - slug: dist
-      title: Distance
-      desc: Adjusts horizontal positioning between glyphs. (Always enabled, as opposed to 'kern'.)
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"dist"'
-      links:
+    # - slug: dist
+    #   title: Distance
+    #   desc: Adjusts horizontal positioning between glyphs. (Always enabled, as opposed to 'kern'.)
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"dist"'
+    #   links:
 
-    - slug: akhn
-      title: Akhand
-      desc: Hindi for unbreakable. Ligates consonant+halant+consonant, usually only for k-ss and j-ny combinations.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"akhn"'
-      links:
+    # - slug: akhn
+    #   title: Akhand
+    #   desc: Hindi for unbreakable. Ligates consonant+halant+consonant, usually only for k-ss and j-ny combinations.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"akhn"'
+    #   links:
 
-    - slug: haln
-      title: Halant Forms
-      desc: Replaces a glyph for final consonant+halant.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"haln"'
-      links:
+    # - slug: haln
+    #   title: Halant Forms
+    #   desc: Replaces a glyph for final consonant+halant.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"haln"'
+    #   links:
 
-    - slug: half
-      title: Half Form
-      desc: Replaces consonant+halant with a half form, indicating it is part of a conjunct.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"half"'
-      links:
+    # - slug: half
+    #   title: Half Form
+    #   desc: Replaces consonant+halant with a half form, indicating it is part of a conjunct.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"half"'
+    #   links:
 
-    - slug: nukt
-      title: Nukta Forms
-      desc: Replace consonant+nukta (dot mark) with single glyph.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"nukt"'
-      links:
+    # - slug: nukt
+    #   title: Nukta Forms
+    #   desc: Replace consonant+nukta (dot mark) with single glyph.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"nukt"'
+    #   links:
 
-    - slug: rkrf
-      title: Rakar Forms
-      desc: Replaces halant+ra with a rakar glyph, indicating it is part of a conjunct.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"rkrf"'
-      links:
+    # - slug: rkrf
+    #   title: Rakar Forms
+    #   desc: Replaces halant+ra with a rakar glyph, indicating it is part of a conjunct.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"rkrf"'
+    #   links:
 
-    - slug: rphf
-      title: Reph Form
-      desc: Replaces initial ra+halant with a final reph mark, indicating part of a conjunct.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"rphf"'
-      links:
+    # - slug: rphf
+    #   title: Reph Form
+    #   desc: Replaces initial ra+halant with a final reph mark, indicating part of a conjunct.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"rphf"'
+    #   links:
 
-    - slug: vatu
-      title: Vattu Variants
-      desc: Replaces consonant+rakar combinations with a vattu variant ligature.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"vatu"'
-      links:
+    # - slug: vatu
+    #   title: Vattu Variants
+    #   desc: Replaces consonant+rakar combinations with a vattu variant ligature.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"vatu"'
+    #   links:
 
-    - slug: cjct
-      title: Conjunct Forms
-      desc: Ligates consonant+halant+consonant, indicates part of a conjunct.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"cjct"'
-      links:
+    # - slug: cjct
+    #   title: Conjunct Forms
+    #   desc: Ligates consonant+halant+consonant, indicates part of a conjunct.
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"cjct"'
+    #   links:
 
-    - slug: cfar
-      title: Conjunct Form After Ro
-      desc: Khmer
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
-      demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
-        css:
-          - 'normal'
-          - '"cfar"'
-      links:
+    # - slug: cfar
+    #   title: Conjunct Form After Ro
+    #   desc: Khmer
+    #   meta:
+    #     - name: N/A
+    #       title: This demo is not available at the moment
+    #       class: tag-na
+    #   demo:
+    #     multiline: true
+    #     font:
+    #     lang:
+    #     text: Not available, feel free to contribute!
+    #     css:
+    #       - 'normal'
+    #       - '"cfar"'
+    #   links:
 
 - group:
   name: Writing Direction
