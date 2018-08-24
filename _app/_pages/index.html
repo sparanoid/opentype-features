@@ -38,14 +38,17 @@ css: |
 {%- endfor %}
 </style>
 
+{% comment %}
+  Support list
+{% endcomment %}
 <h2>Supported Font Features</h2>
 {% for group in site.data.font-features %}
   <h3>{{ group.name }}</h3>
   {% if group.features %}
     <p class="feature-list">
       {% for feature in group.features %}
+        {% comment %} loop over meta tags to get feature status {% endcomment %}
         {%- capture css_class -%}
-          {% comment %} loop over meta tags to get feature status {% endcomment %}
           {%- for tag in feature.meta -%}
             {{ tag.class | append: ' ' }}
           {%- endfor -%}
@@ -58,11 +61,17 @@ css: |
   {% endif %}
 {% endfor %}
 
+{% comment %}
+  Feature block
+{% endcomment %}
 {% for group in site.data.font-features %}
   {% for feature in group.features %}
     <h2 id="{{ feature.slug }}">{{ feature.title }}: <code>{{ feature.slug }}</code></h2>
     {{ feature.desc | markdownify }}
 
+    {% comment %}
+      Feature meta list
+    {% endcomment %}
     {% if feature.meta %}
       <ul class="meta">
         {% for meta in feature.meta %}
@@ -77,6 +86,9 @@ css: |
       </ul>
     {% endif %}
 
+    {% comment %}
+      Feature Link list
+    {% endcomment %}
     {% if feature.links %}
       <details>
         <summary>Supported Fonts</summary>
@@ -88,7 +100,17 @@ css: |
       </details>
     {% endif %}
 
-    <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
+    {% comment %} loop over meta tags to get feature status {% endcomment %}
+    {%- capture css_class -%}
+      {%- for tag in feature.meta -%}
+        {{ tag.class | append: ' ' }}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {% comment %}
+      Demo block
+    {% endcomment %}
+    <div class="demo {{ feature.demo.font }} {{ css_class }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
       {% for current_style in feature.demo.css %}
         {%- capture feature_class -%}
           {% comment %} check how many visual effects we have for this feature {% endcomment %}
@@ -128,6 +150,9 @@ css: |
       {% endfor %}
     </div>
 
+    {% comment %}
+      Demo CSS
+    {% endcomment %}
     {% for demo in feature.demo.css %}
       {% if forloop.last == true %}
         <div class="demo-code">font-feature-settings: {{ demo }};</div>
