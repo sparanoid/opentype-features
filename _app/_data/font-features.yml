@@ -226,7 +226,10 @@
 
 - slug: ss01-ss20
   title: Stylistic Set 1 – 20
-  desc:
+  desc: |
+    This feature replaces sets of default character glyphs with stylistic variants. Glyphs in stylistic sets may be designed to harmonise visually, interact in particular ways, or otherwise work together. See also: [stylistic alternates (salt)](#salt), which is designed to offer stylistic alternatives of individual glyphs.
+
+    To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
   demo:
     multiline: true
     font: tk-hypatia-sans-pro
@@ -235,7 +238,9 @@
       - 'normal'
       - '"ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"'
   links:
+    - '[San Francisco](https://developer.apple.com/fonts/)'
     - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+    - ...and many more
 
 - slug: pwid
   title: Proportional Widths
