@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // Typography setup
-body[data-ua*="Windows"] {
+:root[data-ua*="Windows"] {
   --font-features: normal;
 }
 
@@ -214,7 +214,7 @@ body:hover .latest {
         position: absolute;
         display: inline-block;
         width: 4em;
-        margin-top: 1px;
+        margin-top: 0;
         margin-left: -4em;
         font-size: 80%;
         line-height: calc(var(--line-height) * 1.2 / .8);
@@ -399,6 +399,44 @@ body:hover .latest {
         // https://www.fileformat.info/info/unicode/char/2500/index.htm
         content: "\2500\2500\00a0"
       }
+    }
+  }
+
+  details {
+    margin-bottom: 1.8rem;
+
+    summary {
+      position: relative;
+      line-height: calc(var(--line-height) * 1.2);
+      outline: none;
+      cursor: pointer;
+
+      @media (max-width: $breakpoint-sm) {
+        margin-left: 1em;
+      }
+
+      &::-webkit-details-marker {
+        display: none
+      }
+
+      &:before {
+        content: "+";
+        position: absolute;
+        display: inline-block;
+        width: 4em;
+        padding-right: .6em;
+        margin-top: 0;
+        margin-left: -4em;
+        font-size: 80%;
+        line-height: calc(var(--line-height) * 1.2 / .8);
+        text-align: right;
+        opacity: .6;
+        pointer-events: none;
+      }
+    }
+
+    &[open] summary:before {
+      content: "-";
     }
   }
 
