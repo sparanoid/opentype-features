@@ -19,6 +19,19 @@ css: |
   <p>Global <code>--font-features</code> is disabled on this page.</p>
 </blockquote>
 
+<style>
+{%- for feature in site.data.font-features %}
+  .of-{{ feature.slug }} {
+    {%- for demo in feature.demo.css -%}
+      {%- if forloop.last == true -%}
+        font-feature-settings: {{ demo }};
+      {%- endif -%}
+    {%- endfor -%}
+  }
+{%- endfor %}
+</style>
+
+
 <h2 id="{{ feature.slug }}">Supported font features</h2>
 {% for feature in site.data.font-features %}
   <a href="#{{ feature.slug }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
@@ -38,7 +51,12 @@ css: |
 
   <div class="demo {{ feature.demo.font }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
     {% for demo in feature.demo.css %}
-      <span style='font-feature-settings: {{ demo }}'>{{ feature.demo.text }}</span>
+      {%- capture feature_class -%}
+        {%- if forloop.last == true -%}
+          of-{{ feature.slug | remove: '"' }}
+        {%- endif -%}
+      {%- endcapture -%}
+      <span class="{{ feature_class }}">{{ feature.demo.text }}</span>
     {% endfor %}
   </div>
 
