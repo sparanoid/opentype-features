@@ -381,18 +381,16 @@
       title: Denominator
       desc: Converts to appropriate fraction denominator form, invoked by `frac`
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
+        font: tk-hypatia-sans-pro demo-lg
         lang:
-        text: Not available, feel free to contribute!
+        text: <i>3/4</i>, No. <i>123456</i>
         css:
           - 'normal'
           - '"dnom"'
       links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
     - slug: numr
       title: Numerator
@@ -427,8 +425,9 @@
           - 'normal'
           - '"sinf"'
       links:
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Bree](https://typekit.com/fonts/bree-web)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
     - slug: zero
       title: Slashed Zero
