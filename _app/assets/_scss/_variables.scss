@@ -26,3 +26,129 @@ $code-color: #037247;
 .of-ubuntu-mono {
   font-family: 'of-ubuntu-mono', var(--fontstack-monospace);
 }
+
+@font-face {
+  font-family: 'of-sorts-mill-goudy';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/sorts-mill-goudy-regular.woff2') format('woff2');
+}
+
+.of-sorts-mill-goudy {
+  font-family: 'of-sorts-mill-goudy', var(--fontstack-serif);
+}
+
+@font-face {
+  font-family: 'of-cardo';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/cardo-regular.woff2') format('woff2');
+}
+
+.of-cardo {
+  font-family: 'of-cardo', var(--fontstack-serif);
+}
+
+@font-face {
+  font-family: 'of-yanone-kaffeesatz';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/yanone-kaffeesatz-bold.woff2') format('woff2');
+}
+
+.of-yanone-kaffeesatz {
+  font-family: 'of-yanone-kaffeesatz', var(--fontstack-sans-serif);
+}
+
+@font-face {
+  font-family: 'of-allan';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/allan-regular.woff2') format('woff2');
+}
+
+.of-allan {
+  font-family: 'of-allan', var(--fontstack-sans-serif);
+}
+
+@font-face {
+  font-family: 'of-clara';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/clara-regular.woff2') format('woff2');
+}
+
+.of-clara {
+  font-family: 'of-clara', var(--fontstack-serif);
+}
+
+@font-face {
+  font-family: 'of-exo';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/exo-bold.woff2') format('woff2');
+}
+
+.of-exo {
+  font-family: 'of-exo', var(--fontstack-sans-serif);
+}
+
+// TypeKit
+@font-face {
+  font-family: 'of-hypatia-sans-pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/hypatia-sans-pro-bold.woff2') format('woff2');
+}
+
+.of-hypatia-sans-pro {
+  font-family: 'of-hypatia-sans-pro', var(--fontstack-sans-serif);
+}
+
+// TypeKit
+@font-face {
+  font-family: 'of-caflisch-script-pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/caflisch-script-pro-regular.woff2') format('woff2');
+}
+
+.of-caflisch-script-pro {
+  font-family: 'of-caflisch-script-pro', var(--fontstack-serif);
+}
+
+// TypeKit
+@font-face {
+  font-family: 'of-warnock-pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/warnock-pro-bold.woff2') format('woff2');
+}
+
+.of-warnock-pro {
+  font-family: 'of-warnock-pro', var(--fontstack-sans-serif);
+}
+
+// TypeKit
+@font-face {
+  font-family: 'of-bickham-script-pro-3';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/bickham-script-pro-3-bold.woff2') format('woff2');
+}
+
+.of-bickham-script-pro-3 {
+  font-family: 'of-bickham-script-pro-3', var(--fontstack-serif);
+}
+
+// TypeKit
+@font-face {
+  font-family: 'of-bree';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/bree-bold.woff2') format('woff2');
+}
+
+.of-bree {
+  font-family: 'of-bree', var(--fontstack-sans-serif);
+}
