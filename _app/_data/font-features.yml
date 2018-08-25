@@ -104,7 +104,7 @@
           class: tag-default
       demo:
         multiline: true
-        font: demo-lg
+        font: of-sf-pro-display demo-lg
         text: <i>гпклдвзитжц</i>
         lang:
           - ru
@@ -356,7 +356,7 @@
       desc: This feature turns lowercase characters into small capitals.
       demo:
         multiline: true
-        font:
+        font: of-sf-pro-display
         text: C<i>hanging</i> <i>case to</i> S<i>mall</i> C<i>aps</i>.
         css:
           - 'normal'
@@ -370,7 +370,7 @@
       desc: This feature turns uppercase characters into small capitals.
       demo:
         multiline: true
-        font:
+        font: of-sf-pro-display
         text: <i>Changing case to Small Caps</i>.
         css:
           - 'normal'
@@ -450,7 +450,7 @@
       desc:
       demo:
         multiline: true
-        font:
+        font: of-sf-pro-display
         text: '<i>{</i>¿¡HO<i>-</i>HO<i>—</i>HO!?<i>}</i> <i>[</i>Target<i>]</i> <i>(</i>New<i>)</i>'
         css:
           - 'normal'
@@ -728,8 +728,8 @@
           - 'normal'
           - '"ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10", "ss11", "ss12", "ss13", "ss14", "ss15", "ss16", "ss17", "ss18", "ss19", "ss20"'
       links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - '[San Francisco](https://developer.apple.com/fonts/)'
         - ...and many more
 
 - group:
