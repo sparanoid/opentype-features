@@ -743,7 +743,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: tk-kozuka-mincho-prn demo-lg
+        font: tk-kozuka-mincho-pr6n demo-lg
         lang:
           - zh-Hant
           - zh-Hans
@@ -774,14 +774,14 @@
       title: Traditional Name Forms
       desc: Japanese alternates for proper names
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
       demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
+        text: 亜
         css:
           - 'normal'
           - '"tnam"'
@@ -791,35 +791,31 @@
       title: Expert Forms
       desc: Typographic alternatives for some Japanese tetragrams
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
+        text: <i>唖</i>
         css:
           - 'normal'
           - '"expt"'
       links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
     - slug: hojo
       title: Hojo Kanji Forms
       desc: Hojo alternates for Japanese tetragrams
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
+        text: <i>晷</i>
         css:
           - 'normal'
           - '"hojo"'
       links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
     - slug: nlck
       title: NLC Kanji Forms
