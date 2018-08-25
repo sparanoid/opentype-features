@@ -114,6 +114,7 @@
           - '"locl"'
       links:
         - '[San Francisco](https://developer.apple.com/fonts/)'
+        - Fedra Sans Pro
 
     - slug: rand
       title: Randomize
