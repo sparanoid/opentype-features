@@ -319,8 +319,8 @@
     }
 
     .tag-default {
-      color: #007965;
-      background: #9affee;
+      color: #0040b6;
+      background: #aee1ff;
     }
 
     .tag-wip {
@@ -331,16 +331,6 @@
     .tag-na {
       color: #790014;
       background: #ffb1c4;
-    }
-
-    a[href*="microsoft.com"] {
-      color: #fff;
-      background: #0050c7;
-      text-transform: none;
-
-      &:before {
-        content: 'MS otspec: ';
-      }
     }
   }
 
