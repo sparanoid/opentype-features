@@ -147,6 +147,17 @@
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
+    - slug: cv01-cv99
+      title: Character Variant 1 – 99
+      desc: Multiple variants of a single character, which may not apply to many other characters, see references for voluminous documentation.
+      meta:
+      demo:
+        multiline: false
+        font:
+        lang:
+        text: <i>あ</i>
+        css:
+
     - slug: salt
       title: Stylistic Alternates
       desc: This feature replaces default character glyphs with stylistic alternates.
@@ -252,6 +263,31 @@
           - '"dlig"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: size
+      title: Optical size
+      desc: |
+        Not a lookup: feature's table provides to applications information about the appearance and intent of the font, to aid in font selection.
+      demo:
+        multiline: true
+        font: of-hypatia-sans-pro
+        text: Demo not available
+        css:
+      links:
+        - '[Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)'
+
+    - slug: ornm
+      title: Ornaments
+      desc: This is a dual-function feature, which uses two input methods to give the user access to ornament glyphs (e.g. fleurons, dingbats and border elements) in the font. One method replaces the bullet character with a selection from the full set of available ornaments; the other replaces specific “lower ASCII” characters with ornaments assigned to them. The first approach supports the general or browsing user; the second supports the power user.
+      demo:
+        multiline: true
+        font: of-clara demo-lg
+        text: abcdefg
+        css:
+          - 'normal'
+          - '"ornm"'
+      links:
+        - 'Clara'
 
 - group:
   name: Positioning
@@ -695,34 +731,6 @@
         - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
         - ...and many more
-
-- group:
-  name: Special
-  features:
-    - slug: size
-      title: Optical size
-      desc: |
-        Not a lookup: feature's table provides to applications information about the appearance and intent of the font, to aid in font selection.
-      demo:
-        multiline: true
-        font: of-hypatia-sans-pro
-        text: Demo not available
-        css:
-      links:
-        - '[Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)'
-
-    - slug: ornm
-      title: Ornaments
-      desc: This is a dual-function feature, which uses two input methods to give the user access to ornament glyphs (e.g. fleurons, dingbats and border elements) in the font. One method replaces the bullet character with a selection from the full set of available ornaments; the other replaces specific “lower ASCII” characters with ornaments assigned to them. The first approach supports the general or browsing user; the second supports the power user.
-      demo:
-        multiline: true
-        font: of-clara demo-lg
-        text: abcdefg
-        css:
-          - 'normal'
-          - '"ornm"'
-      links:
-        - 'Clara'
 
 - group:
   name: East Asian Tetragrams (Chinese, Japanese, Korean)
