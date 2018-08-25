@@ -418,18 +418,16 @@
       title: Unicase
       desc: Replaces lowercase and uppercase letters with a set of single case glyphs.
       meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
       demo:
         multiline: true
-        font:
+        font: of-arial
         lang:
-        text: <i>Not available, feel free to contribute!</i>
+        text: <i>Server Offline</i>
         css:
           - 'normal'
           - '"unic"'
       links:
+        - Arial (Windows version)
         - Hermes FB
 
     - slug: cpsp
