@@ -11,15 +11,11 @@ css: |
 
 {%- include amsf/core -%}
 
-<p>This project, a comprehensive CSS <code>font-feature-settings</code> demo for OpenType features, a refined version of <a href="https://helpx.adobe.com/typekit/using/open-type-syntax.html">Syntax for OpenType features in CSS</a> by Adobe, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><abbr title="Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)">CC BY-NC-SA 3.0</abbr></a>.</p>
+<p>This project is a comprehensive CSS <code>font-feature-settings</code> demo for OpenType features, a refined version of <a href="https://helpx.adobe.com/typekit/using/open-type-syntax.html">Syntax for OpenType features in CSS</a> by Adobe, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><abbr title="Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)">CC BY-NC-SA 3.0</abbr></a>.</p>
 
 <p>Featured fonts listed below are hand-picked with high quality. If you find some cool fonts with specific OpenType features support or want to add missing OpenType features, feel free to contribute it on <a href="https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml">GitHub</a>.</p>
 
 <p>Built with <a href="https://sparanoid.com/lab/amsf/">Almace Scaffolding</a>.</p>
-
-{% if page.last_modified_at %}
-  <p>Updated {{ page.last_modified_at | date: "%A, %b %d, %Y" }}</p>
-{% endif %}
 
 <style id="ob-style">
           .of-normal { font-feature-settings: normal; }
@@ -204,3 +200,20 @@ css: |
 </ul>
 
 <p>You can <a href="https://sparanoid.com/doante/">donate</a> to help me renew <a href="https://typekit.com/" class="link">TypeKit</a> subscription 😉</p>
+
+<a class="back-to-top" href="#top">
+  <span class="inner">Back to Top</span>
+</a>
+
+<div><!-- local dev fix, avoid back-to-top margin-bottom override --></div>
+
+{% if page.last_modified_at %}
+  <footer class="post-modified-date">
+    <p>
+      Updated
+      <time datetime="{{ page.last_modified_at | date: " %FT%X+08:00 " }}">
+        {{ page.last_modified_at | date: "%A, %b %d, %Y" }}
+      </time>
+    </p>
+  </footer>
+{% endif %}

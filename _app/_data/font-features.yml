@@ -268,7 +268,7 @@
     - slug: size
       title: Optical size
       desc: |
-        Not a lookup: feature's table provides to applications information about the appearance and intent of the font, to aid in font selection.
+        Not a lookup: feature's table provides to applications information about the appearance and intent of the font, to aid in font selection. Demo is not available on the web.
       demo:
         multiline: true
         font: of-hypatia-sans-pro
@@ -606,7 +606,7 @@
 
     - slug: sinf
       title: Scientific Inferiors
-      desc: as in "H<sub>2</sub>O", "SO<sub>x</sub>", "YC<sub>b</sub>C<sub>r</sub>", or "NO<sub>2</sub>"
+      desc: As in "H<sub>2</sub>O", "SO<sub>x</sub>", "YC<sub>b</sub>C<sub>r</sub>", or "NO<sub>2</sub>"
       meta:
         - name: Partial
           title: This demo is partially supported
