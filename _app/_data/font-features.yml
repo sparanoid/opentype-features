@@ -388,7 +388,7 @@
         multiline: true
         font:
         lang:
-        text: Not available, feel free to contribute!
+        text: <i>Not available, feel free to contribute!</i>
         css:
           - 'normal'
           - '"unic"'
@@ -580,7 +580,7 @@
         multiline: true
         font: of-warnock-pro demo-lg
         lang:
-        text: H2O SOx YCbCr NO2
+        text: H<i>2</i>O SO<i>x</i> YC<i>b</i>C<i>r</i> NO<i>2</i>
         css:
           - 'normal'
           - '"sinf"'
@@ -1102,14 +1102,11 @@
       title: Horizontal Kana Alternates
       desc: This feature replaces standard kana with forms that have been specially designed for only horizontal writing. This is a typographic optimization for improved fit and more even color.
       meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
         lang: ja
-        text: あいうえおかきくけこがぎぐげご。
+        text: <i>あいうえおかきくけこがぎぐげご。</i>
         css:
           - 'normal'
           - '"hkna"'
