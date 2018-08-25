@@ -68,6 +68,14 @@
     @media (max-width: $breakpoint-sm) {
       font-size: 140%;
     }
+
+    .of-spec-link {
+
+      &,
+      code {
+        color: var(--link-color);
+      }
+    }
   }
 
   h3 {
