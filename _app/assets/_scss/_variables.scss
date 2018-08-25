@@ -14,3 +14,15 @@ $link-color: #08bd77;
 $background-color: #fff;
 $text-color: #000;
 $code-color: #037247;
+
+// Typography
+@font-face {
+  font-family: 'of-ubuntu-mono';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/ubuntu-mono-bold.woff2') format('woff2');
+}
+
+.of-ubuntu-mono {
+  font-family: 'of-ubuntu-mono', var(--fontstack-monospace);
+}
