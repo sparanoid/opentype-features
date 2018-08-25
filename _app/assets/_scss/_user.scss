@@ -31,6 +31,32 @@
 
 .content {
 
+  header {
+    position: relative;
+    color: #fff;
+    background: var(--link-color);
+    background: linear-gradient(135deg, #001022 0%,#001607 100%);
+    overflow: hidden;
+
+    &:after {
+      content: 'The quick brown fox jumps over the lazy dog. Grumpy wizards make toxic brew for the evil Queen and Jack.';
+      position: absolute;
+      top: -.5em;
+      left: -.5em;
+      font-size: 800%;
+      line-height: .9;
+      font-weight: bold;
+      color: #05efef;
+      mix-blend-mode: soft-light;
+      pointer-events: none;
+      opacity: .6;
+    }
+
+    h1 {
+      z-index: 1;
+    }
+  }
+
   h2 {
     margin-top: 15vmin;
     font-weight: bold;
