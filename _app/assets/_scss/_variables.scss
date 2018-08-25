@@ -50,6 +50,17 @@ $code-color: #af9625;
 // }
 
 @font-face {
+  font-family: 'of-arial';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/arial-bold.woff2') format('woff2');
+}
+
+.of-arial {
+  font-family: 'of-arial', var(--fontstack-monospace);
+}
+
+@font-face {
   font-family: 'of-ubuntu-mono';
   font-weight: bold;
   font-style: normal;
