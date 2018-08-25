@@ -86,7 +86,8 @@ css: |
         {% endif %}
       {% endcapture %}
 
-      https://docs.microsoft.com/typography/opentype/spec/{{ spec_index | strip }}#{{ feature.slug | replace: "ss01-ss20", "ss01---ss20" }}
+      {% comment %} anchors may not work due to random generated hash by microsft {% endcomment %}
+      https://docs.microsoft.com/typography/opentype/spec/{{ spec_index | strip }}#{{ feature.slug | replace: "-", "---" }}
     {% endcapture %}
 
     <h2 id="{{ feature.slug }}">
