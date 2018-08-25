@@ -91,7 +91,7 @@ css: |
     {% endcomment %}
     {% if feature.links %}
       <details>
-        <summary>Supported Fonts</summary>
+        <summary>Featured Fonts</summary>
         <ul class="links">
           {% for link in feature.links %}
             <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>

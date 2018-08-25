@@ -351,31 +351,30 @@
       desc: This feature replaces figures separated by a slash with common (diagonal) fractions.
       demo:
         multiline: true
-        font: tk-warnock-pro
-        text: Add 1 <i>3/4</i> C of flour, <i>1/2</i> cup at a time.
+        font: of-ubuntu-mono
+        text: 1 <i>3/4</i> C of flour, <i>1/2</i> cup.
         css:
           - 'normal'
           - '"frac"'
       links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
+        - '[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)'
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[San Francisco](https://developer.apple.com/fonts/)'
 
     - slug: afrc
       title: Alternative Fractions
       desc: Converts figures separated by slash with alternative stacked fraction form
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
+        font: of-ubuntu-mono
         lang:
-        text: Not available, feel free to contribute!
+        text: 1 <i>3/4</i> C of flour, <i>1/2</i> cup.
         css:
           - 'normal'
           - '"afrc"'
       links:
+        - '[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)'
 
     - slug: dnom
       title: Denominator
@@ -383,31 +382,30 @@
       meta:
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro demo-lg
+        font: of-ubuntu-mono
         lang:
-        text: <i>3/4</i>, No. <i>123456</i>
+        text: 1 <i>3/4</i> C of flour, <i>1/2</i> cup.
         css:
           - 'normal'
           - '"dnom"'
       links:
+        - '[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
 
     - slug: numr
       title: Numerator
       desc: Converts to appropriate fraction numerator form, invoked by `frac`
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
+        font: of-ubuntu-mono
         lang:
-        text: Not available, feel free to contribute!
+        text: 1 <i>3/4</i> C of flour, <i>1/2</i> cup.
         css:
           - 'normal'
           - '"numr"'
       links:
+        - '[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)'
 
     - slug: sinf
       title: Scientific Inferiors
@@ -428,6 +426,7 @@
         - '[Bree](https://typekit.com/fonts/bree-web)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)'
 
     - slug: zero
       title: Slashed Zero
@@ -444,6 +443,7 @@
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - '[Exo](https://fonts.google.com/specimen/Exo)'
 
     - slug: mgrk
       title: Mathematical Greek
