@@ -111,11 +111,19 @@
     a {
       color: var(--code-color);
 
+      &.tag {
+
+        &,
+        code {
+          color: #00a163;
+        }
+      }
+
       &.tag-default {
 
         &,
         code {
-          color: #0575ef;
+          color: #277dda;
         }
       }
 
@@ -131,7 +139,7 @@
 
         &,
         code {
-          color: #ff0037;
+          color: #e6335a;
         }
       }
     }
@@ -143,7 +151,7 @@
     font-size: var(--base-font-size);
     line-height: var(--line-height);
     color: #000;
-    background: rgba(#000, .04);
+    background: rgba(#000, .02);
     transition: all .1s ease;
 
     --space-code: var(--space-lg);
@@ -170,6 +178,18 @@
         color: var(--link-color);
         transition: all .1s ease;
       }
+    }
+
+    &.tag-default > span:last-child i {
+      color: #0575ef;
+    }
+
+    &.tag-wip > span:last-child i {
+      color: #ff8615;
+    }
+
+    &.tag-na > span:last-child i {
+      color: #f71b49;
     }
 
     &:hover {
@@ -241,7 +261,7 @@
     font-size: 80%;
     margin-bottom: 1.8rem;
     color: var(--code-color);
-    background: rgba(#000, .08);
+    background: rgba(#000, .04);
     font-family: var(--fontstack-monospace);
 
     --space-code: var(--space-lg);
