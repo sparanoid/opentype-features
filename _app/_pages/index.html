@@ -13,7 +13,7 @@ css: |
 
 <p>This project, should be by far, the most complete CSS <code>font-feature-settings</code> live demo for OpenType features on the web. This page is a refined version of <a href="https://helpx.adobe.com/typekit/using/open-type-syntax.html">Syntax for OpenType features in CSS</a> by Adobe, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"><abbr title="Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)">CC BY-NC-SA 3.0</abbr></a>.</p>
 
-<p>Missing some cool fonts & OpenType features? Feel free to contribute it on <a href="https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml">GitHub</a>.</p>
+<p>Missing some cool fonts or OpenType features? Feel free to contribute it on <a href="https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml">GitHub</a>.</p>
 
 <p>This project is built with <a href="https://sparanoid.com/lab/amsf/">Almace Scaffolding</a></p>
 
@@ -66,7 +66,33 @@ css: |
 {% endcomment %}
 {% for group in site.data.font-features %}
   {% for feature in group.features %}
-    <h2 id="{{ feature.slug }}">{{ feature.title }}: <code>{{ feature.slug }}</code></h2>
+
+    {% comment %} Get the correct spec link for MS docs {% endcomment %}
+    {% capture spec_link %}
+      {% capture spec_index %}
+        {% assign slug_pos = feature.slug | slice: 0 %}
+        {% if slug_pos >= 'a' and slug_pos <= 'e' %}
+          features_ae
+        {% elsif slug_pos >= 'f' and slug_pos <= 'j' %}
+          features_fj
+        {% elsif slug_pos >= 'k' and slug_pos <= 'o' %}
+          features_ko
+        {% elsif slug_pos >= 'p' and slug_pos <= 't' %}
+          features_pt
+        {% elsif slug_pos >= 'u' and slug_pos <= 'z' %}
+          features_uz
+        {% else %}
+          featurelist
+        {% endif %}
+      {% endcapture %}
+
+      https://docs.microsoft.com/typography/opentype/spec/{{ spec_index | strip }}#{{ feature.slug | replace: "ss01-ss20", "ss01---ss20" }}
+    {% endcapture %}
+
+    <h2 id="{{ feature.slug }}">
+      {{ feature.title }}:
+      <a href="{{ spec_link | strip }}" class="of-spec-link" title="Go to Microsoft OpenType Specs: {{ feature.slug }}" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+    </h2>
     {{ feature.desc | markdownify }}
 
     {% comment %}
