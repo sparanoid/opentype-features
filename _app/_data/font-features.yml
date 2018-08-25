@@ -448,7 +448,7 @@
 
     - slug: case
       title: Case Sensitive Forms
-      desc:
+      desc: Replace characters, especially punctuation, with forms better suited for all-capital text, cf. `titl`
       demo:
         multiline: true
         font: of-sf-pro-display
