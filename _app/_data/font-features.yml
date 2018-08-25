@@ -1,22 +1,51 @@
 - group:
   name: Ligation & Alternate
   features:
-    - slug: liga
-      title: Standard Ligatures
-      desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
+    - slug: aalt
+      title: Access All Alternates
+      desc: "Special feature: used to present user with choice all alternate forms of the character"
       meta:
-        - name: Default
-          title: Enabled by Default
-          class: tag-default
       demo:
         multiline: true
-        font: tk-warnock-pro
-        text: Di<i>ff</i>erent <i>fi</i>rst A<i>fl</i>iction a<i>ffi</i>davit <i>Th</i>ere
+        font: of-sorts-mill-goudy
+        text: <i>Sorts Mill Goudy's 1/3 wizard dog.</i>
         css:
-          - '"liga" 0, "clig" 0'
-          - '"liga", "clig"'
+          - 'normal'
+          - '"aalt"'
       links:
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+        - '[Sorts Mill Goudy](https://fonts.google.com/specimen/Sorts+Mill+Goudy)'
+        - '[Yanone Kaffeesatz](https://fonts.google.com/specimen/Yanone+Kaffeesatz)'
+        - ...and all fonts that support ligation and alternate forms
+
+    - slug: swsh
+      title: Swashes
+      desc: This feature replaces default character glyphs with corresponding swash glyphs.
+      demo:
+        multiline: true
+        font: of-bickham-script-pro-3 demo-lg
+        text: <i>F</i>red <i>A</i><i>nd</i> <i>G</i>inger
+        css:
+          - 'normal'
+          - '"swsh"'
+      links:
+        - '[Bickham Script Pro 3](https://typekit.com/fonts/bickham-script-pro-3)'
+
+    - slug: cswh
+      title: Contextual Swash
+      desc: Converts letter to a swashed version based on characters around the letter
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"cswh"'
+      links:
 
     - slug: calt
       title: Contextual Alternates
@@ -27,7 +56,7 @@
           class: tag-default
       demo:
         multiline: true
-        font: tk-caflisch-script-pro demo-lg
+        font: of-caflisch-script-pro demo-lg
         text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
         css:
           - '"calt" 0'
@@ -35,13 +64,190 @@
       links:
         - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
 
+    - slug: hist
+      title: Historical Forms
+      desc: Obsolete forms of characters to be applied at the user's discretion, cf. `hlig`
+      meta:
+      demo:
+        multiline: true
+        font: of-sorts-mill-goudy demo-lg
+        text: Aparadi<i>s</i>e lo<i>s</i>t
+        css:
+          - 'normal'
+          - '"hist"'
+      links:
+        - '[Sorts Mill Goudy](https://fonts.google.com/specimen/Sorts+Mill+Goudy)'
+        - '[Cardo](https://fonts.google.com/specimen/Cardo)'
+        - '[Fedra Serif A](https://www.typotheque.com/fonts/fedra_serif_a)'
+
+    - slug: hlig
+      title: Historical Ligatures
+      desc: Obsolete ligatures to be applied at the user's discretion
+      meta:
+      demo:
+        multiline: true
+        font: of-cardo demo-lg
+        text: <i>ſi</i>nful <i>ſi</i>ngular
+        css:
+          - 'normal'
+          - '"hlig"'
+      links:
+        - '[Cardo](https://fonts.google.com/specimen/Cardo)'
+        - '[Fedra Serif B](https://www.typotheque.com/fonts/fedra_serif_b)'
+
+    - slug: locl
+      title: Localised Forms
+      desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
+      meta:
+        - name: Default*
+          title: Only in Firefox
+          class: tag-default
+        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
+      demo:
+        multiline: true
+        font: demo-lg
+        text: <i>гпклдвзитжц</i>
+        lang:
+          - ru
+          - bg
+        css:
+          - 'normal'
+          - '"locl"'
+      links:
+        - '[San Francisco](https://developer.apple.com/fonts/)'
+
+    - slug: rand
+      title: Randomize
+      desc: Replaces character with random forms (meant to simulate handwriting)
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"rand"'
+      links:
+
+    - slug: nalt
+      title: Alternate Annotation Forms
+      desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
+      meta:
+        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
+      demo:
+        multiline: false
+        font: tk-kozuka-mincho-pr6n demo-xl
+        lang: ja
+        text: <i>あ</i>
+        css:
+          - 'normal'
+          - '"nalt"'
+      links:
+        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+
+    - slug: salt
+      title: Stylistic Alternates
+      desc: This feature replaces default character glyphs with stylistic alternates.
+      demo:
+        multiline: true
+        font: of-exo
+        text: E<i>a</i>sy S<i>un</i>day <i>m</i>o<i>rn</i>in<i>g</i> <i>&</i> <i>m</i>y <i>f</i>o<i>x</i>.
+        css:
+          - 'normal'
+          - '"salt"'
+      links:
+        - '[Exo](https://fonts.google.com/specimen/Exo "Feature no longer available on Google Fonts")'
+        - '[Bree](https://typekit.com/fonts/bree-web)'
+        - ...and many more
+
+    - slug: subs
+      title: Subscript
+      desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
+      meta:
+      demo:
+        multiline: true
+        font: of-warnock-pro demo-lg
+        text: H<i>2</i>O, CO<i>2</i>
+        css:
+          - 'normal'
+          - '"subs"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: sups
+      title: Superscript
+      desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
+      meta:
+      demo:
+        multiline: true
+        font: of-hypatia-sans-pro demo-lg
+        text: X<i>2</i>
+        css:
+          - 'normal'
+          - '"sups"'
+      links:
+        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+
+    - slug: titl
+      title: Titling Alternates
+      desc: Replaces characters with forms suited for large type, as in titles
+      meta:
+      demo:
+        multiline: true
+        font: of-allan demo-lg
+        lang:
+        text: Q<i>u</i>ick b<i>r</i>own laz<i>y</i> G<i>r</i><i>u</i>mp<i>y</i>
+        css:
+          - 'normal'
+          - '"titl"'
+      links:
+        - '[Allan](https://fonts.google.com/specimen/Allan)'
+
+    - slug: rvrn
+      title: Required Variation Alternates
+      desc: Special variants of a single character, which need apply to specific font variation, required by variable fonts
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"rvrn"'
+      links:
+
+    - slug: liga
+      title: Standard Ligatures
+      desc: This feature replaces a sequence of glyphs with a single glyph, called a ligature, which is preferred for typographic purposes. When enabled, this feature inserts the ligatures which the designer/manufacturer judges should be used in normal conditions.
+      meta:
+        - name: Default
+          title: Enabled by Default
+          class: tag-default
+      demo:
+        multiline: true
+        font: of-warnock-pro
+        text: Di<i>ff</i>erent <i>fi</i>rst A<i>fl</i>iction a<i>ffi</i>davit <i>Th</i>ere
+        css:
+          - '"liga" 0, "clig" 0'
+          - '"liga", "clig"'
+      links:
+        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
     - slug: dlig
       title: Discretionary Ligatures
       desc: This feature, in specified situations, replaces default glyphs with alternate forms which provide better joining behavior. Like ligatures (though not strictly a ligature feature), contextual alternates are commonly used to harmonize the shapes of glyphs with the surrounding context.
       meta:
       demo:
         multiline: true
-        font: tk-warnock-pro demo-lg
+        font: of-warnock-pro demo-lg
         text: <i>ct sp st</i>
         css:
           - 'normal'
@@ -49,84 +255,9 @@
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
 
-    - slug: swsh
-      title: Swashes
-      desc: This feature replaces default character glyphs with corresponding swash glyphs.
-      demo:
-        multiline: true
-        font: tk-bickham-script-pro-3 demo-lg
-        text: <i>F</i>red <i>A</i>n<i>d</i> <i>G</i>inger
-        css:
-          - 'normal'
-          - '"swsh"'
-      links:
-        - '[Bickham Script Pro 3](https://typekit.com/fonts/bickham-script-pro-3)'
-
-    - slug: hlig
-      title: Historical Ligatures
-      desc:
-      meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-      demo:
-        multiline: true
-        font:
-        text: ſinful ſingular
-        css:
-          - 'normal'
-          - '"hlig"'
-      links:
-        - Fedra Serif B
-
-    - slug: hist
-      title: Historical Forms
-      desc:
-      meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-      demo:
-        multiline: true
-        font:
-        text: Aparadise lost
-        css:
-          - 'normal'
-          - '"hist"'
-      links:
-        - Fedra Serif A
-
-    - slug: salt
-      title: Stylistic Alternates
-      desc: This feature replaces default character glyphs with stylistic alternates.
-      demo:
-        multiline: true
-        font: tk-bree
-        text: An <i>ea</i>s<i>y &</i> bree<i>zy</i> Sund<i>ay</i> mornin<i>g</i>.
-        css:
-          - 'normal'
-          - '"salt"'
-      links:
-        - '[Bree](https://typekit.com/fonts/bree-web)'
-
-    - slug: kern
-      title: Kerning
-      desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
-      meta:
-        - name: WIP
-          title: This demo is working in progress
-          class: tag-wip
-        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
-      demo:
-        multiline: true
-        font: tk-warnock-pro demo-lg
-        text: <i>Try As You Will</i>
-        css:
-          - 'normal'
-          - '"kern"'
-      links:
-        - '[Source Sans Pro](https://typekit.com/fonts/source-sans-pro)'
-
+- group:
+  name: Positioning
+  features:
     - slug: ccmp
       title: Glyph Composition / Decomposition
       desc: To minimize the number of glyph alternates, it is sometimes desired to decompose a character into two glyphs. Additionally, it may be preferable to compose two characters into a single glyph for better glyph processing. This feature permits such composition/decompostion. The feature should be processed as the first feature processed, and should be processed only when it is called.
@@ -150,70 +281,40 @@
       links:
         - '[Source Han Sans (Japanese)](https://typekit.com/lists/source-han-sans)'
 
-    - slug: sups
-      title: Superscript
-      desc: This feature replaces lining or oldstyle figures with superior figures (primarily for footnote indication), and replaces lowercase letters with superior letters (primarily for abbreviated French titles).
+    - slug: kern
+      title: Kerning
+      desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
       meta:
+        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro demo-lg
-        text: X<i>2</i>
+        font: of-warnock-pro demo-lg
+        text: <i>Try As You Will</i>
         css:
-          - 'normal'
-          - '"sups"'
+          - 'normal; font-kerning: none'
+          - '"kern"'
       links:
-        - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
+        - Most OpenType fonts support this feature
 
-    - slug: subs
-      title: Subscript
-      desc: This feature may replace a default glyph with a subscript glyph, or it may combine a glyph substitution with positioning adjustments for proper placement.
-      meta:
-      demo:
-        multiline: true
-        font: tk-warnock-pro demo-lg
-        text: H<i>2</i>O, CO<i>2</i>
-        css:
-          - 'normal'
-          - '"subs"'
-      links:
-        - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+    # - slug: mark
+    #   title: Mark Positioning
+    #   desc: Fine positioning of a mark glyph to a base character
 
-    - slug: locl
-      title: Localised Forms
-      desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
-      meta:
-        - name: Default*
-          title: Only in Firefox
-          class: tag-default
-        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
-      demo:
-        multiline: true
-        font: demo-lg
-        text: <i>гпклдвзитжц</i>
-        lang:
-          - ru
-          - bg
-        css:
-          - 'normal'
-          - '"locl"'
-      links:
-        - '[San Francisco](https://developer.apple.com/fonts/)'
+    # - slug: mkmk
+    #   title: Mark-to-mark Positioning
+    #   desc: Fine positioning of a mark glyph to another mark character
 
-    - slug: nalt
-      title: Alternate Annotation Forms
-      desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
-      meta:
-        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
-      demo:
-        multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
-        lang: ja
-        text: <i>あ</i>
-        css:
-          - 'normal'
-          - '"nalt"'
-      links:
-        - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
+    # - slug: opbd
+    #   title: Optical Bounds
+    #   desc: Re-positions glyphs at beginning and end of line, for precise justification of text.
+
+    # - slug: lfbd
+    #   title: Left Bounds
+    #   desc: Re-positions glyphs at end of line. Called by `opbd`.
+
+    # - slug: rtbd
+    #   title: Right Bounds
+    #   desc: Re-positions glyphs at beginning of line. Called by `opbd`.
 
 - group:
   name: Bicameral [cased] Alphabets (Latin, Greek, Cyrillic, etc.)
@@ -245,6 +346,72 @@
       links:
         - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
+
+    - slug: pcap
+      title: Petite Caps
+      desc: Substitute lower-case letters with their petite caps analogs.
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"mgrk"'
+      links:
+
+    - slug: c2pc
+      title: Capitals to Petite Caps
+      desc: Substitutes capital letters with petite caps.
+      meta:
+        - name: N/A
+          title: This demo is not available at the moment
+          class: tag-na
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"c2pc"'
+      links:
+
+    - slug: unic
+      title: Unicase
+      desc: Replaces lowercase and uppercase letters with a set of single case glyphs.
+      meta:
+        - name: WIP
+          title: This demo is working in progress
+          class: tag-wip
+      demo:
+        multiline: true
+        font:
+        lang:
+        text: Not available, feel free to contribute!
+        css:
+          - 'normal'
+          - '"unic"'
+      links:
+        - Hermes FB
+
+    - slug: cpsp
+      title: Capital Spacing
+      desc: Adjusts spacing between letters in all-capitals text
+      meta:
+      demo:
+        multiline: true
+        font: of-sorts-mill-goudy
+        lang:
+        text: <i>THE LAZY DOG</i>.
+        css:
+          - 'normal'
+          - '"cpsp"'
+      links:
 
     - slug: case
       title: Case Sensitive Forms
@@ -279,7 +446,7 @@
       desc:
       demo:
         multiline: true
-        font: tk-warnock-pro demo-lg
+        font: of-warnock-pro demo-lg
         text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
         css:
           - 'normal'
@@ -295,7 +462,7 @@
       desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
       demo:
         multiline: true
-        font: tk-warnock-pro demo-lg
+        font: of-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
           - '"onum"'
@@ -310,7 +477,7 @@
       desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
       demo:
         multiline: true
-        font: tk-warnock-pro demo-lg
+        font: of-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
           - '"lnum"'
@@ -325,7 +492,7 @@
       desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro demo-lg
+        font: of-hypatia-sans-pro demo-lg
         text: <i>0123456789</i>
         css:
           - 'normal'
@@ -338,7 +505,7 @@
       desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro demo-lg
+        font: of-hypatia-sans-pro demo-lg
         text: <i>0123456789</i>
         css:
           - '"pnum"'
@@ -416,7 +583,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: tk-warnock-pro demo-lg
+        font: of-warnock-pro demo-lg
         lang:
         text: H2O SOx YCbCr NO2
         css:
@@ -434,7 +601,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-hypatia-sans-pro demo-xl
+        font: of-hypatia-sans-pro demo-xl
         lang:
         text: 0
         css:
@@ -524,7 +691,7 @@
         To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
       demo:
         multiline: true
-        font: tk-hypatia-sans-pro
+        font: of-hypatia-sans-pro
         text: <i>01234</i>, <i>5</i>6<i>7</i>8<i>9</i> <i>&</i> <i>The quick brown fox jumps over the lazy dog</i>.
         css:
           - 'normal'
@@ -533,6 +700,34 @@
         - '[San Francisco](https://developer.apple.com/fonts/)'
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
         - ...and many more
+
+- group:
+  name: Special
+  features:
+    - slug: size
+      title: Optical size
+      desc: |
+        Not a lookup: feature's table provides to applications information about the appearance and intent of the font, to aid in font selection.
+      demo:
+        multiline: true
+        font: of-hypatia-sans-pro
+        text: Demo not available
+        css:
+      links:
+        - '[Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)'
+
+    - slug: ornm
+      title: Ornaments
+      desc: This is a dual-function feature, which uses two input methods to give the user access to ornament glyphs (e.g. fleurons, dingbats and border elements) in the font. One method replaces the bullet character with a selection from the full set of available ornaments; the other replaces specific “lower ASCII” characters with ornaments assigned to them. The first approach supports the general or browsing user; the second supports the power user.
+      demo:
+        multiline: true
+        font: of-clara demo-lg
+        text: abcdefg
+        css:
+          - 'normal'
+          - '"ornm"'
+      links:
+        - 'Clara'
 
 - group:
   name: East Asian Tetragrams (Chinese, Japanese, Korean)
