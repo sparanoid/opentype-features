@@ -102,7 +102,6 @@
         - name: Default*
           title: Only in Firefox
           class: tag-default
-        - '[locl](https://www.microsoft.com/typography/otspec/features_ko.htm#locl)'
       demo:
         multiline: true
         font: demo-lg
@@ -137,7 +136,6 @@
       title: Alternate Annotation Forms
       desc: This feature replaces default glyphs with various notational forms (e.g. glyphs placed in open or solid circles, squares, parentheses, diamonds or rounded boxes). In some cases an annotation form may already be present, but the user may want a different one.
       meta:
-        - '[nalt](https://www.microsoft.com/typography/otspec/features_ko.htm#nalt)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -268,7 +266,6 @@
         - name: WIP
           title: This demo is working in progress
           class: tag-wip
-        - '[ccmp](https://www.microsoft.com/typography/otspec/features_ae.htm#ccmp)'
       demo:
         multiline: false
         font: tk-source-han-sans-japanese demo-xl
@@ -285,7 +282,6 @@
       title: Kerning
       desc: This feature adjusts the amount of space between glyphs, generally to provide optically consistent spacing between glyphs. Although a well-designed typeface has consistent inter-glyph spacing overall, some glyph combinations require adjustment for improved legibility. Note that this feature may apply to runs of more than two glyphs, and would not be used in monospaced fonts. Also note that this feature does not apply to text set vertically.
       meta:
-        - '[kern](https://www.microsoft.com/typography/otspec/features_ko.htm#kern)'
       demo:
         multiline: true
         font: of-warnock-pro demo-lg
@@ -430,7 +426,6 @@
       title: Italics
       desc: Some fonts (such as Adobe's Pro Japanese fonts) will have both Roman and Italic forms of some characters in a single font. This feature replaces the Roman glyphs with the corresponding Italic glyphs.
       meta:
-        - '[ital](https://www.microsoft.com/typography/otspec/features_fj.htm#ital)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n demo-lg
@@ -739,7 +734,6 @@
         - name: WIP
           title: This demo is working in progress
           class: tag-wip
-        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#smpl)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-prn demo-lg
@@ -756,7 +750,6 @@
       title: Traditional Forms
       desc: Replaces 'simplified' Chinese hanzi or Japanese kanji forms with the corresponding 'traditional' forms.
       meta:
-        - '[trad](https://www.microsoft.com/typography/otspec/features_pt.htm#trad)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -825,7 +818,6 @@
       title: NLC Kanji Forms
       desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters in 2000. The 'nlck' feature is used to access those glyphs.
       meta:
-        - '[nlck](https://www.microsoft.com/typography/otspec/features_ko.htm#nlck)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -841,7 +833,6 @@
       title: JIS78 Forms
       desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS C 6226-1978 (JIS78) specification.
       meta:
-        - '[jp78](https://www.microsoft.com/typography/otspec/features_fj.htm#jp78)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -857,7 +848,6 @@
       title: JIS83 Forms
       desc: This feature replaces default (JIS90) Japanese glyphs with the corresponding forms from the JIS X 0208-1983 (JIS83) specification.
       meta:
-        - '[jp83](https://www.microsoft.com/typography/otspec/features_fj.htm#jp83)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -873,7 +863,6 @@
       title: JIS90 Forms
       desc: This feature replaces Japanese glyphs from the JIS78 or JIS83 specifications with the corresponding forms from the JIS X 0208-1990 (JIS90) specification.
       meta:
-        - '[jp90](https://www.microsoft.com/typography/otspec/features_fj.htm#jp90)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
@@ -889,7 +878,6 @@
       title: JIS2004 Forms
       desc: The National Language Council (NLC) of Japan has defined new glyph shapes for a number of JIS characters, which were incorporated into JIS X 0213:2004 as new prototypical forms. The 'jp04' feature is a subset of the 'nlck' feature, and is used to access these prototypical glyphs in a manner that maintains the integrity of JIS X 0213:2004.
       meta:
-        - '[jp04](https://www.microsoft.com/typography/otspec/features_fj.htm#jp04)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pro demo-xl
@@ -973,7 +961,6 @@
       title: Full Widths
       desc: This feature replaces glyphs set on other widths with glyphs set on full (usually em) widths. In a CJKV font, this may include “lower ASCII” Latin characters and various symbols. In a European font, this feature replaces proportionally-spaced glyphs with monospaced glyphs, which are generally set on widths of 0.6 em.
       meta:
-        - '[fwid](https://www.microsoft.com/typography/otspec/features_fj.htm#fwid)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -989,7 +976,6 @@
       title: Half Widths
       desc: This feature replaces glyphs on proportional widths, or fixed widths other than half an em, with glyphs on half-em (en) widths. Many CJKV fonts have glyphs which are set on multiple widths; this feature selects the half-em version. There are various contexts in which this is the preferred behavior, including compatibility with older desktop documents.
       meta:
-        - '[hwid](https://www.microsoft.com/typography/otspec/features_fj.htm#hwid)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -1005,7 +991,6 @@
       title: Alternate Half Widths
       desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto half-em widths. This differs from hwid in that it does not substitute new glyphs.
       meta:
-        - '[halt](https://www.microsoft.com/typography/otspec/features_fj.htm#halt)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -1021,7 +1006,6 @@
       title: Third Widths
       desc: This feature replaces glyphs on other widths with glyphs set on widths of one third of an em. The characters involved are normally figures and some forms of punctuation.
       meta:
-        - '[twid](https://www.microsoft.com/typography/otspec/features_fj.htm#twid)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -1037,7 +1021,6 @@
       title: Quarter Widths
       desc: This feature replaces glyphs on other widths with glyphs set on widths of one quarter of an em (half an en). The characters involved are normally figures and some forms of punctuation.
       meta:
-        - '[qwid](https://www.microsoft.com/typography/otspec/features_fj.htm#qwid)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -1053,7 +1036,6 @@
       title: Proportional Widths
       desc: This feature replaces glyphs set on uniform widths (typically full or half-em) with proportionally spaced glyphs. The proportional variants are often used for the Latin characters in CJKV fonts, but may also be used for Kana in Japanese fonts.
       meta:
-        - '[pwid](https://www.microsoft.com/typography/otspec/features_pt.htm#pwid)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n demo-lg
@@ -1069,7 +1051,6 @@
       title: Proportional Alternate Widths
       desc: This feature re-spaces glyphs designed to be set on full-em widths, fitting them onto individual (more or less proportional) horizontal widths. This differs from pwid in that it does not substitute new glyphs (GPOS, not GSUB feature). The user may prefer the monospaced form, or may simply want to ensure that the glyph is well-fit and not rotated in vertical setting (Latin forms designed for proportional spacing would be rotated).
       meta:
-        - '[palt](https://www.microsoft.com/typography/otspec/features_pt.htm#palt)'
       demo:
         multiline: true
         font: tk-source-han-sans-japanese demo-lg
@@ -1085,7 +1066,6 @@
       title: Proportional Kana
       desc: This feature replaces kana and kana-related glyphs set on uniform widths (half or full-width) with proportional glyphs. It is similar to the proportional widths feature, but only affects kana.
       meta:
-        - '[pkna](https://www.microsoft.com/typography/otspec/features_pt.htm#pkna)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
@@ -1101,7 +1081,6 @@
       title: Ruby Notation Forms
       desc: Japanese typesetting often uses smaller kana glyphs, generally in superscripted form, to clarify the meaning of kanji which may be unfamiliar to the reader. These are called ruby, from the old typesetting term for four-point-sized type. This feature identifies glyphs in the font which have been designed for this use, substituting them for the default designs.
       meta:
-        - '[ruby](https://www.microsoft.com/typography/otspec/features_pt.htm#ruby)'
       demo:
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl demo-ruby-fix
@@ -1126,7 +1105,6 @@
         - name: WIP
           title: This demo is working in progress
           class: tag-wip
-        - '[hkna](https://www.microsoft.com/typography/otspec/features_fj.htm#hkna)'
       demo:
         multiline: true
         font: tk-kozuka-mincho-pr6n
