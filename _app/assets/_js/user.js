@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', function(){
     tippy(tag, {
       placement: tag.parentNode.classList.contains('demo-multiline') ? 'left' : 'top',
       arrow: true,
+      flip: true,
       arrowType: 'sharp',
       arrowTransform: 'scale(0.7)',
-      offset: '0, 8',
+      distance: 18,
       theme: 'dark',
       animation: false,
       duration: 0,
