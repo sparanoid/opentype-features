@@ -54,13 +54,16 @@
         - name: Default*
           title: Enabled by Default (except Chrome, cannot be disabled in Safari)
           class: tag-default
+        - name: Note
+          title: font-variant-ligatures need to be defined for cross-browser consistency
+          class: tag-note
       demo:
         multiline: true
         font: of-caflisch-script-pro demo-lg
         text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
         css:
           - '"calt" 0; font-variant-ligatures: none'
-          - '"calt"'
+          - '"calt"; font-variant-ligatures: common-ligatures'
       links:
         - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
 
@@ -1153,7 +1156,7 @@
             </ruby>
           </span>
         css:
-          - 'normal'
+          - '"ruby" 0'
           - '"ruby"'
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
