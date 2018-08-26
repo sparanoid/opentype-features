@@ -1274,7 +1274,7 @@
           class: tag-default
       demo:
         multiline: false
-        font: of-cairo demo-xl demo-rtl
+        font: of-cairo demo-xl
         text: <i>لا</i>
         lang: ar
         css:
