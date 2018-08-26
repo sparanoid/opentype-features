@@ -22,12 +22,16 @@ css: |
 {%- for group in site.data.font-features %}
   {%- for feature in group.features -%}
     {%- for current_style in feature.demo.css -%}
-      {%- if forloop.last == true %}
-          .of-{{ feature.slug }} { font-feature-settings: {{ current_style }}; }
-      {%- else -%}
+      {%- if forloop.first %}
         {%- if current_style != "normal" %}
           .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }
         {%- endif -%}
+      {%- else -%}
+        {%- capture feat_index -%}
+          {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
+          {% if index %}-{{ index }}{% endif %}
+        {%- endcapture %}
+          .of-{{ feature.slug }}{{ feat_index }} { font-feature-settings: {{ current_style }}; }
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
@@ -138,31 +142,35 @@ css: |
         {% for current_style in feature.demo.css %}
           {%- capture feature_class -%}
             {% comment %} check how many visual effects we have for this feature {% endcomment %}
-            {%- if forloop.last -%}
-              of-{{ feature.slug }}
-            {%- else -%}
-              {%- if current_style == "normal" -%}
-                of-normal
-              {%- else -%}
+            {%- if forloop.first -%}
+              {%- if current_style != "normal" -%}
                 of-{{ feature.slug }}--off
+              {%- else -%}
+                of-normal
               {%- endif -%}
+            {%- else -%}
+              {%- capture feat_index -%}
+                {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
+                {% if index %}-{{ index }}{% endif %}
+              {%- endcapture -%}
+              of-{{ feature.slug }}{{ feat_index }}
             {%- endif -%}
           {%- endcapture -%}
 
           {%- capture feature_lang -%}
             {% comment %} check how many visual effects we have for this feature {% endcomment %}
-            {%- if forloop.last -%}
+            {%- if forloop.first -%}
               {%- if feature.demo.lang -%}
-                {%- if feature.demo.lang.last -%}
-                  lang="{{ feature.demo.lang[1] }}"
+                {%- if feature.demo.lang.first -%}
+                  lang="{{ feature.demo.lang[0] }}"
                 {%- else -%}
                   lang="{{ feature.demo.lang }}"
                 {%- endif -%}
               {%- endif -%}
             {%- else -%}
               {%- if feature.demo.lang -%}
-                {%- if feature.demo.lang.first -%}
-                  lang="{{ feature.demo.lang[0] }}"
+                {%- if feature.demo.lang.last -%}
+                  lang="{{ feature.demo.lang[1] }}"
                 {%- else -%}
                   lang="{{ feature.demo.lang }}"
                 {%- endif -%}
@@ -178,13 +186,23 @@ css: |
     {% comment %}
       Demo CSS
     {% endcomment %}
-    {% for demo in feature.demo.css %}
-      {% if forloop.last == true %}
-        <div class="demo-code highlight">
-          <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ demo }}</span><span class="o">;</span>
-        </div>
-      {% endif %}
-    {% endfor %}
+    {% if feature.demo.css %}
+      <div class="demo-code highlight">
+        {% for current_style in feature.demo.css %}
+          {% if forloop.first %}
+            {%- if current_style != "normal" %}
+              .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }<br>
+            {%- endif -%}
+          {%- else -%}
+            {%- capture feat_index -%}
+              {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
+              {% if index %}-{{ index }}{% endif %}
+            {%- endcapture %}
+            .of-{{ feature.slug }}{{ feat_index }} { <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> }<br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
 {% endfor %}
 
