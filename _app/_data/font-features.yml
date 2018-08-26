@@ -535,7 +535,6 @@
         font: of-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
-          - '"onum"'
           - '"lnum"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
@@ -550,7 +549,6 @@
         font: of-warnock-pro demo-lg
         text: <i>0123456789</i>
         css:
-          - '"lnum"'
           - '"onum"'
       links:
         - '[Warnock Pro](https://typekit.com/fonts/warnock-pro)'
@@ -562,10 +560,9 @@
       desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-lg
-        text: <i>0123456789</i>
+        font: of-hypatia-sans-pro demo-lg demo-outline
+        text: <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
         css:
-          - 'normal'
           - '"pnum"'
       links:
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
@@ -575,10 +572,9 @@
       desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-lg
-        text: <i>0123456789</i>
+        font: of-hypatia-sans-pro demo-lg demo-outline
+        text: <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
         css:
-          - '"pnum"'
           - '"tnum"'
       links:
         - '[Hypatia Sans Pro](https://typekit.com/fonts/hypatia-sans-pro)'
