@@ -182,6 +182,10 @@
         color: var(--link-color);
         transition: all .1s ease;
       }
+
+      &[lang="ar"] {
+        direction: rtl;
+      }
     }
 
     &.tag-default > span:last-child i {
@@ -325,8 +329,8 @@
     }
 
     .tag-wip {
-      color: #793f00;
-      background: #ffeb9a;
+      color: #a04500;
+      background: #ffe0b6;
     }
 
     .tag-na {
@@ -374,8 +378,8 @@
       font-size: 75%;
       background: rgba(230, 230, 230, .5);
       padding: .2em 1em;
-      margin-bottom: .8rem;
-      margin-right: 1rem;
+      margin-bottom: 1.1rem;
+      margin-right: 1.25rem;
       border-radius: 4px;
       backdrop-filter: blur(10px);
     }

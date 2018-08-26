@@ -137,6 +137,51 @@ $code-color: #af9625;
   font-family: 'of-exo', var(--fontstack-sans-serif);
 }
 
+@font-face {
+  font-family: 'of-fira-sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/fira-sans-bold.woff2') format('woff2');
+}
+
+.of-fira-sans {
+  font-family: 'of-fira-sans', var(--fontstack-sans-serif);
+}
+
+@font-face {
+  font-family: 'of-amiri';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/amiri-bold.woff2') format('woff2');
+}
+
+.of-amiri {
+  font-family: 'of-amiri', var(--fontstack-serif);
+}
+
+@font-face {
+  font-family: 'of-cairo';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/cairo-bold.woff2') format('woff2');
+}
+
+.of-cairo {
+  font-family: 'of-cairo', var(--fontstack-serif);
+}
+
+// Typotheque
+@font-face {
+  font-family: 'fedra-serif-multiscript';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/fedra-serif-multiscript-book.woff2') format('woff2');
+}
+
+.of-fedra-serif-multiscript {
+  font-family: 'fedra-serif-multiscript', var(--fontstack-serif);
+}
+
 // TypeKit
 @font-face {
   font-family: 'of-hypatia-sans-pro';
