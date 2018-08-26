@@ -19,7 +19,7 @@ css: |
 
 <style id="ob-style">
           .of-normal { font-feature-settings: normal; }
-{%- for group in site.data.font-features -%}
+{%- for group in site.data.opentype-features -%}
   {%- for feature in group.features -%}
     {%- for current_style in feature.demo.css -%}
       {%- if forloop.first -%}
@@ -58,7 +58,7 @@ css: |
   Support list
 {% endcomment %}
 <h2 id="toc">Supported Font Features</h2>
-{% for group in site.data.font-features %}
+{% for group in site.data.opentype-features %}
   <h3>{{ group.name }}</h3>
   {% if group.features %}
     <p class="feature-list">
@@ -80,7 +80,7 @@ css: |
 {% comment %}
   Feature block
 {% endcomment %}
-{% for group in site.data.font-features %}
+{% for group in site.data.opentype-features %}
   {% for feature in group.features %}
 
     {% comment %} Get the correct spec link for MS docs {% endcomment %}
@@ -108,7 +108,7 @@ css: |
 
     <h2 id="{{ feature.slug }}">
       {{ feature.title }}:
-      <a href="{{ spec_link | strip }}" class="of-spec-link" title="Go to Microsoft OpenType Specs: {{ feature.slug }}" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+      <a href="{{ spec_link | strip }}" class="of-spec-link" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
     </h2>
     {{ feature.desc | markdownify }}
 
