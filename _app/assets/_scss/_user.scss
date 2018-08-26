@@ -233,6 +233,18 @@
       }
     }
 
+    &-sm {
+      --base-font-size: 180%;
+
+      @media (max-width: $breakpoint-md) {
+        --base-font-size: 170%;
+      }
+
+      @media (max-width: $breakpoint-sm) {
+        --base-font-size: 160%;
+      }
+    }
+
     &-multiline > span {
       display: block;
     }

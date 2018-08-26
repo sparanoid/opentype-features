@@ -758,7 +758,7 @@
         To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro
+        font: of-hypatia-sans-pro demo-sm
         text: The quick brown fox jumps over the lazy dog.
         css:
           - 'normal'
