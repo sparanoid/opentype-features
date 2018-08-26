@@ -11,7 +11,7 @@
 
 // Tooltips
 document.addEventListener('DOMContentLoaded', function(){
-  var tags = document.querySelectorAll('.tag, abbr, .demo > span');
+  var tags = document.querySelectorAll('.tag, abbr, .of-spec-link, .demo > span');
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
     tippy(tag, {
