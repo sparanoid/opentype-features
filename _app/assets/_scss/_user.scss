@@ -178,7 +178,8 @@
         font-style: normal;
       }
 
-      &:not(:first-child) i {
+      &:not(:first-child) i,
+      &:last-child i {
         color: var(--link-color);
         transition: all .1s ease;
       }
@@ -218,7 +219,8 @@
 
       > span {
 
-        &:not(:first-child) i {
+        &:not(:first-child) i,
+        &:last-child i {
           color: #fff;
         }
       }
