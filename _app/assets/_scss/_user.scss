@@ -263,6 +263,20 @@
     &-ruby-fix {
       padding-top: calc(var(--space-sm) + .45em);
     }
+
+    &-outline {
+
+      > span {
+
+        i {
+          border-right: 1px solid;
+
+          &:first-child {
+            border-left: 1px solid;
+          }
+        }
+      }
+    }
   }
 
   .demo-code {
