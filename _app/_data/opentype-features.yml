@@ -100,7 +100,7 @@
       desc: Many scripts used to write multiple languages over wide geographical areas have developed localized variant forms of specific letters, which are used by individual literary communities. For example, a number of letters in the Bulgarian and Serbian alphabets have forms distinct from their Russian counterparts and from each other. In some cases the localized form differs only subtly from the script 'norm', in others the forms are radically distinct. This feature enables localized forms of glyphs to be substituted for default forms.
       meta:
         - name: Default*
-          title: Only in Firefox
+          title: Doesn't work on iOS Safari
           class: tag-default
       demo:
         multiline: true
@@ -838,7 +838,7 @@
         multiline: false
         font: tk-kozuka-mincho-pr6n demo-xl
         lang: ja
-        text: 亜
+        text: <i>亜</i>
         css:
           - 'normal'
           - '"tnam"'
