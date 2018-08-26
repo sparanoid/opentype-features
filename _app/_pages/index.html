@@ -24,7 +24,7 @@ css: |
     {%- for current_style in feature.demo.css -%}
       {%- if forloop.first %}
         {%- if current_style != "normal" %}
-          .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }
+          .of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %} { font-feature-settings: {{ current_style }}; }
         {%- endif -%}
       {%- else -%}
         {%- capture feat_index -%}
@@ -144,7 +144,7 @@ css: |
             {% comment %} check how many visual effects we have for this feature {% endcomment %}
             {%- if forloop.first -%}
               {%- if current_style != "normal" -%}
-                of-{{ feature.slug }}--off
+                of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %}
               {%- else -%}
                 of-normal
               {%- endif -%}
@@ -191,7 +191,7 @@ css: |
         {% for current_style in feature.demo.css %}
           {% if forloop.first %}
             {%- if current_style != "normal" %}
-              <span class="nc">.of-{{ feature.slug }}--off</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
+              <span class="nc">.of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
             {%- endif -%}
           {%- else -%}
             {%- capture feat_index -%}
