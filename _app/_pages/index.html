@@ -191,14 +191,14 @@ css: |
         {% for current_style in feature.demo.css %}
           {% if forloop.first %}
             {%- if current_style != "normal" %}
-              .of-{{ feature.slug }}--off { font-feature-settings: {{ current_style }}; }<br>
+              <span class="nc">.of-{{ feature.slug }}--off</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
             {%- endif -%}
           {%- else -%}
             {%- capture feat_index -%}
               {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
               {% if index %}-{{ index }}{% endif %}
             {%- endcapture %}
-            .of-{{ feature.slug }}{{ feat_index }} { <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> }<br>
+            <span class="nc">.of-{{ feature.slug }}{{ feat_index }}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
           {% endif %}
         {% endfor %}
       </div>
