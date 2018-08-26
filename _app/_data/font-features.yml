@@ -144,6 +144,7 @@
         text: <i>あ</i>
         css:
           - 'normal'
+          - '"nalt"'
           - '"nalt" 1'
           - '"nalt" 2'
           - '"nalt" 3'
