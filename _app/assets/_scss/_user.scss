@@ -201,31 +201,6 @@
       color: #f71b49;
     }
 
-    &:hover {
-      color: #fff;
-      background: var(--link-color);
-
-      &.tag-default {
-        background: #0575ef;
-      }
-
-      &.tag-wip {
-        background: #ff8615;
-      }
-
-      &.tag-na {
-        background: #f71b49;
-      }
-
-      > span {
-
-        &:not(:first-child) i,
-        &:last-child i {
-          color: #fff;
-        }
-      }
-    }
-
     @media (max-width: $breakpoint-sm) {
       --base-font-size: 180%;
       word-break: keep-all;
