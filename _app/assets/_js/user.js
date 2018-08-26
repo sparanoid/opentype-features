@@ -14,9 +14,16 @@ document.addEventListener('DOMContentLoaded', function(){
   var tags = document.querySelectorAll('.tag, abbr, .demo > span');
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    new Tooltip(tag, {
+    tippy(tag, {
       placement: tag.parentNode.classList.contains('demo-multiline') ? 'left' : 'top',
-      container: 'body'
+      arrow: true,
+      arrowType: 'sharp',
+      arrowTransform: 'scale(0.7)',
+      offset: '0, 8',
+      theme: 'dark',
+      animation: false,
+      duration: 0,
+      delay: 0
     });
   }
 });
