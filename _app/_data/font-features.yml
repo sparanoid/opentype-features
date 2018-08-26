@@ -59,7 +59,7 @@
         font: of-caflisch-script-pro demo-lg
         text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
         css:
-          - '"calt" 0'
+          - '"calt" 0; font-variant-ligatures: none'
           - '"calt"'
       links:
         - '[Caflisch Script Pro](https://typekit.com/fonts/caflisch-script-pro)'
