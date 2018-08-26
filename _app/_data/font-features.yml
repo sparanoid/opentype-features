@@ -139,12 +139,18 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demo-lg
         lang: ja
         text: <i>あ</i>
         css:
           - 'normal'
-          - '"nalt"'
+          - '"nalt" 1'
+          - '"nalt" 2'
+          - '"nalt" 3'
+          - '"nalt" 4'
+          - '"nalt" 5'
+          - '"nalt" 6'
+          - '"nalt" 7'
       links:
         - '[Kozuka Mincho Pr6n](https://typekit.com/fonts/kozuka-mincho-pr6n)'
 
@@ -329,13 +335,46 @@
       links:
         - Most OpenType fonts support this feature
 
-    # - slug: mark
-    #   title: Mark Positioning
-    #   desc: Fine positioning of a mark glyph to a base character
+    - slug: mark
+      title: Mark Positioning
+      desc: Fine positioning of a mark glyph to a base character
+      meta:
+        - name: help-wanted
+          title: I need help/contribtion for this feature
+          class: tag-wip
+      demo:
+        multiline: false
+        font: of-cairo demo-xl
+        text: ۂ<i>ي</i>ئ
+        lang: ar
+        css:
+          - 'normal'
+          - '"mark"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Fira Sans](https://fonts.google.com/specimen/Fira+Sans)'
 
-    # - slug: mkmk
-    #   title: Mark-to-mark Positioning
-    #   desc: Fine positioning of a mark glyph to another mark character
+    - slug: mkmk
+      title: Mark-to-mark Positioning
+      desc: Fine positioning of a mark glyph to another mark character
+      meta:
+        - name: Default
+          title: Enabled by Default
+          class: tag-default demo-xl
+        - name: help-wanted
+          title: I need help/contribtion for this feature
+          class: tag-wip
+      demo:
+        multiline: false
+        font: of-cairo
+        text: <i>ۂ</i>
+        lang: ar
+        css:
+          - 'normal'
+          - '"mkmk"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Fira Sans](https://fonts.google.com/specimen/Fira+Sans)'
 
     # - slug: opbd
     #   title: Optical Bounds
@@ -443,6 +482,7 @@
           - 'normal'
           - '"cpsp"'
       links:
+        - '[Sorts Mill Goudy](https://fonts.google.com/specimen/Sorts+Mill+Goudy)'
 
     - slug: case
       title: Case Sensitive Forms
@@ -646,18 +686,18 @@
       title: Mathematical Greek
       desc: Replaces Greek characters with special forms for use in mathematics
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
-        multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        multiline: false
+        font: of-fira-sans demo-xl
+        lang: gr
+        text: <i>Σ∑</i>
         css:
           - 'normal'
           - '"mgrk"'
       links:
+        - '[Fira Sans](https://fonts.google.com/specimen/Fira+Sans)'
+        - '[FF DIN](https://www.myfonts.com/fonts/fontfont/ff-din/)'
+        - '[FF Meta](https://www.myfonts.com/fonts/fontfont/ff-meta/)'
 
     - slug: flac
       title: Flattened accent forms
@@ -1136,6 +1176,261 @@
 - group:
   name: West Asian (Semitic, Arabic)
   features:
+    # - slug: curs
+    #   title: Cursive Positioning
+    #   desc: Precise positioning of a letter's connection to an adjacent one
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"curs"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: jalt
+    #   title: Justification Alternates
+    #   desc: User selectable wider and narrower alternates
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"jalt"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: mset
+    #   title: Mark Positioning via Substitution
+    #   desc: Used in Windows 95 for positioning of Arabic marks
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"mset"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: rclt
+    #   title: Required Contextual Alternates
+    #   desc: Contextual alternates required for correct text display which differs from the default join for other letters, required especially important by Arabic
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"rclt"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    - slug: rlig
+      title: Required Ligatures
+      desc: Ligatures required for correct text display (any script, but in cursive)
+      meta:
+        - name: Default
+          title: Enabled by Default
+          class: tag-default
+      demo:
+        multiline: false
+        font: of-cairo demo-xl
+        text: <i>لا</i>
+        lang: ar
+        css:
+          - '"rlig" 0'
+          - '"rlig"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: isol
+    #   title: Isolated Forms
+    #   desc: Substitutes a special form of a letter occurring outside a word (required by Arabic and Syriac)
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"isol"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    - slug: init
+      title: Initial Forms
+      desc: Substitutes a special form of a letter occurring at the beginning of a word (required by Arabic and Syriac)
+      meta:
+        - name: help-wanted
+          title: I need help/contribtion for this feature
+          class: tag-wip
+      demo:
+        multiline: true
+        font: of-cairo
+        text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+        lang: ar
+        css:
+          - 'normal'
+          - '"init"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Fedra Arabic](https://www.typotheque.com/fonts/fedra_arabic)'
+
+    - slug: medi
+      title: Medial Forms
+      desc: Substitutes a special form of letters between other letters in words (required by Arabic and Syriac)
+      meta:
+        - name: help-wanted
+          title: I need help/contribtion for this feature
+          class: tag-wip
+      demo:
+        multiline: true
+        font: of-cairo
+        text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+        lang: ar
+        css:
+          - 'normal'
+          - '"medi"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Fedra Arabic](https://www.typotheque.com/fonts/fedra_arabic)'
+
+    # - slug: med2
+    #   title: 'Medial Form #2'
+    #   desc: Substitutes a special form of letters between other letters in words (required by Arabic and Syriac)
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"med2"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    - slug: fina
+      title: 'Medial Form #3'
+      desc: Substitutes a special form of a letter at end of words (required by Arabic and Syriac)
+      meta:
+        - name: help-wanted
+          title: I need help/contribtion for this feature
+          class: tag-wip
+      demo:
+        multiline: true
+        font: of-cairo
+        text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+        lang: ar
+        css:
+          - 'normal'
+          - '"fina"'
+      links:
+        - '[Cairo](https://fonts.google.com/specimen/Cairo)'
+        - '[Fedra Arabic](https://www.typotheque.com/fonts/fedra_arabic)'
+
+    # - slug: fin2
+    #   title: 'Medial Form #3'
+    #   desc: Substitutes a special form of a letter at end of words (required by Arabic and Syriac)
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-fedra-serif-multiscript
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"fin2"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: fin3
+    #   title: 'Medial Form #3'
+    #   desc: Substitutes a special form of a letter at end of words (required by Arabic and Syriac)
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-fedra-serif-multiscript
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"fin3"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: falt
+    #   title: Final Glyph on Line Alternates
+    #   desc: Replaces final glyph on the line with an alternate.
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"falt"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
+
+    # - slug: stch
+    #   title: Stretching Glyph Decomposition
+    #   desc: Substitutes a special form of a stretchy glyph onto one or more letters (required by Syriac)
+    #   meta:
+    #     - name: WIP
+    #       title: This demo is working in progress
+    #       class: tag-wip
+    #   demo:
+    #     multiline: true
+    #     font: of-amiri
+    #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+    #     lang: ar
+    #     css:
+    #       - 'normal'
+    #       - '"stch"'
+    #   links:
+    #     - '[Amiri](https://fonts.google.com/specimen/Amiri)'
 
 - group:
   name: South-Asian alphasyllabaries (Indic/Brahmic)
