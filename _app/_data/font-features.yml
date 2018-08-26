@@ -1202,7 +1202,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1220,7 +1220,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1238,7 +1238,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1256,7 +1256,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1274,7 +1274,7 @@
           class: tag-default
       demo:
         multiline: false
-        font: of-cairo demo-xl
+        font: of-cairo demo-xl demo-rtl
         text: <i>لا</i>
         lang: ar
         css:
@@ -1293,7 +1293,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1311,7 +1311,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo
+        font: of-cairo demo-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1330,7 +1330,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo
+        font: of-cairo demo-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1349,7 +1349,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1367,7 +1367,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo
+        font: of-cairo demo-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1386,7 +1386,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-fedra-serif-multiscript
+    #     font: of-fedra-serif-multiscript demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1404,7 +1404,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-fedra-serif-multiscript
+    #     font: of-fedra-serif-multiscript demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1422,7 +1422,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1440,7 +1440,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri
+    #     font: of-amiri demo-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
