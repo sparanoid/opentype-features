@@ -19,19 +19,35 @@ css: |
 
 <style id="ob-style">
           .of-normal { font-feature-settings: normal; }
-{%- for group in site.data.font-features %}
+{%- for group in site.data.font-features -%}
   {%- for feature in group.features -%}
     {%- for current_style in feature.demo.css -%}
-      {%- if forloop.first %}
+      {%- if forloop.first -%}
         {%- if current_style != "normal" %}
           .of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %} { font-feature-settings: {{ current_style }}; }
         {%- endif -%}
       {%- else -%}
+        {% comment %} check if multiple demo exists {% endcomment %}
         {%- capture feat_index -%}
           {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
           {% if index %}-{{ index }}{% endif %}
-        {%- endcapture %}
+        {%- endcapture -%}
+
+        {% comment %} check if is ss01-20 {% endcomment %}
+        {%- capture feat_index_ss -%}
+          {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
+          {%- if index -%}
+            {{- index -}}
+          {%- else -%}
+            01-20
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- if feature.slug == 'ss01-ss20' %}
+          .of-ss{{ feat_index_ss }} { font-feature-settings: {{ current_style }}; }
+        {%- else %}
           .of-{{ feature.slug }}{{ feat_index }} { font-feature-settings: {{ current_style }}; }
+        {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
@@ -149,11 +165,27 @@ css: |
                 of-normal
               {%- endif -%}
             {%- else -%}
+              {% comment %} check if multiple demo exists {% endcomment %}
               {%- capture feat_index -%}
                 {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
                 {% if index %}-{{ index }}{% endif %}
               {%- endcapture -%}
-              of-{{ feature.slug }}{{ feat_index }}
+
+              {% comment %} check if is ss01-20 {% endcomment %}
+              {%- capture feat_index_ss -%}
+                {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
+                {%- if index -%}
+                  {{- index -}}
+                {%- else -%}
+                  01-20
+                {%- endif -%}
+              {%- endcapture -%}
+
+              {%- if feature.slug == 'ss01-ss20' -%}
+                of-ss{{ feat_index_ss }}
+              {%- else -%}
+                of-{{ feature.slug }}{{ feat_index }}
+              {%- endif -%}
             {%- endif -%}
           {%- endcapture -%}
 
@@ -178,7 +210,7 @@ css: |
             {%- endif -%}
           {%- endcapture -%}
 
-          <span class="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</span>
+          <span class="{{ feature_class }}" title="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</span>
         {% endfor %}
       </div>
     {% endif %}
@@ -194,11 +226,27 @@ css: |
               <span class="nc">.of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
             {%- endif -%}
           {%- else -%}
+            {% comment %} check if multiple demo exists {% endcomment %}
             {%- capture feat_index -%}
               {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
               {% if index %}-{{ index }}{% endif %}
-            {%- endcapture %}
-            <span class="nc">.of-{{ feature.slug }}{{ feat_index }}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
+            {%- endcapture -%}
+
+            {% comment %} check if is ss01-20 {% endcomment %}
+            {%- capture feat_index_ss -%}
+              {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
+              {%- if index -%}
+                {{- index -}}
+              {%- else -%}
+                01-20
+              {%- endif -%}
+            {%- endcapture -%}
+
+            {%- if feature.slug == 'ss01-ss20' %}
+              <span class="nc">.of-ss{{ feat_index_ss }}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
+            {%- else %}
+              <span class="nc">.of-{{ feature.slug }}{{ feat_index }}</span> <span class="p">{</span> <span class="nt">font-feature-settings</span><span class="o">:</span> <span class="s1">{{ current_style }}</span><span class="o">;</span> <span class="p">}</span><br>
+            {%- endif -%}
           {% endif %}
         {% endfor %}
       </div>
