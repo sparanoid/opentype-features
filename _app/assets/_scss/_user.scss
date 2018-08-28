@@ -155,7 +155,7 @@
 
   }
 
-  .demo {
+  .demos {
     @include heading();
     --base-font-size: 220%;
     font-size: var(--base-font-size);
@@ -178,29 +178,28 @@
       --space-code: var(--space-sm);
     }
 
-    > span {
+    .demo {
       display: inline-block;
 
       i {
         font-style: normal;
       }
 
-      &:not(:first-child) i,
-      &:last-child i {
+      &.demo-after i {
         color: var(--tag-normal);
         transition: all .1s ease;
       }
     }
 
-    &.tag-default > span:last-child i {
+    &.tag-default .demo-after i {
       color: var(--tag-default);
     }
 
-    &.tag-wip > span:last-child i {
+    &.tag-wip .demo-after i {
       color: var(--tag-wip);
     }
 
-    &.tag-na > span:last-child i {
+    &.tag-na .demo-after i {
       color: var(--tag-na);
     }
 
@@ -251,12 +250,12 @@
     &-rtl {
 
       &,
-      & > span {
+      & .demo {
         direction: rtl;
       }
     }
 
-    &-multiline > span {
+    &-multiline .demo {
       display: block;
     }
 
@@ -266,7 +265,7 @@
 
     &-outline {
 
-      > span {
+      .demo {
 
         i {
           border-right: 1px solid;
