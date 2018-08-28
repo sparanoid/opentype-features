@@ -279,8 +279,8 @@
     }
   }
 
-  .demo-code {
-    font-size: 80%;
+  // Code block container override
+  .demo-code .highlight > pre {
     margin-bottom: 1.8rem;
     color: var(--code-color);
     background: rgba(#000, .04);
