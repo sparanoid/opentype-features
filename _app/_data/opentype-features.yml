@@ -22,7 +22,7 @@
       desc: This feature replaces default character glyphs with corresponding swash glyphs.
       demo:
         multiline: true
-        font: of-bickham-script-pro-3 demo-lg
+        font: of-bickham-script-pro-3 demos-lg
         text: <i>F</i>red <i>A</i><i>nd</i> <i>G</i>inger
         css:
           - 'normal'
@@ -36,7 +36,7 @@
       meta:
       demo:
         multiline: true
-        font: of-bello-pro demo-lg
+        font: of-bello-pro demos-lg
         lang:
         text: I feel great today.
         css:
@@ -57,7 +57,7 @@
           class: tag-note
       demo:
         multiline: true
-        font: of-caflisch-script-pro demo-lg
+        font: of-caflisch-script-pro demos-lg
         text: The <i>bloom</i> has g<i>one</i> off the <i>rose</i>
         css:
           - '"calt" 0; font-variant-ligatures: none'
@@ -71,7 +71,7 @@
       meta:
       demo:
         multiline: true
-        font: of-sorts-mill-goudy demo-lg
+        font: of-sorts-mill-goudy demos-lg
         text: Aparadi<i>s</i>e lo<i>s</i>t
         css:
           - 'normal'
@@ -87,7 +87,7 @@
       meta:
       demo:
         multiline: true
-        font: of-cardo demo-lg
+        font: of-cardo demos-lg
         text: <i>ſi</i>nful <i>ſi</i>ngular
         css:
           - 'normal'
@@ -105,7 +105,7 @@
           class: tag-default
       demo:
         multiline: true
-        font: of-sf-pro-display demo-lg
+        font: of-sf-pro-display demos-lg
         text: <i>гпклдвзитжц</i>
         lang:
           - ru
@@ -140,7 +140,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-lg
+        font: tk-kozuka-mincho-pr6n demos-lg
         lang: ja
         text: <i>あ</i>
         css:
@@ -188,7 +188,7 @@
       meta:
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: H<i>2</i>O, CO<i>2</i>
         css:
           - 'normal'
@@ -202,7 +202,7 @@
       meta:
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-lg
+        font: of-hypatia-sans-pro demos-lg
         text: X<i>2</i>
         css:
           - 'normal'
@@ -216,7 +216,7 @@
       meta:
       demo:
         multiline: true
-        font: of-allan demo-lg
+        font: of-allan demos-lg
         lang:
         text: Q<i>u</i>ick b<i>r</i>own laz<i>y</i> G<i>r</i><i>u</i>mp<i>y</i>
         css:
@@ -265,7 +265,7 @@
       meta:
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: <i>ct sp st</i>
         css:
           - 'normal'
@@ -290,7 +290,7 @@
       desc: This is a dual-function feature, which uses two input methods to give the user access to ornament glyphs (e.g. fleurons, dingbats and border elements) in the font. One method replaces the bullet character with a selection from the full set of available ornaments; the other replaces specific “lower ASCII” characters with ornaments assigned to them. The first approach supports the general or browsing user; the second supports the power user.
       demo:
         multiline: true
-        font: of-clara demo-lg
+        font: of-clara demos-lg
         text: abcdefg
         css:
           - 'normal'
@@ -313,7 +313,7 @@
           class: tag-wip
       demo:
         multiline: false
-        font: tk-source-han-sans-japanese demo-xl
+        font: tk-source-han-sans-japanese demos-xl
         lang: ja
         # https://en.wikipedia.org/wiki/Dakuten_and_handakuten
         text: <i>あﾞ</i>
@@ -329,7 +329,7 @@
       meta:
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: <i>Try As You Will</i>
         css:
           - 'normal; font-kerning: none'
@@ -346,7 +346,7 @@
           class: tag-wip
       demo:
         multiline: false
-        font: of-cairo demo-xl
+        font: of-cairo demos-xl
         text: ۂ<i>ي</i>ئ
         lang: ar
         css:
@@ -362,7 +362,7 @@
       meta:
         - name: Default
           title: Enabled by Default
-          class: tag-default demo-xl
+          class: tag-default demos-xl
         - name: help-wanted
           title: I need help/contribtion for this feature
           class: tag-wip
@@ -505,7 +505,7 @@
       meta:
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n demo-lg
+        font: tk-kozuka-mincho-pr6n demos-lg
         text: <i>Infinite Jest</i>を読みたい。
         css:
           - 'normal'
@@ -518,7 +518,7 @@
       desc:
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: 1<i>st</i>, 2<i>nd</i>, 3<i>rd</i>
         css:
           - 'normal'
@@ -534,7 +534,7 @@
       desc: This feature changes numeral glyphs from default or oldstyle figures to lining figures. Note that some fonts may contain lining figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: <i>0123456789</i>
         css:
           - '"lnum"'
@@ -548,7 +548,7 @@
       desc: This feature changes numeral glyphs from default or lining figures to oldstyle figures. Note that some fonts may contain oldstyle figures as their default figure style, in which case enabling this feature may not appear to affect the style of glyphs.
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         text: <i>0123456789</i>
         css:
           - '"onum"'
@@ -562,7 +562,7 @@
       desc: This feature replaces numeral glyphs set on uniform (tabular) widths with corresponding glyphs set on glyph-specific (proportional) widths. Note that some fonts may contain proportional figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-lg demo-outline
+        font: of-hypatia-sans-pro demos-lg demos-outline
         text: <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
         css:
           - '"pnum"'
@@ -574,7 +574,7 @@
       desc: This feature replaces numeral glyphs set on glyph-specific (proportional) widths with corresponding glyphs set on uniform (tabular) widths. Note that some fonts may contain tabular figures by default, in which case enabling this feature may not appear to affect the width of glyphs.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-lg demo-outline
+        font: of-hypatia-sans-pro demos-lg demos-outline
         text: <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
         css:
           - '"tnum"'
@@ -651,7 +651,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-warnock-pro demo-lg
+        font: of-warnock-pro demos-lg
         lang:
         text: H<i>2</i>O SO<i>x</i> YC<i>b</i>C<i>r</i> NO<i>2</i>
         css:
@@ -669,7 +669,7 @@
       meta:
       demo:
         multiline: false
-        font: of-hypatia-sans-pro demo-xl
+        font: of-hypatia-sans-pro demos-xl
         lang:
         text: <i>0</i>
         css:
@@ -686,7 +686,7 @@
       meta:
       demo:
         multiline: false
-        font: of-fira-sans demo-xl
+        font: of-fira-sans demos-xl
         lang: gr
         text: <i>Σ∑</i>
         css:
@@ -759,7 +759,7 @@
         To enable it with `font-feature-settings`, use the `ss##` feature tag, where `##` is any two-digit combination from 01–20. Note that fonts employ stylistic sets in completely arbitrary and custom ways. For example, two different fonts may employ the same feature (like `ss01`) to replace totally different sets of glyphs; or, a particular font may use `ss01` and `ss03` to replace sets of glyphs, but ignore `ss02`. Some type foundries offer documentation about how features are organized.
       demo:
         multiline: true
-        font: of-hypatia-sans-pro demo-sm
+        font: of-hypatia-sans-pro demos-sm
         text: The quick brown fox jumps over the lazy dog.
         css:
           - 'normal'
@@ -801,7 +801,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n demo-lg
+        font: tk-kozuka-mincho-pr6n demos-lg
         lang:
           - zh-Hant
           - zh-Hans
@@ -817,7 +817,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang:
           - zh-Hans
           - zh-Hant
@@ -837,7 +837,7 @@
           class: tag-wip
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>亜</i>
         css:
@@ -851,7 +851,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>唖</i>
         css:
@@ -866,7 +866,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>晷</i>
         css:
@@ -881,7 +881,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>屡</i>
         css:
@@ -896,7 +896,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>餌</i>
         css:
@@ -911,7 +911,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>餌</i>
         css:
@@ -926,7 +926,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl
+        font: tk-kozuka-mincho-pr6n demos-xl
         lang: ja
         text: <i>餌</i>
         css:
@@ -941,7 +941,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pro demo-xl
+        font: tk-kozuka-mincho-pro demos-xl
         lang: ja
         text: <i>餌</i>
         css:
@@ -1099,7 +1099,7 @@
       meta:
       demo:
         multiline: true
-        font: tk-kozuka-mincho-pr6n demo-lg
+        font: tk-kozuka-mincho-pr6n demos-lg
         lang: ja
         text: <i>きょう</i>、本を買<i>っ</i>た。
         css:
@@ -1114,7 +1114,7 @@
       meta:
       demo:
         multiline: true
-        font: tk-source-han-sans-japanese demo-lg
+        font: tk-source-han-sans-japanese demos-lg
         lang: ja
         text: <i>きょう、</i>本を買<i>った</i>。
         css:
@@ -1144,7 +1144,7 @@
       meta:
       demo:
         multiline: false
-        font: tk-kozuka-mincho-pr6n demo-xl demo-ruby-fix
+        font: tk-kozuka-mincho-pr6n demos-xl demos-ruby-fix
         lang: ja
         text: |
           <span>
@@ -1203,7 +1203,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1221,7 +1221,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1239,7 +1239,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1257,7 +1257,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1275,7 +1275,7 @@
           class: tag-default
       demo:
         multiline: false
-        font: of-cairo demo-xl
+        font: of-cairo demos-xl
         text: <i>لا</i>
         lang: ar
         css:
@@ -1294,7 +1294,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1312,7 +1312,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo demo-rtl
+        font: of-cairo demos-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1331,7 +1331,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo demo-rtl
+        font: of-cairo demos-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1350,7 +1350,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1368,7 +1368,7 @@
           class: tag-wip
       demo:
         multiline: true
-        font: of-cairo demo-rtl
+        font: of-cairo demos-rtl
         text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
         lang: ar
         css:
@@ -1387,7 +1387,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-fedra-serif-multiscript demo-rtl
+    #     font: of-fedra-serif-multiscript demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1405,7 +1405,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-fedra-serif-multiscript demo-rtl
+    #     font: of-fedra-serif-multiscript demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1423,7 +1423,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:
@@ -1441,7 +1441,7 @@
     #       class: tag-wip
     #   demo:
     #     multiline: true
-    #     font: of-amiri demo-rtl
+    #     font: of-amiri demos-rtl
     #     text: نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
     #     lang: ar
     #     css:

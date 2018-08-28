@@ -111,153 +111,169 @@ css: |
         {{ tag.class | append: ' ' }}
       {%- endfor -%}
     {%- endcapture -%}
-    <h2 id="{{ feature.slug }}">
-      {{ feature.title }}:
-      <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
-    </h2>
-    {{ feature.desc | markdownify }}
 
-    {% comment %}
-      Feature meta list
-    {% endcomment %}
-    {% if feature.meta %}
-      <ul class="meta">
-        {% for meta in feature.meta %}
-          <li>
-            {% if meta.name %}
-              <span class="tag {{ meta.class }}" title="{{ meta.title }}">{{ meta.name }}</span>
-            {% else %}
-              {{ meta | markdownify | remove: '<p>' | remove: '</p>' }}
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+    {% comment %} begin feature container {% endcomment %}
+    <section id="{{ feature.slug }}" class="of-feature-{{ feature.slug }}">
+      <h2>
+        {{ feature.title }}:
+        <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+      </h2>
+      {{ feature.desc | markdownify }}
 
-    {% comment %}
-      Feature Link list
-    {% endcomment %}
-    {% if feature.links %}
-      <details>
-        <summary>Featured Fonts</summary>
-        <ul class="links">
-          {% for link in feature.links %}
-            <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+      {% comment %}
+        Feature meta list
+      {% endcomment %}
+      {% if feature.meta %}
+        <ul class="meta">
+          {% for meta in feature.meta %}
+            <li>
+              {% if meta.name %}
+                <span class="tag {{ meta.class }}" title="{{ meta.title }}">{{ meta.name }}</span>
+              {% else %}
+                {{ meta | markdownify | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
-      </details>
-    {% endif %}
+      {% endif %}
 
-    {% comment %} loop over meta tags to get feature status {% endcomment %}
-    {%- capture css_class -%}
-      {%- for tag in feature.meta -%}
-        {{ tag.class | append: ' ' }}
-      {%- endfor -%}
-    {%- endcapture -%}
+      {% comment %}
+        Feature Link list
+      {% endcomment %}
+      {% if feature.links %}
+        <details>
+          <summary>Featured Fonts</summary>
+          <ul class="links">
+            {% for link in feature.links %}
+              <li>{{ link | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+      {% endif %}
 
-    {% comment %}
-      Demo block
-    {% endcomment %}
-    {% if feature.demo.css %}
-      <div class="demo {{ feature.demo.font }} {{ css_class }} {% if feature.demo.multiline %}demo-multiline{% endif %}">
-        {% for current_style in feature.demo.css %}
-          {%- capture feature_class -%}
-            {% comment %} check how many visual effects we have for this feature {% endcomment %}
-            {%- if forloop.first -%}
-              {%- if current_style != "normal" -%}
-                of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %}
+      {% comment %} loop over meta tags to get feature status {% endcomment %}
+      {%- capture css_class -%}
+        {%- for tag in feature.meta -%}
+          {{ tag.class | append: ' ' }}
+        {%- endfor -%}
+      {%- endcapture -%}
+
+      {% comment %}
+        Demo block
+      {% endcomment %}
+      {% if feature.demo.css %}
+        <div class="demos {{ feature.demo.font }} {{ css_class }} {% if feature.demo.multiline %}demos-multiline{% endif %}">
+          {% for current_style in feature.demo.css %}
+            {%- capture feature_status -%}
+              {%- if forloop.first == forloop.last -%}
+                demo-after
               {%- else -%}
-                of-normal
-              {%- endif -%}
-            {%- else -%}
-              {% comment %} check if multiple demo exists {% endcomment %}
-              {%- capture feat_index -%}
-                {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
-                {% if index %}-{{ index }}{% endif %}
-              {%- endcapture -%}
-
-              {% comment %} check if is ss01-20 {% endcomment %}
-              {%- capture feat_index_ss -%}
-                {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
-                {%- if index -%}
-                  {{- index -}}
+                {%- if forloop.first -%}
+                  demo-before
                 {%- else -%}
-                  01-20
+                  demo-after
                 {%- endif -%}
-              {%- endcapture -%}
+              {%- endif -%}
+            {%- endcapture -%}
 
-              {%- if feature.slug == 'ss01-ss20' -%}
-                of-ss{{ feat_index_ss }}
+            {%- capture feature_class -%}
+              {% comment %} check how many visual effects we have for this feature {% endcomment %}
+              {%- if forloop.first -%}
+                {%- if current_style != "normal" -%}
+                  of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %}
+                {%- else -%}
+                  of-normal
+                {%- endif -%}
               {%- else -%}
-                of-{{ feature.slug }}{{ feat_index }}
-              {%- endif -%}
-            {%- endif -%}
-          {%- endcapture -%}
+                {% comment %} check if multiple demo exists {% endcomment %}
+                {%- capture feat_index -%}
+                  {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
+                  {% if index %}-{{ index }}{% endif %}
+                {%- endcapture -%}
 
-          {%- capture feature_lang -%}
-            {% comment %} check how many visual effects we have for this feature {% endcomment %}
-            {%- if forloop.first -%}
-              {%- if feature.demo.lang -%}
-                {%- if feature.demo.lang.first -%}
-                  lang="{{ feature.demo.lang[0] }}"
+                {% comment %} check if is ss01-20 {% endcomment %}
+                {%- capture feat_index_ss -%}
+                  {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
+                  {%- if index -%}
+                    {{- index -}}
+                  {%- else -%}
+                    01-20
+                  {%- endif -%}
+                {%- endcapture -%}
+
+                {%- if feature.slug == 'ss01-ss20' -%}
+                  of-ss{{ feat_index_ss }}
                 {%- else -%}
-                  lang="{{ feature.demo.lang }}"
+                  of-{{ feature.slug }}{{ feat_index }}
                 {%- endif -%}
               {%- endif -%}
-            {%- else -%}
-              {%- if feature.demo.lang -%}
-                {%- if feature.demo.lang.last -%}
-                  lang="{{ feature.demo.lang[1] }}"
-                {%- else -%}
-                  lang="{{ feature.demo.lang }}"
+            {%- endcapture -%}
+
+            {%- capture feature_lang -%}
+              {% comment %} check how many visual effects we have for this feature {% endcomment %}
+              {%- if forloop.first -%}
+                {%- if feature.demo.lang -%}
+                  {%- if feature.demo.lang.first -%}
+                    lang="{{ feature.demo.lang[0] }}"
+                  {%- else -%}
+                    lang="{{ feature.demo.lang }}"
+                  {%- endif -%}
+                {%- endif -%}
+              {%- else -%}
+                {%- if feature.demo.lang -%}
+                  {%- if feature.demo.lang.last -%}
+                    lang="{{ feature.demo.lang[1] }}"
+                  {%- else -%}
+                    lang="{{ feature.demo.lang }}"
+                  {%- endif -%}
                 {%- endif -%}
               {%- endif -%}
-            {%- endif -%}
-          {%- endcapture -%}
+            {%- endcapture -%}
 
-          <span class="{{ feature_class }}" title="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</span>
-        {% endfor %}
-      </div>
-    {% endif %}
+            <div class="demo {{ feature_status }} {{ feature_class }}" title="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
 
-    {% comment %}
-      Demo CSS
-    {% endcomment %}
-    {% if feature.demo.css %}
-      <div class="demo-code">
-        {% highlight css %}
-          {%- for current_style in feature.demo.css -%}
-            {%- if forloop.first -%}
-              {%- if current_style != "normal" %}
+      {% comment %}
+        Demo CSS
+      {% endcomment %}
+      {% if feature.demo.css %}
+        <div class="demo-code">
+          {% highlight css %}
+            {%- for current_style in feature.demo.css -%}
+              {%- if forloop.first -%}
+                {%- if current_style != "normal" %}
 .of-{{ feature.slug }}{% if forloop.first != forloop.last %}--off{% endif %} { font-feature-settings: {{ current_style }}; }
-              {%- endif -%}
-            {%- else -%}
-              {% comment %} check if multiple demo exists {% endcomment %}
-              {%- capture feat_index -%}
-                {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
-                {% if index %}-{{ index }}{% endif %}
-              {%- endcapture -%}
-
-              {% comment %} check if is ss01-20 {% endcomment %}
-              {%- capture feat_index_ss -%}
-                {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
-                {%- if index -%}
-                  {{- index -}}
-                {%- else -%}
-                  01-20
                 {%- endif -%}
-              {%- endcapture -%}
+              {%- else -%}
+                {% comment %} check if multiple demo exists {% endcomment %}
+                {%- capture feat_index -%}
+                  {%- assign index = current_style | match_regex: '^"[a-z]*" ([0-9]+)' -%}
+                  {% if index %}-{{ index }}{% endif %}
+                {%- endcapture -%}
 
-              {%- if feature.slug == 'ss01-ss20' %}
+                {% comment %} check if is ss01-20 {% endcomment %}
+                {%- capture feat_index_ss -%}
+                  {%- assign index = current_style | match_regex: '^"ss(\d+)"(?!,)' -%}
+                  {%- if index -%}
+                    {{- index -}}
+                  {%- else -%}
+                    01-20
+                  {%- endif -%}
+                {%- endcapture -%}
+
+                {%- if feature.slug == 'ss01-ss20' %}
 .of-ss{{ feat_index_ss }} { font-feature-settings: {{ current_style }}; }
-              {%- else %}
+                {%- else %}
 .of-{{ feature.slug }}{{ feat_index }} { font-feature-settings: {{ current_style }}; }
+                {%- endif -%}
               {%- endif -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {% endhighlight %}
-      </div>
-    {% endif %}
+            {%- endfor -%}
+          {% endhighlight %}
+        </div>
+      {% endif %}
+    </section>
   {% endfor %}
 {% endfor %}
 
