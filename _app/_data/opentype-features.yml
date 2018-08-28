@@ -242,6 +242,9 @@
       title: Required Variation Alternates
       desc: Special variants of a single character, which need apply to specific font variation, required by variable fonts
       meta:
+        - name: Default
+          title: Enabled by Default
+          class: tag-default demos-lg
         - name: N/A
           title: This demo is not available at the moment
           class: tag-na
@@ -249,7 +252,7 @@
         multiline: true
         font:
         lang:
-        text: Not available, feel free to contribute!
+        text: $713,40.19
         css:
           - 'normal'
           - '"rvrn"'
