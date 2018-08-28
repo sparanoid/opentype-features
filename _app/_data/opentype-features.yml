@@ -34,18 +34,16 @@
       title: Contextual Swash
       desc: Converts letter to a swashed version based on characters around the letter
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
+        font: of-bello-pro demo-lg
         lang:
-        text: Not available, feel free to contribute!
+        text: I feel great today.
         css:
           - 'normal'
           - '"cswh"'
       links:
+        - '[Bello Pro](https://typekit.com/fonts/bello) - found by [ffoodd](https://github.com/ffoodd)'
 
     - slug: calt
       title: Contextual Alternates
