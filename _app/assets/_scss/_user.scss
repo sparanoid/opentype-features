@@ -280,14 +280,9 @@
 
   // Code block container override
   .demo-code .highlight > pre {
-    margin-bottom: 1.8rem;
-    color: var(--code-color);
     background: rgba(#000, .04);
-    font-family: var(--fontstack-monospace);
 
     --space-code: var(--space-lg);
-    padding-top: var(--space-xs);
-    padding-bottom: var(--space-xs);
     @include padding-offset(var(--space-code));
     @include margin-offset(calc(var(--space-code) * -1));
 
@@ -297,10 +292,6 @@
 
     @media (max-width: $breakpoint-sm) {
       --space-code: var(--space-sm);
-      word-break: keep-all;
-      white-space: nowrap;
-      overflow: scroll;
-      -webkit-overflow-scrolling: touch;
     }
   }
 
