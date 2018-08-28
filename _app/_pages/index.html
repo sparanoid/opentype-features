@@ -116,7 +116,7 @@ css: |
     <section id="{{ feature.slug }}" class="of-feature-{{ feature.slug }}">
       <h2>
         {{ feature.title }}:
-        <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+        <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec <code>{{ feature.slug }}</code> at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
       </h2>
       {{ feature.desc | markdownify }}
 
@@ -230,7 +230,7 @@ css: |
               {%- endif -%}
             {%- endcapture -%}
 
-            <div class="demo {{ feature_status }} {{ feature_class }}" title="{{ feature_class }}" {{ feature_lang }}>{{ feature.demo.text }}</div>
+            <div class="demo {{ feature_status }} {{ feature_class }}" title="<code>.{{ feature_class }}</code>" {{ feature_lang }}>{{ feature.demo.text }}</div>
           {% endfor %}
         </div>
       {% endif %}
