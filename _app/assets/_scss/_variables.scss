@@ -241,3 +241,15 @@ $code-color: #af9625;
 .of-bree {
   font-family: 'of-bree', var(--fontstack-sans-serif);
 }
+
+// TypeKit
+@font-face {
+  font-family: 'of-bello-pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/bello-pro.woff2') format('woff2');
+}
+
+.of-bello-pro {
+  font-family: 'of-bello-pro', var(--fontstack-sans-serif);
+}
