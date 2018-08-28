@@ -11,11 +11,11 @@
 
 // Tooltips
 document.addEventListener('DOMContentLoaded', function(){
-  var tags = document.querySelectorAll('.tag, abbr, .of-spec-link, .demo > span');
+  var tags = document.querySelectorAll('.tag, abbr, .of-spec-link, .demo');
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
     tippy(tag, {
-      placement: tag.parentNode.classList.contains('demo-multiline') ? 'left' : 'top',
+      placement: tag.parentNode.classList.contains('demos-multiline') ? 'left' : 'top',
       arrow: true,
       flip: true,
       arrowType: 'sharp',
