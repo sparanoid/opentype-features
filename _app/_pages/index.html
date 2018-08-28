@@ -106,9 +106,14 @@ css: |
       https://docs.microsoft.com/typography/opentype/spec/{{ spec_index | strip }}#{{ feature.slug | replace: "-", "---" }}
     {% endcapture %}
 
+    {%- capture css_class -%}
+      {%- for tag in feature.meta -%}
+        {{ tag.class | append: ' ' }}
+      {%- endfor -%}
+    {%- endcapture -%}
     <h2 id="{{ feature.slug }}">
       {{ feature.title }}:
-      <a href="{{ spec_link | strip }}" class="of-spec-link" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+      <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec {{ feature.slug }} at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
     </h2>
     {{ feature.desc | markdownify }}
 
