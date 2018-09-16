@@ -170,6 +170,28 @@ $code-color: #af9625;
   font-family: 'of-cairo', var(--fontstack-serif);
 }
 
+@font-face {
+  font-family: 'of-ff-kosmik-pro';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/ff-kosmik-pro-bold.woff2') format('woff2');
+}
+
+.of-ff-kosmik-pro {
+  font-family: 'of-ff-kosmik-pro', var(--fontstack-sans-serif);
+}
+
+@font-face {
+  font-family: 'of-punk-nova';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/punk-nova-bold.woff2') format('woff2');
+}
+
+.of-punk-nova {
+  font-family: 'of-punk-nova', var(--fontstack-sans-serif);
+}
+
 // Typotheque
 @font-face {
   font-family: 'fedra-serif-multiscript';
