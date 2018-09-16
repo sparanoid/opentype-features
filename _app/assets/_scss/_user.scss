@@ -343,10 +343,10 @@
   .links a:before,
   .link:before {
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    vertical-align: -4px;
-    margin-right: 4px;
+    width: var(--font-size);
+    height: var(--font-size);
+    vertical-align: -.125em;;
+    margin-right: .25em;
   }
 
   .links a[href*="typekit.com"]:before,
