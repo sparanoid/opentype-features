@@ -132,20 +132,25 @@
 
     - slug: rand
       title: Randomize
-      desc: Replaces character with random forms (meant to simulate handwriting)
+      desc: |
+        Replaces character with random forms (meant to simulate handwriting).
+
+        > It's actually not random at all, but instead cyclical: it keeps track of each character's last glyph variant and cycles to the next variant (or back to the first) the next time the character appears. Unfortunately this requires applications to implement a special kind of behavior for a more general class of lookup type, and as of this writing, no shipping applications support the feature as described. Typeface like FF Kosmik uses the [Contextual Alternates](#calt) feature is therefore a compromise, but it nonetheless delivers the desired behavior, even inside the limitations of currently shipping OT-savvy apps (i.e. just InDesign 2.0.) --- [Eccentrifuge Recent Projects: Kosmik](http://www.eccentrifuge.com/clients/KosmikOT.html)
       meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
+        - name: Note
+          title: Browser support via Contextual Alternates (calt) for selected fonts
+          class: tag-note
       demo:
         multiline: true
-        font:
+        font: of-ff-kosmik-pro demos-lg
         lang:
-        text: Not available, feel free to contribute!
+        text: Free stood speech 777!
         css:
-          - 'normal'
+          - '"rand" 0, "calt" 0'
           - '"rand"'
       links:
+        - '[FF Kosmik](https://www.fontshop.com/families/ff-kosmik)'
+        - '[Punk Nova](https://github.com/khaledhosny/punk-otf)'
 
     - slug: nalt
       title: Alternate Annotation Forms
