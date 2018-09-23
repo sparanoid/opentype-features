@@ -97,25 +97,6 @@
     opacity: .8;
   }
 
-  details {
-
-    summary {
-      list-style: none;
-
-      &:focus,
-      &:hover {
-        color: var(--link-color);
-      }
-    }
-
-    &[open] {
-
-      summary {
-        color: var(--link-color);
-      }
-    }
-  }
-
   // Link color schemes
   a {
 
@@ -389,6 +370,34 @@
     }
   }
 }
+
+// TODO: This is a workaround for Sass genrating wrong !important comment
+// position when related block are nested inside, you have to make sure the
+// block you wanna keep by uncss the topmost level (root) of your css.
+/*! uncss:ignore start */
+details {
+
+  summary {
+
+    &:focus,
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+
+  &[open] {
+
+    summary {
+      color: var(--link-color);
+
+      &::before {
+        opacity: 1;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+/*! uncss:ignore end */
 
 // Tippy.js
 /*! uncss:ignore start */
