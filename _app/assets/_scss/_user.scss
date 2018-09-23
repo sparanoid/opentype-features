@@ -324,10 +324,23 @@
   .links a:before,
   .link:before {
     display: inline-block;
-    width: var(--font-size);
-    height: var(--font-size);
+    --size: var(--font-size);
+    width: var(--size);
+    height: var(--size);
     vertical-align: -.125em;;
     margin-right: .25em;
+
+    @media (max-width: $breakpoint-md) {
+      --size: calc(var(--font-size) * 1.4);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      --size: calc(var(--font-size) * 2.4);
+    }
+
+    @media (max-width: $breakpoint-xs) {
+      --size: calc(var(--font-size) * 3.2);
+    }
   }
 
   .links a[href*="typekit.com"]:before,
