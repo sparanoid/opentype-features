@@ -43,7 +43,7 @@
       desc: Converts letter to a swashed version based on characters around the letter
       meta:
         - name: Note
-          title: Doesn't work on iOS Safari
+          title: Doesn't work on Safari
           class: tag-note
       demo:
         multiline: true
@@ -114,7 +114,7 @@
         - name: Default
           class: tag-default
         - name: Note
-          title: Doesn't work on iOS Safari
+          title: Doesn't work on Safari
           class: tag-note
       demo:
         multiline: true
