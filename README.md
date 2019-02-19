@@ -13,6 +13,22 @@ The Complete CSS Demo for OpenType Features
 
 If you find something wrong or I just missed some OpenType features of cool fonts, you can just edit [./_app/_data/font-features.yml](https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml) this data file via GitHub and send me Pull Request.
 
+### Development Notes
+
+#### List GSUB/GPOS Features
+
+```shell
+$ brew install lcdf-typetools
+$ otfinfo -f font.ttf
+```
+
+#### Compress to WOFF2
+
+```shell
+$ brew install woff2
+$ woff2_compress font.ttf
+```
+
 ## Donate
 
 Wanna buy me a cup of coffee? [Great](https://sparanoid.com/donate/).
