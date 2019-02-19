@@ -275,3 +275,14 @@ $code-color: #af9625;
 .of-bello-pro {
   font-family: 'of-bello-pro', var(--fontstack-sans-serif);
 }
+
+@font-face {
+  font-family: 'of-eb-garamond';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../../fonts/eb-garamond-bold.woff2') format('woff2');
+}
+
+.of-eb-garamond {
+  font-family: 'of-eb-garamond', var(--fontstack-serif);
+}
