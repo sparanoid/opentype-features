@@ -101,6 +101,16 @@ description:    The Complete CSS Demo for OpenType Features
 # Default:      ""
 baseurl:        /lab/opentype-features
 
+# Flatten base
+#
+# This is useful when you generate your static site for GitHub Pages. By default
+# the generated pages will have full hierarchy with `baseurl` you defined. This
+# behavior will causes wrong URLs when using GitHub Pages under `docs/`. So
+# enable this option if you're using GitHub Pages.
+#
+# Default:      false
+flatten_base:   false
+
 # CSS path used in templates
 #
 # Default:      /assets
@@ -163,7 +173,7 @@ service_worker:
 google_analytics:
   enabled:      false
   id:           UA-xxxxxxx
-  url:          https://www.googletagmanager.com/gtag/js
+  url:          https://www.google-analytics.com/analytics.js
 
 # Site Twitter account handle
 twitter:        sparanoid

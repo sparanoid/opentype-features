@@ -1,3 +1,107 @@
+<a name="2.0.12"></a>
+## [2.0.12](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.11...v2.0.12) (2019-02-19)
+
+
+### Features
+
+* **css:** simpler fontstack ([48f9446](https://github.com/sparanoid/almace-scaffolding/commit/48f9446))
+* **docs:** update “Customizing Styles” ([8579b04](https://github.com/sparanoid/almace-scaffolding/commit/8579b04))
+* **package:** avoid deprecated package ([61b410f](https://github.com/sparanoid/almace-scaffolding/commit/61b410f))
+
+
+
+<a name="2.0.11"></a>
+## [2.0.11](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.10...v2.0.11) (2019-02-14)
+
+
+### Features
+
+* **grunt:** use terser for es6+ uglifier ([0037e2d](https://github.com/sparanoid/almace-scaffolding/commit/0037e2d))
+
+
+
+<a name="2.0.10"></a>
+## [2.0.10](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.9...v2.0.10) (2019-02-06)
+
+
+### Bug Fixes
+
+* **grunt:** wrong task condition for flatten option ([2740b78](https://github.com/sparanoid/almace-scaffolding/commit/2740b78))
+
+
+
+<a name="2.0.9"></a>
+## [2.0.9](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.8...v2.0.9) (2019-02-06)
+
+
+### Features
+
+* **config:** add new option `flatten_base` for easier setup fpr GitHub Pages (for projects) ([8f41221](https://github.com/sparanoid/almace-scaffolding/commit/8f41221))
+* **css:** add `halt` support ([bb2fe6c](https://github.com/sparanoid/almace-scaffolding/commit/bb2fe6c))
+* switch from npm to yarn ([6020fbf](https://github.com/sparanoid/almace-scaffolding/commit/6020fbf))
+
+
+
+<a name="2.0.8"></a>
+## [2.0.8](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.7...v2.0.8) (2018-12-01)
+
+
+### Bug Fixes
+
+* **amsf:** no page/post title fallback ([176d3a0](https://github.com/sparanoid/almace-scaffolding/commit/176d3a0))
+
+
+### Features
+
+* **footer:** add dynamic footer links support ([b64617f](https://github.com/sparanoid/almace-scaffolding/commit/b64617f))
+* **pages:** hide error page in sitemap ([ad72fda](https://github.com/sparanoid/almace-scaffolding/commit/ad72fda))
+* **robots.txt:** better output ([fd3fd55](https://github.com/sparanoid/almace-scaffolding/commit/fd3fd55))
+
+
+### BREAKING CHANGES
+
+* **footer:** If you already defined your custom footer links in `footer.html`, you need to remove them and defined them in `footer.yml` for further compatibility
+
+
+
+<a name="2.0.7"></a>
+## [2.0.7](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.6...v2.0.7) (2018-11-09)
+
+
+### Bug Fixes
+
+* **css:** image position overwritten with `:not` pseudo selector ([4f7e623](https://github.com/sparanoid/almace-scaffolding/commit/4f7e623))
+* **css:** list decorations not aligned to the baseline ([9d2ee52](https://github.com/sparanoid/almace-scaffolding/commit/9d2ee52))
+
+
+### Features
+
+* **css:** reimplement `no-resize` separately ([752b521](https://github.com/sparanoid/almace-scaffolding/commit/752b521))
+
+
+
+<a name="2.0.6"></a>
+## [2.0.6](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.5...v2.0.6) (2018-11-09)
+
+
+### Bug Fixes
+
+* **css:** wrong mixin order ([4c26c69](https://github.com/sparanoid/almace-scaffolding/commit/4c26c69))
+* **css:** wrong variable definition ([4057f9e](https://github.com/sparanoid/almace-scaffolding/commit/4057f9e))
+* **grunt:** `uncss_inline` v1.2.4 causes `cacheBust` not triggered anymore, reorder task ([d2672c8](https://github.com/sparanoid/almace-scaffolding/commit/d2672c8))
+
+
+### Features
+
+* rebrand description ([7362fe5](https://github.com/sparanoid/almace-scaffolding/commit/7362fe5))
+* rebrand logo to v2 ([4eb9a46](https://github.com/sparanoid/almace-scaffolding/commit/4eb9a46))
+* **amsf:** fallback to site name if page title not defined ([725521b](https://github.com/sparanoid/almace-scaffolding/commit/725521b))
+* **config:** revert back to original analytics.js instead of ga.js for better performance ([54c826f](https://github.com/sparanoid/almace-scaffolding/commit/54c826f))
+* **css:** add a simple way to avoid default image resizing ([cd66a6c](https://github.com/sparanoid/almace-scaffolding/commit/cd66a6c))
+* **grunt:** add `grunt-doctype` support ([092b498](https://github.com/sparanoid/almace-scaffolding/commit/092b498))
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.4...v2.0.5) (2018-09-23)
 

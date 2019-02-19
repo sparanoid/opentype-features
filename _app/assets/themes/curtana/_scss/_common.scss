@@ -226,13 +226,13 @@ body:hover .latest {
 
   ul li::before {
     content: "-";
-    padding-right: .6em;
+    padding-right: .5em;
   }
 
   ol li::before {
     counter-increment: list;
     content: counter(list) ".";
-    padding-right: .3em;
+    padding-right: .25em;
   }
 
   dl {
@@ -342,6 +342,20 @@ body:hover .latest {
         margin-bottom: auto;
       }
     }
+
+    &.no-resize,
+    &.noresize,
+    &.size-original {
+      width: unset;
+      max-width: 100%;
+      margin-left: unset;
+      margin-right: unset;
+
+      &.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 
   blockquote {
@@ -418,10 +432,10 @@ body:hover .latest {
         position: absolute;
         display: flex;
         justify-content: center;
-        width: 1em;
-        left: -.3em;
+        width: 1ex;
+        left: -.5em;
         margin-top: 0;
-        margin-left: -1em;
+        margin-left: -1ex;
         text-align: right;
         opacity: .4;
         transition: opacity .2s ease, transform .2s ease;
@@ -430,6 +444,10 @@ body:hover .latest {
       }
     }
 
+    // TODO: SCSS generates wrong !important comment position when related
+    // block are nested inside, you have to make sure the block you wanna keep
+    // by uncss the topmost level (root) of your css. I already implemented a
+    // workaround for `opentype-features` repo.
     &[open] summary::before {
       opacity: 1;
       transform: rotate(45deg);
