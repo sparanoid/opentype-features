@@ -446,36 +446,30 @@
     - slug: pcap
       title: Petite Caps
       desc: Substitute lower-case letters with their petite caps analogs.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        font: of-eb-garamond
+        text: Georg Duffner - Principal Design
         css:
           - 'normal'
           - '"pcap"'
       links:
+        - '[EB Garamond](https://fonts.google.com/specimen/EB+Garamond)'
+        - '[Coelacanth](https://github.com/Fuzzypeg/Coelacanth)'
 
     - slug: c2pc
       title: Capitals to Petite Caps
       desc: Substitutes capital letters with petite caps.
-      meta:
-        - name: N/A
-          title: This demo is not available at the moment
-          class: tag-na
       demo:
         multiline: true
-        font:
-        lang:
-        text: Not available, feel free to contribute!
+        font: of-eb-garamond
+        text: Georg Duffner - Principal Design
         css:
           - 'normal'
           - '"c2pc"'
       links:
+        - '[EB Garamond](https://fonts.google.com/specimen/EB+Garamond)'
+        - '[Coelacanth](https://github.com/Fuzzypeg/Coelacanth)'
 
     - slug: unic
       title: Unicase
