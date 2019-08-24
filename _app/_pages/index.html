@@ -69,7 +69,7 @@ css: |
             {{ tag.class | append: ' ' }}
           {%- endfor -%}
         {%- endcapture -%}
-        <a href="#{{ feature.slug }}" class="tag {{ css_class }}" title="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
+        <a href="#{{ feature.slug }}" class="tag {{ css_class }}" data-tippy-content="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
       {% endfor %}
     </p>
   {% else %}
@@ -116,7 +116,7 @@ css: |
     <section id="{{ feature.slug }}" class="of-feature-{{ feature.slug }}">
       <h2>
         {{ feature.title }}:
-        <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" title="View spec <code>{{ feature.slug }}</code> at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
+        <a href="{{ spec_link | strip }}" class="of-spec-link {{ css_class }}" data-tippy-content="View spec <code>{{ feature.slug }}</code> at Microsoft" target="_blank" rel="noopener noreferrer"><code>{{ feature.slug }}</code></a>
       </h2>
       {{ feature.desc | markdownify }}
 
@@ -128,7 +128,7 @@ css: |
           {% for meta in feature.meta %}
             <li>
               {% if meta.name %}
-                <span class="tag {{ meta.class }}" title="{{ meta.title }}">{{ meta.name }}</span>
+                <span class="tag {{ meta.class }}" data-tippy-content="{{ meta.title }}">{{ meta.name }}</span>
               {% else %}
                 {{ meta | markdownify | remove: '<p>' | remove: '</p>' }}
               {% endif %}
@@ -230,7 +230,7 @@ css: |
               {%- endif -%}
             {%- endcapture -%}
 
-            <div class="demo {{ feature_status }} {{ feature_class }}" title="<code>.{{ feature_class }}</code>" {{ feature_lang }}>{{ feature.demo.text }}</div>
+            <div class="demo {{ feature_status }} {{ feature_class }}" data-tippy-content="<code>.{{ feature_class }}</code>" {{ feature_lang }}>{{ feature.demo.text }}</div>
           {% endfor %}
         </div>
       {% endif %}
