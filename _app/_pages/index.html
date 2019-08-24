@@ -61,7 +61,7 @@ css: |
 {% for group in site.data.opentype-features %}
   <h3>{{ group.name }}</h3>
   {% if group.features %}
-    <p class="feature-list">
+    <ul class="feature-list">
       {% for feature in group.features %}
         {% comment %} loop over meta tags to get feature status {% endcomment %}
         {%- capture css_class -%}
@@ -69,9 +69,9 @@ css: |
             {{ tag.class | append: ' ' }}
           {%- endfor -%}
         {%- endcapture -%}
-        <a href="#{{ feature.slug }}" class="tag {{ css_class }}" data-tippy-content="{{ feature.title }}"><code>{{ feature.slug }}</code></a>
+        <li><a href="#{{ feature.slug }}" class="tag {{ css_class }}" data-tippy-content="{{ feature.title }}"><code>{{ feature.slug }}</code></a></li>
       {% endfor %}
-    </p>
+    </ul>
   {% else %}
     <p>Coming soon</p>
   {% endif %}
