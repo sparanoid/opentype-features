@@ -27,11 +27,31 @@
 
 :root {
   --space-lg: 18vw;
+  --link-color-h: 157;
+  --link-color-s: 100%;
+  --link-color-l: 34%;
+  --text-color-h: var(--link-color-h);
+  --bg-color-h: var(--link-color-h);
+  --code-color-h: -60;
+  --code-color-l: 55%;
 
   --tag-normal: #00af6c;
   --tag-default: #277dda;
   --tag-wip: #ff9d00;
   --tag-na: #e6335a;
+
+  @media (prefers-color-scheme: dark) {
+    --text-color-l: 95%;
+    --link-color-l: 44%;
+    --bg-color-l: 14%;
+    --bg-color-s: 2%;
+    --code-color-l: 70%;
+
+    --tag-normal: #00ff9d;
+    --tag-default: #0cb8ff;
+    --tag-wip: #ffa412;
+    --tag-na: #ff4577;
+  }
 }
 
 .content {
@@ -42,10 +62,14 @@
 
   header {
     position: relative;
-    color: #fff;
+    color: var(--bg-color);
     background: var(--link-color);
-    background: linear-gradient(135deg, #001022 0%,#001607 100%);
+    background: linear-gradient(135deg, #0173a9 0%, #009c29 100%);
     overflow: hidden;
+
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(135deg, #6bffa6 0%, #16dfff 100%);
+    }
 
     &:after {
       content: 'Grumpy wizards make toxic brew for the evil Queen and Jack & the quick brown fox jumps over the lazy dog. ';
@@ -142,8 +166,8 @@
     --base-font-size: 220%;
     font-size: var(--base-font-size);
     line-height: var(--line-height);
-    color: #000;
-    background: rgba(#000, .02);
+    color: var(--text-color);
+    background: var(--text-color-3);
     transition: all .1s ease;
 
     --space-code: var(--space-lg);
@@ -262,7 +286,7 @@
 
   // Code block container override
   .demo-code .highlight > pre {
-    background: rgba(#000, .04);
+    background: var(--text-color-5);
 
     --space-code: var(--space-lg);
     @include padding-offset(var(--space-code));
@@ -295,8 +319,8 @@
       display: inline-block;
       line-height: 1;
       font-size: 80%;
-      color: #fff;
-      background: #333;
+      color: var(--bg-color);
+      background: var(--text-color);
       border-radius: 4px;
       text-transform: uppercase;
       padding: 4px 10px;
@@ -370,7 +394,7 @@
     .inner {
       display: block;
       font-size: 75%;
-      background: rgba(230, 230, 230, .5);
+      background: var(--text-color-7);
       padding: .2em 1em;
       margin-bottom: 1.1rem;
       margin-right: 1.25rem;
