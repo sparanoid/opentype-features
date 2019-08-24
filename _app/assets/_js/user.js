@@ -27,3 +27,17 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 });
+
+// Gumshoe
+var spy = new Gumshoe('.feature-list a', {
+  offset: 50,
+  reflow: true
+});
+document.addEventListener('gumshoeActivate', function(event) {
+  var id = event.detail.content.id;
+  console.log(id);
+  
+  window.history.replaceState(
+    'data', 'title', location.origin + location.pathname + '#' + id
+  );
+}, false);
