@@ -1,9 +1,9 @@
 # OpenType Features in CSS
 
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/opentype-features.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/sparanoid/opentype-features.svg)](https://travis-ci.org/sparanoid/opentype-features)
+[![CircleCI](https://circleci.com/gh/sparanoid/opentype-features.svg?style=svg)](https://circleci.com/gh/sparanoid/almace-scaffolding)
 [![devDependency Status](https://david-dm.org/sparanoid/opentype-features/dev-status.svg)](https://david-dm.org/sparanoid/opentype-features#info=devDependencies)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/sparanoid/opentype-features)
 
 The Complete CSS Demo for OpenType Features
 
