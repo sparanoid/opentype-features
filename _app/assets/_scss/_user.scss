@@ -158,7 +158,7 @@
   }
 
   .feature-list {
-    
+
     li {
       display: inline;
 
@@ -445,9 +445,9 @@ details {
 
 // Tippy.js
 /*! uncss:ignore start */
-.tippy-tooltip {
-  
-  &.dark-theme {
+.tippy-box {
+
+  &[data-theme^='dark'] {
 
     code {
       font-family: var(--fontstack-monospace);
@@ -465,25 +465,25 @@ details {
       fill: var(--text-color)
     }
 
-    &[x-placement^=top] .tippy-arrow {
+    &[data-placement^=top] .tippy-arrow::before {
       border-top: 8px solid var(--text-color);
       border-right: 8px solid transparent;
       border-left: 8px solid transparent
     }
 
-    &[x-placement^=bottom] .tippy-arrow {
+    &[data-placement^=bottom] .tippy-arrow::before {
       border-bottom: 8px solid var(--text-color);
       border-right: 8px solid transparent;
       border-left: 8px solid transparent
     }
 
-    &[x-placement^=left] .tippy-arrow {
+    &[data-placement^=left] .tippy-arrow::before {
       border-left: 8px solid var(--text-color);
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent
     }
 
-    &[x-placement^=right] .tippy-arrow {
+    &[data-placement^=right] .tippy-arrow::before {
       border-right: 8px solid var(--text-color);
       border-top: 8px solid transparent;
       border-bottom: 8px solid transparent
