@@ -11,7 +11,7 @@ The Complete CSS Demo for OpenType Features
 
 ## Contributing
 
-If you find something wrong or I just missed some OpenType features of cool fonts, you can just edit [./_app/_data/font-features.yml](https://github.com/sparanoid/opentype-features/blob/master/_app/_data/font-features.yml) this data file via GitHub and send me Pull Request.
+If you find something wrong or I just missed some OpenType features of cool fonts, you can just edit [./_app/_data/opentype-features.yml](https://github.com/sparanoid/opentype-features/blob/master/_app/_data/opentype-features.yml) this data file via GitHub and send me Pull Request.
 
 ### Development Notes
 
