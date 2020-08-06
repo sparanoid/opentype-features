@@ -12,20 +12,34 @@
 // Tooltips
 document.addEventListener('DOMContentLoaded', function(){
   var tags = document.querySelectorAll('.tag, .of-spec-link, .demo');
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-    tippy(tag, {
-      placement: tag.parentNode.classList.contains('demos-multiline') ? 'left' : 'top',
-      arrow: true,
-      flip: true,
-      arrowType: 'sharp',
-      distance: 18,
-      theme: 'dark',
-      animation: false,
-      duration: 0,
-      delay: 0
-    });
+
+  // Init Tippy tooltips
+  tippy.setDefaultProps({
+    allowHTML: true,
+    arrow: true,
+    theme: 'dark',
+  });
+
+  const tippySingletonOptions = {
+    delay: 500,
+    // TODO: doesn't work smooth enough
+    // moveTransition: 'transform .4s cubic-bezier(0.22, 1, 0.36, 1) 0s',
   }
+
+  const tagTippies = tippy('.tag');
+  tippy.createSingleton(tagTippies, tippySingletonOptions);
+
+  const specLinkTippies = tippy('.of-spec-link');
+  tippy.createSingleton(specLinkTippies, tippySingletonOptions);
+
+  const demoTippies = tippy('.demo', {
+    onCreate(instance) {
+      instance.setProps({
+        placement: instance.reference.parentNode.classList.contains('demos-multiline') ? 'left' : 'top'
+      })
+    },
+  });
+  tippy.createSingleton(demoTippies, { ...tippySingletonOptions, overrides: ['placement']});
 });
 
 // Gumshoe
@@ -36,7 +50,7 @@ var spy = new Gumshoe('.feature-list a', {
 document.addEventListener('gumshoeActivate', function(event) {
   var id = event.detail.content.id;
   console.log(id);
-  
+
   window.history.replaceState(
     'data', 'title', location.origin + location.pathname + '#' + id
   );
