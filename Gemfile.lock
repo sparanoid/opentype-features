@@ -4,7 +4,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -61,7 +61,7 @@ GEM
     stringex (2.8.5)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    tzinfo (2.0.2)
+    tzinfo (2.0.3)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
@@ -75,7 +75,7 @@ DEPENDENCIES
   jekyll-last-modified-at
   match_regex
   stringex
-  tzinfo (= 2.0.2)
+  tzinfo (= 2.0.3)
   tzinfo-data
 
 BUNDLED WITH
