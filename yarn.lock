@@ -270,7 +270,7 @@ async@^1.5.2, async@~1.5.2:
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
 
-async@^2.0.0, async@^2.6.0, async@^2.6.1:
+async@^2.6.0, async@^2.6.1:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
@@ -530,6 +530,14 @@ chalk@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.1.0:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -1795,15 +1803,15 @@ grunt-contrib-htmlmin@3.1.0:
     html-minifier "^4.0.0"
     pretty-bytes "^5.1.0"
 
-grunt-contrib-less@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/grunt-contrib-less/-/grunt-contrib-less-2.0.0.tgz#ca4b78e15e54610cc04332d5fa0b196b203b14d9"
-  integrity sha512-nsaODoEMjVn61OuqPaFeFQpb4Qd/EbfxQDeYnh2oONXm8L5Gnuchtv59kl0V3hjiFdOkZlPILDc3ZrkoZI0PNw==
+grunt-contrib-less@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/grunt-contrib-less/-/grunt-contrib-less-2.1.0.tgz#204bc248f29184a40fe9aa5b5882cbf5cbdd51b0"
+  integrity sha512-+GNKFKpZfiopgUd5cDYNuzsVHZ7WFHM7MOUPKtmMDhfKQ4ZSFuVpNP5PoTFs669TARE6Rvgtv1izILKCpuhFZw==
   dependencies:
-    async "^2.0.0"
-    chalk "^1.0.0"
+    async "^3.2.0"
+    chalk "^4.1.0"
     less "^3.0.4"
-    lodash "^4.17.10"
+    lodash "^4.17.20"
 
 grunt-contrib-watch@1.1.0:
   version "1.1.0"
@@ -2830,6 +2838,11 @@ lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+
+lodash@^4.17.20:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loud-rejection@^1.0.0:
   version "1.6.0"
