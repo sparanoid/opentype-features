@@ -1831,10 +1831,10 @@ grunt-doctype@2.0.2:
   resolved "https://registry.yarnpkg.com/grunt-doctype/-/grunt-doctype-2.0.2.tgz#7ca2df3f339e6b8a7c7fa50f7b5d201600e6f4be"
   integrity sha512-ALVt7V81Rj/BTiHw1mOE0AVeH/V8yH6QaWwIpPsnshc5jBzPVRwGA4G/cXB4y541+ptp7Hq/RwiV0/ueAWsgZQ==
 
-grunt-git@1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/grunt-git/-/grunt-git-1.0.14.tgz#6d27d76c243d9ff71a562ec6c9899b14d95b930c"
-  integrity sha512-cjavNWMysd7qnNMfGArtSdRRbtCUkvDoY/IM0MRcQJCGEEr7B/Onbz53ke7uM/EZroXEOMWtdc647m8TnevoaQ==
+grunt-git@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/grunt-git/-/grunt-git-1.1.1.tgz#50c315e6647ec77c841c387f6ad050a49a415f10"
+  integrity sha512-PiqCEuh3K9H+BheQozaQ8LCoO1hjS6MzQuany4IpIY4A/d/U9omQdpI70asf+bWeCU3eQTI2wEk8vqeG5Ktzvg==
   dependencies:
     flopmang "^1.0.0"
 
