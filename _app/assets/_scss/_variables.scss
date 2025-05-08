@@ -259,16 +259,18 @@
 }
 
 // TypeKit
-@font-face {
-  font-family: 'of-bello-pro';
-  font-weight: bold;
-  font-style: normal;
-  src: url('../../../fonts/bello-pro.woff2') format('woff2');
-}
+// The company (Underware) asked me to remove the font-face declaration for font license reasons.
+// Now it's migrated to TypeKit :)
+// @font-face {
+//   font-family: 'of-bello-pro';
+//   font-weight: bold;
+//   font-style: normal;
+//   src: url('../../../fonts/bello-pro.woff2') format('woff2');
+// }
 
-.of-bello-pro {
-  font-family: 'of-bello-pro', var(--fontstack-sans-serif);
-}
+// .of-bello-pro {
+//   font-family: 'of-bello-pro', var(--fontstack-sans-serif);
+// }
 
 @font-face {
   font-family: 'of-eb-garamond';
