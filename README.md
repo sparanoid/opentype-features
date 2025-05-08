@@ -35,9 +35,9 @@ Wanna buy me a cup of coffee? [Great](https://sparanoid.com/donate/).
 
 ## Author
 
-**Tunghsiao Liu**
+**Sparanoid**
 
-- Twitter: @[tunghsiao](https://twitter.com/tunghsiao)
+- Twitter: @[sparanoid](https://twitter.com/sparanoid)
 - GitHub: @[sparanoid](https://github.com/sparanoid)
 
 ## Licenses
