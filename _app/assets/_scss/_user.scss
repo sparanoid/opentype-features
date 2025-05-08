@@ -169,7 +169,8 @@
   }
 
   .demos {
-    @include heading();
+    font-size: 360%;
+    letter-spacing: var(--heading-letter-spacing);
     --base-font-size: 220%;
     font-size: var(--base-font-size);
     line-height: var(--line-height);

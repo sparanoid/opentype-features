@@ -47,7 +47,7 @@
           class: tag-note
       demo:
         multiline: true
-        font: of-bello-pro demos-lg
+        font: tk-bello-pro demos-lg
         lang:
         text: I feel great today.
         css:
