@@ -1,10 +1,14 @@
 source "https://rubygems.org"
 
-gem "jekyll", "4.1.1"
+gem "jekyll", "4.4.1"
+gem "csv" # Required for Ruby 3.4+
+gem "logger" # Will be removed from default gems in Ruby 3.5+
+gem "base64" # Required for Ruby 3.4+
+gem "bigdecimal" # Required for Ruby 3.4+
 
 group :development do
-  gem "jekyll-last-modified-at"
   gem "stringex"
+  gem "webrick"
 end
 
 group :jekyll_plugins do
